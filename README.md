@@ -30,6 +30,16 @@ An `InputController` takes an input value, chosen by it's `input` property, then
 |`type`|`InputControllerType`|This is the method used to map the input to the output range. More below.|
 |`zeroOnDeactivate`|`bool`|If false, the value will remain frozen when deactivated. If true it will go to zero.|
 
+### Option Values
+
+|InputControllerType|Description (from in-game tooltip)|
+|---|---|
+|Standard|A positive axis will be multiplied by the max value. A negative axis will be multiplied by the min value. |
+|Lerp Full Axis|The output value will be linearly interpolated between the min and max values assuming an input axis of -1 to 1. |
+|Lerp Positive Axis|The output value will be linearly interpolated between the min and max values assuming an input axis of 0 to 1. |
+|Lerp Negative Axis|The output value will be linearly interpolated between the min and max values assuming an input axis of -1 to 0.|
+
+
 ### Input Axes
 There are many things you can put in the `input` field. It's rather quite exciting. For a start, you can access any "control" in this list.
 
@@ -72,4 +82,4 @@ But it goes on. You can also access Flight Data.
 |`FlightData.SurfaceVelocityMagnitude`|
 |`FlightData.VelocityMagnitude`|
 
-How awesome! Then it gets even more complex. You can assign, to any part modifier (the sub elements under `<Part>`), an `id` value, that uniquely identifies that modifier within the craft. You can then reference that from the InputController and get a value from that modifier. There are two ways to do this. Firstly, the modifier itself can act as an input. To do this, you just add the modifier ID straight out. This only works if that particular modifier is able to act as an InputControllerInput, and nothing does that at the moment. But don't fret! Something probably will in the future. Also, there's another way. By inputting the modifier ID, then a `.`, then a property name, you can get any property from the modifier! What properties are there? Lots! I don't have time to write them all down here. But for instance, there is `DockingPort.IsDocked`, or `DockingPort.DockingTime`, or `ResizableWheel.CurrentRPM`. I will document them systematically in another page in the future.
+How awesome! Then it gets even more complex. You can assign, to any part modifier (the sub elements under `<Part>`), an `id` value, that uniquely identifies that modifier within the craft. You can then reference that from the InputController and get a value from that modifier. There are two ways to do this. Firstly, the modifier itself can act as an input. To do this, you just add the modifier ID straight out. This only works if that particular modifier is able to act as an InputControllerInput, and nothing does that at the moment. But don't fret! Something probably will in the future. Also, there's another way. By inputting the modifier ID, then a `.`, then a property name, you can get any property from the modifier! What properties are there? Lots! I don't have time to write them all down here. But for instance, there is `DockingPort.IsDocked`, or `DockingPort.DockingTime`, or `ResizableWheel.CurrentRPM` or `Engine.CurrentThrust`. I will document them systematically in another page in the future.
