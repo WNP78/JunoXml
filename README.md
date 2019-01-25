@@ -56,6 +56,7 @@ There are many things you can put in the `input` field. It's rather quite exciti
 But it goes on. You can also access Flight Data.
 
 |Flight Data|
+|---|
 |`FlightData.AltitudeAboveGroundLevel`|
 |`FlightData.AltitudeAboveSeaLevel`|
 |`FlightData.CurrentEngineThrust`|
