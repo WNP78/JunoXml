@@ -53,6 +53,8 @@ There are many things you can put in the `input` field. It's rather quite exciti
 |`TranslateUp`|
 |`Yaw`|
 
+If you want to, you can just put a constant value in there. Like `0.5`, `-1`, or even `.3`. This will just remain constant.
+
 But it goes on. You can also access Flight Data.
 
 |Flight Data|
@@ -70,4 +72,4 @@ But it goes on. You can also access Flight Data.
 |`FlightData.SurfaceVelocityMagnitude`|
 |`FlightData.VelocityMagnitude`|
 
-How awesome! Then it gets even more complex.
+How awesome! Then it gets even more complex. You can assign, to any part modifier (the sub elements under `<Part>`), an `id` value, that uniquely identifies that modifier within the craft. You can then reference that from the InputController and get a value from that modifier. There are two ways to do this. Firstly, the modifier itself can act as an input. To do this, you just add the modifier ID straight out. This only works if that particular modifier is able to act as an InputControllerInput, and nothing does that at the moment. But don't fret! Something probably will in the future. Also, there's another way. By inputting the modifier ID, then a `.`, then a property name, you can get any property from the modifier! What properties are there? Lots! I don't have time to write them all down here. But for instance, there is `DockingPort.IsDocked`, or `DockingPort.DockingTime`, or `ResizableWheel.CurrentRPM`. I will document them systematically in another page in the future.
