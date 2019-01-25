@@ -80,13 +80,6 @@ These can all be used when referencing a part modifier by `id` in an InputContro
 |WingSweep|float|
 
 
-## SolarPanelArray
-|Name|Type|
-|---|---|
-|_extensionPistonTravelSpeed|float|
-|_hingeHolderTravelSpeed|float|
-
-
 ## Engine
 |Name|Type|
 |---|---|
