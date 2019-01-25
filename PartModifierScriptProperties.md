@@ -93,17 +93,17 @@ These can all be used when referencing a part modifier by `id` in an InputContro
 |CurrentEfficiency|float|
 |CurrentThrust|float|
 |MassFlowRate|float|
-|Assets.Scripts.Craft.Parts.Modifiers.Propulsion.IReactionEngine.MaximumThrust|float|
-|Assets.Scripts.Craft.Parts.Modifiers.Propulsion.IReactionEngine.RemainingFuel|float|
+|MaximumThrust|float|
+|RemainingFuel|float|
 
 
 ## JetEngine
 |Name|Type|
 |---|---|
-|Assets.Scripts.Craft.Parts.Modifiers.Propulsion.IReactionEngine.CurrentThrust|float|
-|Assets.Scripts.Craft.Parts.Modifiers.Propulsion.IReactionEngine.MassFlowRate|float|
-|Assets.Scripts.Craft.Parts.Modifiers.Propulsion.IReactionEngine.MaximumThrust|float|
-|Assets.Scripts.Craft.Parts.Modifiers.Propulsion.IReactionEngine.RemainingFuel|float|
+|CurrentThrust|float|
+|MassFlowRate|float|
+|MaximumThrust|float|
+|RemainingFuel|float|
 
 
 ## InputController
