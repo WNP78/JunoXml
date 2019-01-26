@@ -1,4 +1,5 @@
 # Part
+A `Part` element represents a part in game. They have the following properties. They also have sub-elements each of which corresponds to a Part Modifier.
 
 |Name|Type|Description|
 |---|---|---|
