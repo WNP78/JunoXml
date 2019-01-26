@@ -2,6 +2,7 @@
 These can all be used when referencing a part modifier by `id` in an InputController.
 
 ## DockingPort
+
 |Name|Type|
 |---|---|
 |DockingTime|float|
@@ -13,12 +14,14 @@ These can all be used when referencing a part modifier by `id` in an InputContro
 
 
 ## ElectricMotor
+
 |Name|Type|
 |---|---|
 |MaxPowerConsumption|float|
 
 
 ## FuelSource
+
 |Name|Type|
 |---|---|
 |IsEmpty|bool|
@@ -27,12 +30,14 @@ These can all be used when referencing a part modifier by `id` in an InputContro
 
 
 ## FuelTank
+
 |Name|Type|
 |---|---|
 |IsEmpty|bool|
 
 
 ## RelayFuelSource
+
 |Name|Type|
 |---|---|
 |IsEmpty|bool|
@@ -41,6 +46,7 @@ These can all be used when referencing a part modifier by `id` in an InputContro
 
 
 ## ResizableWheel
+
 |Name|Type|
 |---|---|
 |CurrentRpm|float|
@@ -54,6 +60,7 @@ These can all be used when referencing a part modifier by `id` in an InputContro
 
 
 ## TestPilot
+
 |Name|Type|
 |---|---|
 |Acceleration|float|
@@ -63,12 +70,14 @@ These can all be used when referencing a part modifier by `id` in an InputContro
 
 
 ## ControlSurface
+
 |Name|Type|
 |---|---|
 |DeflectionAngle|float|
 
 
 ## Wing
+
 |Name|Type|
 |---|---|
 |DrawCenterOfLiftBalls|bool|
@@ -81,6 +90,7 @@ These can all be used when referencing a part modifier by `id` in an InputContro
 
 
 ## Engine
+
 |Name|Type|
 |---|---|
 |CurrentEfficiency|float|
@@ -91,6 +101,7 @@ These can all be used when referencing a part modifier by `id` in an InputContro
 
 
 ## JetEngine
+
 |Name|Type|
 |---|---|
 |CurrentThrust|float|
@@ -100,6 +111,7 @@ These can all be used when referencing a part modifier by `id` in an InputContro
 
 
 ## InputController
+
 |Name|Type|
 |---|---|
 |Active|bool|
@@ -107,6 +119,7 @@ These can all be used when referencing a part modifier by `id` in an InputContro
 
 
 ## Fuselage
+
 |Name|Type|
 |---|---|
 |Backwards|bool|
