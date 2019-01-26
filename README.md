@@ -6,4 +6,5 @@ The big difference between SP and SR2 modding is that you can add new modifiers 
 If you find, or think you have found, any inaccuracies or omissions, do not be afraid to ask, or submit a PR.
 
  - [Part](Part):
+   - [Config](Config)
    - [InputController](InputController)
