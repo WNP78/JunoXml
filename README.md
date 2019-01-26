@@ -9,6 +9,7 @@ If you find, or think you have found, any inaccuracies or omissions, do not be a
 An `InputController` takes an input value, chosen by it's `input` property, then applies a set of transformations to it, mapping it to the final range of `min` to `max`, optionally inverting it. Other modifiers then use the `InputController`'s output value as their input.
 
 ### Options
+
 |Option|Type|Description|
 |---|---|---|
 |`activationGroup`|`int`|The activation group assigned to the inputcontroller. When this is disabled, the inputcontroller will not update it's input.|
