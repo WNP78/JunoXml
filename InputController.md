@@ -10,7 +10,7 @@ An `InputController` takes an input value, chosen by it's `input` property, then
 |`designerInputOptions`|`string`|This is the comma separated list of available inputs in the part properties panel. This is overriden by the "Show Hidden Properties" checkbox in the Tinker panel.|
 |`ignorePartActivationState`|`bool`|If set to true, then the input controller will function even when the part is not activated. This is required for auto-activating parts.|
 |`input`|`string`|The input axis to use. More details below.|
-|`inputAxisRange`|`string`|One, two or three numbers, comma separated. More detail below.|
+|`inputAxisRange`|`string`|One, two or three numbers, comma separated. They define the range |
 |`inputAxisRangeDesigner`|`string`|The designer field for the above property.|
 |`invert`|`bool`|Invert the value?|
 |`invertOnMirror`|`bool`|Invert when the part is mirrored?|
@@ -21,18 +21,17 @@ An `InputController` takes an input value, chosen by it's `input` property, then
 |`showActivationGroup`|`bool`|Controls if the activation group spinner is shown in the designer.|
 |`showInputAxis`|`bool`|Controls if the input axis spinner is shown in the desinger.|
 |`showInvert`|`bool`|Controls if the invert checkbox is shown in the deisgner.|
-|`type`|`string`|This is the method used to map the input to the output range. More below.|
+|`type`|`string`|This is the method used to map the input to the output range. See the `InputControllerType` table.|
 |`zeroOnDeactivate`|`bool`|If false, the value will remain frozen when deactivated. If true it will go to zero.|
 
 ## Option Values
 
 |InputControllerType|Description (from in-game tooltip)|
 |---|---|
-|Standard|A positive axis will be multiplied by the max value. A negative axis will be multiplied by the min value. |
-|LerpFullAxis|The output value will be linearly interpolated between the min and max values assuming an input axis of -1 to 1. |
-|LerpPositiveAxis|The output value will be linearly interpolated between the min and max values assuming an input axis of 0 to 1. |
-|LerpNegativeAxis|The output value will be linearly interpolated between the min and max values assuming an input axis of -1 to 0.|
-
+|`Standard`|A positive axis will be multiplied by the max value. A negative axis will be multiplied by the min value. |
+|`LerpFullAxis`|The output value will be linearly interpolated between the min and max values assuming an input axis of -1 to 1. |
+|`LerpPositiveAxis`|The output value will be linearly interpolated between the min and max values assuming an input axis of 0 to 1. |
+|`LerpNegativeAxis`|The output value will be linearly interpolated between the min and max values assuming an input axis of -1 to 0.|
 
 ## Input Axes
 There are many things you can put in the `input` field. It's rather quite exciting. For a start, you can access any "control" in this list.
@@ -76,4 +75,10 @@ But it goes on. You can also access Flight Data.
 |`FlightData.SurfaceVelocityMagnitude`|
 |`FlightData.VelocityMagnitude`|
 
-How awesome! Then it gets even more complex. You can assign, to any part modifier (the sub elements under `<Part>`), an `id` value, that uniquely identifies that modifier within the craft. You can then reference that from the InputController and get a value from that modifier. There are two ways to do this. Firstly, the modifier itself can act as an input. To do this, you just add the modifier ID straight out. This only works if that particular modifier is able to act as an InputControllerInput, and nothing does that at the moment. But don't fret! Something probably will in the future. Also, there's another way. By inputting the modifier ID, then a `.`, then a property name, you can get any property from the modifier! The properties you can choose are all listed in [this page](PartModifierScriptProperties).
+How awesome! Then it gets even more complex.
+
+You can assign, to any part modifier (the sub elements under `<Part>`), an `id` value, that uniquely identifies that modifier within the craft. You can then reference that from the InputController and get a value from that modifier. There are two ways to do this. 
+
+Firstly, the modifier itself can act as an input. To do this, you just add the modifier ID straight out. This only works if that particular modifier is able to act as an InputControllerInput, and nothing does that at the moment. So for now, this paragraph is useless. But don't fret! Something probably will use it in the future.
+
+There is also a way that works. By inputting the modifier ID, then a `.`, then a property name, you can get any property from the modifier! The properties you can choose are all listed in [this page](PartModifierScriptProperties).
