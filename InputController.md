@@ -1,7 +1,7 @@
-## InputControllers
+# InputControllers
 An `InputController` takes an input value, chosen by it's `input` property, then applies a set of transformations to it, mapping it to the final range of `min` to `max`, optionally inverting it. Other modifiers then use the `InputController`'s output value as their input.
 
-### Options
+## Options
 
 |Option|Type|Description|
 |---|---|---|
@@ -24,7 +24,7 @@ An `InputController` takes an input value, chosen by it's `input` property, then
 |`type`|`string`|This is the method used to map the input to the output range. More below.|
 |`zeroOnDeactivate`|`bool`|If false, the value will remain frozen when deactivated. If true it will go to zero.|
 
-### Option Values
+## Option Values
 
 |InputControllerType|Description (from in-game tooltip)|
 |---|---|
@@ -34,7 +34,7 @@ An `InputController` takes an input value, chosen by it's `input` property, then
 |LerpNegativeAxis|The output value will be linearly interpolated between the min and max values assuming an input axis of -1 to 0.|
 
 
-### Input Axes
+## Input Axes
 There are many things you can put in the `input` field. It's rather quite exciting. For a start, you can access any "control" in this list.
 
 |Controls|
