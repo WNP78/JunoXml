@@ -17,18 +17,18 @@ An `InputController` takes an input value, chosen by it's `input` property, then
 |`designerInputOptions`|`string`|This is the comma separated list of available inputs in the part properties panel. This is overriden by the "Show Hidden Properties" checkbox in the Tinker panel.|
 |`ignorePartActivationState`|`bool`|If set to true, then the input controller will function even when the part is not activated. This is required for auto-activating parts.|
 |`input`|`string`|The input axis to use. More details below.|
-|`inputAxisRange`|`InputControllerInputRange`|One, two or three numbers, comma separated. More detail below.|
+|`inputAxisRange`|`string`|One, two or three numbers, comma separated. More detail below.|
 |`inputAxisRangeDesigner`|`string`|The designer field for the above property.|
 |`invert`|`bool`|Invert the value?|
 |`invertOnMirror`|`bool`|Invert when the part is mirrored?|
-|`invertType`|`InvertType`|If `Output`, then the value will be inverted after mapping. If `Axis`, it will be before mapping.|
+|`invertType`|`string`|If `Output`, then the value will be inverted after mapping. If `Axis`, it will be before mapping.|
 |`max`|`float`|The maximum output value|
 |`min`|`float`|The minimum output value|
 |`overrideInput`|`string`|If assigned, this will override the `input` field.|
 |`showActivationGroup`|`bool`|Controls if the activation group spinner is shown in the designer.|
 |`showInputAxis`|`bool`|Controls if the input axis spinner is shown in the desinger.|
 |`showInvert`|`bool`|Controls if the invert checkbox is shown in the deisgner.|
-|`type`|`InputControllerType`|This is the method used to map the input to the output range. More below.|
+|`type`|`string`|This is the method used to map the input to the output range. More below.|
 |`zeroOnDeactivate`|`bool`|If false, the value will remain frozen when deactivated. If true it will go to zero.|
 
 ### Option Values
@@ -36,9 +36,9 @@ An `InputController` takes an input value, chosen by it's `input` property, then
 |InputControllerType|Description (from in-game tooltip)|
 |---|---|
 |Standard|A positive axis will be multiplied by the max value. A negative axis will be multiplied by the min value. |
-|Lerp Full Axis|The output value will be linearly interpolated between the min and max values assuming an input axis of -1 to 1. |
-|Lerp Positive Axis|The output value will be linearly interpolated between the min and max values assuming an input axis of 0 to 1. |
-|Lerp Negative Axis|The output value will be linearly interpolated between the min and max values assuming an input axis of -1 to 0.|
+|LerpFullAxis|The output value will be linearly interpolated between the min and max values assuming an input axis of -1 to 1. |
+|LerpPositiveAxis|The output value will be linearly interpolated between the min and max values assuming an input axis of 0 to 1. |
+|LerpNegativeAxis|The output value will be linearly interpolated between the min and max values assuming an input axis of -1 to 0.|
 
 
 ### Input Axes
