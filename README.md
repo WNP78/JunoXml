@@ -8,3 +8,4 @@ If you find, or think you have found, any inaccuracies or omissions, do not be a
  - [Part](Part):
    - [Config](Config)
    - [InputController](InputController)
+     - [Part Modifier Script Properties](PartModifierScriptProperties)
