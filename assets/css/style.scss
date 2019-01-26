@@ -3,6 +3,6 @@
 
 @import "{{ site.theme }}";
 
-code {
+:not(pre) > code {
     background: #333;
 }
