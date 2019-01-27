@@ -1,11 +1,12 @@
 # ResizableWheel
 
+
 |Name|Type|Description|
 |--|--|--|
 |`brakeTorque`|`float`|Changes the torque applied to the wheel when brake is applied.|
 |`damper`|`float`|Higher damper settings can help to reduce oscillation. Lower damper settings allow more oscillation.|
 |`direction`|`string`|Changes the direction the wheel rotates when motor input is applied.|
-|`enableSuspension`|`Boolean`||
+|`enableSuspension`|`bool`||
 |`gearRatio`|`float`|Higher values result in more torque for the wheel, but lower RPM. Lower values result in less torque, but higher max RPM.|
 |`maxAngularVelocity`|`float`||
 |`maxRpm`|`float`||
@@ -21,3 +22,5 @@
 |`turningAngle`|`float`|Changes the maximum turning angle of the wheel.|
 |`turningRate`|`float`||
 |`width`|`float`|Changes the width of the wheel.|
+
+

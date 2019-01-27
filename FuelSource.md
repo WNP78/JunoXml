@@ -1,9 +1,12 @@
 # FuelSource
 
+
 |Name|Type|Description|
 |--|--|--|
-|`autoIdentifyFuelTanks`|`Boolean`||
+|`autoIdentifyFuelTanks`|`bool`||
 |`fuelTankPartIds`|`string`||
 |`fuelType`|`FuelType`||
 |`totalCapacity`|`float`||
 |`totalFuel`|`float`||
+
+

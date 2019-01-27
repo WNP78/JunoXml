@@ -1,5 +1,6 @@
 # Engine
 
+
 |Name|Type|Description|
 |--|--|--|
 |`electricalConsumption`|`float`||
@@ -9,6 +10,8 @@
 |`maxGimbalAngle`|`float`||
 |`maxTorque`|`float`||
 |`seaLevelEfficiency`|`float`||
-|`supportsWarpBurn`|`Boolean`||
+|`supportsWarpBurn`|`bool`||
 |`thrust`|`float`||
 |`vacuumEfficiency`|`float`||
+
+

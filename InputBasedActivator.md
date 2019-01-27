@@ -1,10 +1,13 @@
 # InputBasedActivator
 
+
 |Name|Type|Description|
 |--|--|--|
 |`activationType`|`ActivatorType`||
-|`currentState`|`Boolean`||
+|`currentState`|`bool`||
 |`rangeEnd`|`float`||
 |`rangeStart`|`float`||
 |`target`|`int`||
 |`updateMethod`|`ActivatorUpdateMethod`||
+
+

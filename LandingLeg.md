@@ -1,5 +1,6 @@
 # LandingLeg
 
+
 |Name|Type|Description|
 |--|--|--|
 |`currentExtensionPosition`|`Vector3`||
@@ -8,3 +9,5 @@
 |`deployedExtensionY`|`float`||
 |`deploySpeed`|`float`|Changes the speed at which the leg will deploy.|
 |`scale`|`float`|Changes the overall size of the part.|
+
+

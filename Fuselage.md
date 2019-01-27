@@ -1,8 +1,9 @@
 # Fuselage
 
+
 |Name|Type|Description|
 |--|--|--|
-|`autoResize`|`Boolean`|Determines if the part should automatically attempt to resize itself when connecting to a similar part to match its dimensions.|
+|`autoResize`|`bool`|Determines if the part should automatically attempt to resize itself when connecting to a similar part to match its dimensions.|
 |`bottomScale`|`Vector2`||
 |`buoyancy`|`float`||
 |`cornerRadiuses`|`Single[]`||
@@ -12,14 +13,16 @@
 |`normalSmoothingAngle`|`float`||
 |`offset`|`Vector3`||
 |`subpartIndex`|`int`||
-|`toolAutoAdaptBottom`|`Boolean`||
-|`toolAutoAdaptTop`|`Boolean`||
-|`toolIgnore`|`Boolean`||
-|`toolResizeBottom`|`Boolean`||
-|`toolResizeHeight`|`Boolean`||
-|`toolResizeRadius`|`Boolean`||
-|`toolResizeTop`|`Boolean`||
-|`toolShapeBottom`|`Boolean`||
-|`toolShapeTop`|`Boolean`||
-|`toolSupportsAddSection`|`Boolean`||
+|`toolAutoAdaptBottom`|`bool`||
+|`toolAutoAdaptTop`|`bool`||
+|`toolIgnore`|`bool`||
+|`toolResizeBottom`|`bool`||
+|`toolResizeHeight`|`bool`||
+|`toolResizeRadius`|`bool`||
+|`toolResizeTop`|`bool`||
+|`toolShapeBottom`|`bool`||
+|`toolShapeTop`|`bool`||
+|`toolSupportsAddSection`|`bool`||
 |`topScale`|`Vector2`||
+
+

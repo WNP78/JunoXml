@@ -1,8 +1,9 @@
 # JointRotator
 
+
 |Name|Type|Description|
 |--|--|--|
-|`allowFreeSpin`|`Boolean`||
+|`allowFreeSpin`|`bool`||
 |`attachPointIndex`|`int`||
 |`baseMode`|`BaseMode`|Changes the visual style of the base plate. Purely for cosmetic purposes.|
 |`currentAngle`|`float`||
@@ -13,3 +14,5 @@
 |`range`|`float`|Changes the range of rotation.|
 |`soundVolume`|`float`|Changes the volume of the sound made by this part.|
 |`speed`|`float`|Changes the speed at which the part rotates.|
+
+
