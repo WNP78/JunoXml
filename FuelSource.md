@@ -1,3 +1,12 @@
 # FuelSource
 
-This Part Modifier type has no XML properties.
+
+|Name|Type|Description|
+|--|--|--|
+|`autoIdentifyFuelTanks`|`bool`||
+|`fuelTankPartIds`|`string`||
+|`fuelType`|`FuelType`||
+|`totalCapacity`|`float`||
+|`totalFuel`|`float`||
+
+

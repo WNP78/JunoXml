@@ -1,17 +1,14 @@
-# InputControllers
+# InputController
 An `InputController` takes an input value, chosen by it's `input` property, then applies a set of transformations to it, mapping it to the final range of `min` to `max`, optionally inverting it. Other modifiers then use the `InputController`'s output value as their input.
 
-## Options
-
-|Option|Type|Description|
-|---|---|---|
+|Name|Type|Description|
+|--|--|--|
 |`activationGroup`|`int`|The activation group assigned to the inputcontroller. When this is disabled, the inputcontroller will not update it's input.|
 |`currentValue`|`float`|This is used in-game, when saving the game's state.|
 |`designerInputOptions`|`string`|This is the comma separated list of available inputs in the part properties panel. This is overriden by the "Show Hidden Properties" checkbox in the Tinker panel.|
 |`ignorePartActivationState`|`bool`|If set to true, then the input controller will function even when the part is not activated. This is required for auto-activating parts.|
 |`input`|`string`|The input axis to use. More details below.|
-|`inputAxisRange`|`string`|One, two or three numbers, comma separated. They define the range |
-|`inputAxisRangeDesigner`|`string`|The designer field for the above property.|
+|`inputAxisRangeDesigner`|`string`|The designer field for the `inputAxisRange` property.|
 |`invert`|`bool`|Invert the value?|
 |`invertOnMirror`|`bool`|Invert when the part is mirrored?|
 |`invertType`|`string`|If `Output`, then the value will be inverted after mapping. If `Axis`, it will be before mapping.|
@@ -23,6 +20,7 @@ An `InputController` takes an input value, chosen by it's `input` property, then
 |`showInvert`|`bool`|Controls if the invert checkbox is shown in the deisgner.|
 |`type`|`string`|This is the method used to map the input to the output range. See the `InputControllerType` table.|
 |`zeroOnDeactivate`|`bool`|If false, the value will remain frozen when deactivated. If true it will go to zero.|
+|`inputAxisRange`|`string`|One, two or three numbers, comma separated. They define the range of the input values that are expected when mapping to output values. Can either be `max`, `min,max` or `min,zero,max`.|
 
 ## Option Values
 

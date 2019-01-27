@@ -1,0 +1,456 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Sr2XmlDocManifest>
+  <README>
+    <Head>
+# SR2 XML Guide
+This guide is under construction. Patience.
+
+The big difference between SP and SR2 modding is that you can add new modifiers to things as you like. For instance, a landing leg might not have an `InputBasedActivator` on it by default, but you can just add one.
+
+If you find, or think you have found, any inaccuracies or omissions, do not be afraid to ask, or submit a PR.
+        </Head>
+  </README>
+  <InputController childPages="PartModifierScriptProperties">
+    <Head>
+# InputController
+An `InputController` takes an input value, chosen by it's `input` property, then applies a set of transformations to it, mapping it to the final range of `min` to `max`, optionally inverting it. Other modifiers then use the `InputController`'s output value as their input.
+        </Head>
+    <Footer>
+## Option Values
+
+|InputControllerType|Description (from in-game tooltip)|
+|---|---|
+|`Standard`|A positive axis will be multiplied by the max value. A negative axis will be multiplied by the min value. |
+|`LerpFullAxis`|The output value will be linearly interpolated between the min and max values assuming an input axis of -1 to 1. |
+|`LerpPositiveAxis`|The output value will be linearly interpolated between the min and max values assuming an input axis of 0 to 1. |
+|`LerpNegativeAxis`|The output value will be linearly interpolated between the min and max values assuming an input axis of -1 to 0.|
+
+## Input Axes
+There are many things you can put in the `input` field. It's rather quite exciting. For a start, you can access any "control" in this list.
+
+|Controls|
+|---|
+|`Brake`|
+|`OffsetBrake`|
+|`OffsetPitch`|
+|`OffsetRoll`|
+|`OffsetSlider1`|
+|`OffsetSlider2`|
+|`OffsetYaw`|
+|`Pitch`|
+|`Roll`|
+|`RollInputReceived`|
+|`Slider1`|
+|`Slider2`|
+|`Throttle`|
+|`TranslateForward`|
+|`TranslateRight`|
+|`TranslateUp`|
+|`Yaw`|
+
+If you want to, you can just put a constant value in there. Like `0.5`, `-1`, or even `.3`. This will just remain constant.
+
+But it goes on. You can also access Flight Data.
+
+|Flight Data|
+|---|
+|`FlightData.AltitudeAboveGroundLevel`|
+|`FlightData.AltitudeAboveSeaLevel`|
+|`FlightData.CurrentEngineThrust`|
+|`FlightData.CurrentMass`|
+|`FlightData.MaxActiveEngineThrust`|
+|`FlightData.ParentPlanetOcclusion`|
+|`FlightData.RemainingBattery`|
+|`FlightData.RemainingFuelInStage`|
+|`FlightData.RemainingMonopropellant`|
+|`FlightData.SolarRadiationIntensity`|
+|`FlightData.SurfaceVelocityMagnitude`|
+|`FlightData.VelocityMagnitude`|
+
+How awesome! Then it gets even more complex.
+
+You can assign, to any part modifier (the sub elements under `&lt;Part&gt;`), an `id` value, that uniquely identifies that modifier within the craft. You can then reference that from the InputController and get a value from that modifier. There are two ways to do this. 
+
+Firstly, the modifier itself can act as an input. To do this, you just add the modifier ID straight out. This only works if that particular modifier is able to act as an InputControllerInput, and nothing does that at the moment. So for now, this paragraph is useless. But don't fret! Something probably will use it in the future.
+
+There is also a way that works. By inputting the modifier ID, then a `.`, then a property name, you can get any property from the modifier! The properties you can choose are all listed in [this page](PartModifierScriptProperties).
+        </Footer>
+    <Overrides>
+      <activationGroup type="int">
+The activation group assigned to the inputcontroller. When this is disabled, the inputcontroller will not update it's input.
+           </activationGroup>
+      <currentValue type="float">
+This is used in-game, when saving the game's state.
+           </currentValue>
+      <designerInputOptions type="string">
+This is the comma separated list of available inputs in the part properties panel. This is overriden by the "Show Hidden Properties" checkbox in the Tinker panel.
+           </designerInputOptions>
+      <ignorePartActivationState type="bool">
+If set to true, then the input controller will function even when the part is not activated. This is required for auto-activating parts.
+           </ignorePartActivationState>
+      <input type="string">
+The input axis to use. More details below.
+           </input>
+      <inputAxisRangeDesigner type="string">
+The designer field for the `inputAxisRange` property.
+           </inputAxisRangeDesigner>
+      <invert type="bool">
+Invert the value?
+           </invert>
+      <invertOnMirror type="bool">
+Invert when the part is mirrored?
+           </invertOnMirror>
+      <invertType type="string">
+If `Output`, then the value will be inverted after mapping. If `Axis`, it will be before mapping.
+           </invertType>
+      <max type="float">
+The maximum output value
+           </max>
+      <min type="float">
+The minimum output value
+           </min>
+      <overrideInput type="string">
+If assigned, this will override the `input` field.
+           </overrideInput>
+      <showActivationGroup type="bool">
+Controls if the activation group spinner is shown in the designer.
+           </showActivationGroup>
+      <showInputAxis type="bool">
+Controls if the input axis spinner is shown in the desinger.
+           </showInputAxis>
+      <showInvert type="bool">
+Controls if the invert checkbox is shown in the deisgner.
+           </showInvert>
+      <type type="string">
+This is the method used to map the input to the output range. See the `InputControllerType` table.
+           </type>
+      <zeroOnDeactivate type="bool">
+If false, the value will remain frozen when deactivated. If true it will go to zero.
+           </zeroOnDeactivate>
+    </Overrides>
+    <Customs>
+      <inputAxisRange type="string">
+One, two or three numbers, comma separated. They define the range of the input values that are expected when mapping to output values. Can either be `max`, `min,max` or `min,zero,max`.
+        </inputAxisRange>
+    </Customs>
+  </InputController>
+  <CargoBay>
+    <Overrides>
+      <open />
+      <openAngle />
+      <openSpeed />
+      <startOpen />
+    </Overrides>
+  </CargoBay>
+  <CommandPod>
+    <Overrides>
+      <activationGroupNames />
+      <activationGroupStates />
+      <currentStage />
+      <editActivationGroups />
+      <headingDirectionRotation />
+      <primaryButton />
+    </Overrides>
+  </CommandPod>
+  <Detacher>
+    <Overrides>
+      <force />
+      <targetAttachPoints />
+    </Overrides>
+  </Detacher>
+  <DockingPort>
+    <Overrides />
+  </DockingPort>
+  <ElectricMotor>
+    <Overrides>
+      <attachPointIndex />
+      <brakeTorque />
+      <powerUsagePerTorque />
+      <rpm />
+      <soundVolume />
+      <staticResistance />
+      <torque />
+    </Overrides>
+  </ElectricMotor>
+  <Fairing>
+    <Overrides>
+      <fairingBase />
+      <jettisoned />
+      <jettisonSpin />
+      <jettisonVelocity />
+    </Overrides>
+  </Fairing>
+  <FuelSource>
+    <Overrides>
+      <autoIdentifyFuelTanks />
+      <fuelTankPartIds />
+      <fuelType />
+      <totalCapacity />
+      <totalFuel />
+    </Overrides>
+  </FuelSource>
+  <FuelTank>
+    <Overrides>
+      <capacity />
+      <designerFuelType />
+      <fuel />
+      <fuelType />
+    </Overrides>
+  </FuelTank>
+  <CoverEngine>
+    <Overrides>
+      <coverEngine />
+    </Overrides>
+  </CoverEngine>
+  <Gyroscope>
+    <Overrides>
+      <electricalConsumption />
+      <power />
+      <powerScale />
+    </Overrides>
+  </Gyroscope>
+  <InputBasedActivator>
+    <Overrides>
+      <activationType />
+      <currentState />
+      <rangeEnd />
+      <rangeStart />
+      <target />
+      <updateMethod />
+    </Overrides>
+  </InputBasedActivator>
+  <JointRotator>
+    <Overrides>
+      <allowFreeSpin />
+      <attachPointIndex />
+      <baseMode />
+      <currentAngle />
+      <damperMultiplier />
+      <maxRange />
+      <maxSpeed />
+      <minRange />
+      <range />
+      <soundVolume />
+      <speed />
+    </Overrides>
+  </JointRotator>
+  <LandingLeg>
+    <Overrides>
+      <currentExtensionPosition />
+      <currentRotation />
+      <deployedAngle />
+      <deployedExtensionY />
+      <deploySpeed />
+      <scale />
+    </Overrides>
+  </LandingLeg>
+  <Light>
+    <Overrides />
+  </Light>
+  <Parachute>
+    <Overrides>
+      <size />
+    </Overrides>
+  </Parachute>
+  <Piston>
+    <Overrides>
+      <currentPosition />
+      <cycle />
+      <editMessage />
+      <extend />
+      <preventBreaking />
+      <range />
+      <scale />
+      <speed />
+    </Overrides>
+  </Piston>
+  <ReactionControlNozzle>
+    <Overrides>
+      <fuelConsumptionRate />
+      <power />
+      <powerScale />
+    </Overrides>
+  </ReactionControlNozzle>
+  <RelayFuelSource>
+    <Overrides />
+  </RelayFuelSource>
+  <ResizableWheel>
+    <Overrides>
+      <brakeTorque />
+      <damper />
+      <direction />
+      <enableSuspension />
+      <gearRatio />
+      <maxAngularVelocity />
+      <maxRpm />
+      <size />
+      <slipForwardAsymptote />
+      <slipForwardExtremum />
+      <slipSidewaysAsymptote />
+      <slipSidewaysExtremum />
+      <spring />
+      <torque />
+      <tractionForward />
+      <tractionSideways />
+      <turningAngle />
+      <turningRate />
+      <width />
+    </Overrides>
+  </ResizableWheel>
+  <Suspension>
+    <Overrides>
+      <damper />
+      <preventBreaking />
+      <size />
+      <spring />
+      <thickness />
+    </Overrides>
+  </Suspension>
+  <TestPilot>
+    <Overrides>
+      <anchorFeet />
+    </Overrides>
+  </TestPilot>
+  <Wing>
+    <Overrides>
+      <airfoil />
+      <allowControlSurfaces />
+      <angleOfAttack />
+      <density />
+      <fuelPercentage />
+      <hingeDistanceFromTrailingEdge />
+      <inverted />
+      <minSectionLength />
+      <rootLeadingOffset />
+      <rootTrailingOffset />
+      <tipLeadingOffset />
+      <tipPosition />
+      <tipTrailingOffset />
+      <wingPhysicsEnabled />
+    </Overrides>
+  </Wing>
+  <ControlSurface>
+    <Overrides>
+      <autoInvert />
+      <deflectionSpeed />
+      <end />
+      <input />
+      <invert />
+      <maxDeflectionDegree />
+      <start />
+    </Overrides>
+  </ControlSurface>
+  <SolarPanelArray>
+    <Overrides>
+      <deploySpeed />
+      <efficiency />
+      <mainOpenPercentage />
+      <open />
+      <openingSideDepth />
+      <rows />
+      <rowSize />
+      <scale />
+      <sideOpenPercentage />
+      <startOpen />
+    </Overrides>
+  </SolarPanelArray>
+  <SolarPanel>
+    <Overrides>
+      <efficiency />
+      <length />
+      <width />
+    </Overrides>
+  </SolarPanel>
+  <Engine>
+    <Overrides>
+      <electricalConsumption />
+      <fuelConsumption />
+      <fuelConsumptionScale />
+      <gimbalRange />
+      <maxGimbalAngle />
+      <maxTorque />
+      <seaLevelEfficiency />
+      <supportsWarpBurn />
+      <thrust />
+      <vacuumEfficiency />
+    </Overrides>
+  </Engine>
+  <Inlet>
+    <Overrides />
+  </Inlet>
+  <JetEngine>
+    <Overrides>
+      <afterburnerThrottleStart />
+      <bypassRatio />
+      <compressionRatio />
+      <designerPerformanceAltitude />
+      <designerPerformanceHeader />
+      <designerPerformanceIsp />
+      <designerPerformanceMach />
+      <designerPerformanceMaxThrust />
+      <hasAfterburner />
+      <shroudCurvature />
+      <shroudLength />
+      <size />
+    </Overrides>
+  </JetEngine>
+  <Fuselage>
+    <Overrides>
+      <autoResize />
+      <bottomScale />
+      <buoyancy />
+      <cornerRadiuses />
+      <deadWeight />
+      <fuelPercentage />
+      <meshType />
+      <normalSmoothingAngle />
+      <offset />
+      <subpartIndex />
+      <toolAutoAdaptBottom />
+      <toolAutoAdaptTop />
+      <toolIgnore />
+      <toolResizeBottom />
+      <toolResizeHeight />
+      <toolResizeRadius />
+      <toolResizeTop />
+      <toolShapeBottom />
+      <toolShapeTop />
+      <toolSupportsAddSection />
+      <topScale />
+    </Overrides>
+  </Fuselage>
+  <Config>
+    <Overrides>
+      <buoyancyBaseScale />
+      <buoyancyUserScale />
+      <centerOfMass />
+      <collisionDisconnectImpulse />
+      <collisionDisconnectVelocity />
+      <collisionExplodeImpulse />
+      <collisionExplodeVelocity />
+      <collisionVelocityMode />
+      <descriptionLabel />
+      <dragScale />
+      <fuelLine />
+      <heatShield />
+      <includeInDrag />
+      <inertiaTensorBaseScale />
+      <inertiaTensorMin />
+      <inertiaTensorUserScale />
+      <massScale />
+      <maxDamage />
+      <maxTemperature />
+      <partCollisionHandling />
+      <partCollisionResponse />
+      <partIdLabel />
+      <partScale />
+      <partScaleMagnitude />
+      <raiseWaterEventsEvenIfNotBuoyant />
+      <showHiddenPartProperties />
+      <stageActivationType />
+      <supportsActivation />
+      <thermalMassRatio />
+      <tinkerPanelEnabled />
+    </Overrides>
+  </Config>
+</Sr2XmlDocManifest>
