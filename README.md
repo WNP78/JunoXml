@@ -5,6 +5,9 @@ The big difference between SP and SR2 modding is that you can add new modifiers 
 
 If you find, or think you have found, any inaccuracies or omissions, do not be afraid to ask, or submit a PR.
 
+To those interested in contributing, all changes should be made to `manifest.xml`, and then the site can be re-generated with [this](https://github.com/WNP78/ModifierPropertiesExtractor) program. If you can't run this, just submit a PR with your modifications to manifest.xml and I can merge it and re-build the site.
+If you would like to contact me, I am WNP78#2849 on discord or WNP78 on [simplerockets.com](https://www.simplerockets.com/u/WNP78). Details on how the `manfiest.xml` file is laid out are [here](ManifestXmlGuide).
+
 Contents:
  - [CargoBay](/Sr2Xml/CargoBay)
  - [CommandPod](/Sr2Xml/CommandPod)
