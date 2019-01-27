@@ -74,5 +74,61 @@ Firstly, the modifier itself can act as an input. To do this, you just add the m
 
 There is also a way that works. By inputting the modifier ID, then a `.`, then a property name, you can get any property from the modifier! The properties you can choose are all listed in [this page](PartModifierScriptProperties).
         </Footer>
+        <Overrides>
+            <activationGroup type="int">
+The activation group assigned to the inputcontroller. When this is disabled, the inputcontroller will not update it's input.
+           </activationGroup>
+           <currentValue type="float">
+This is used in-game, when saving the game's state.
+           </currentValue>
+           <designerInputOptions type="string">
+This is the comma separated list of available inputs in the part properties panel. This is overriden by the "Show Hidden Properties" checkbox in the Tinker panel.
+           </designerInputOptions>
+           <ignorePartActivationState type="bool">
+If set to true, then the input controller will function even when the part is not activated. This is required for auto-activating parts.
+           </ignorePartActivationState>
+           <input type="string">
+The input axis to use. More details below.
+           </input>
+           <inputAxisRange type="string">
+One, two or three numbers, comma separated. They define the range 
+           </inputAxisRange>
+           <inputAxisRangeDesigner type="string">
+The designer field for the above property.
+           </inputAxisRangeDesigner>
+           <invert type="bool">
+Invert the value?
+           </invert>
+           <invertOnMirror type="bool">
+Invert when the part is mirrored?
+           </invertOnMirror>
+           <invertType type="string">
+If `Output`, then the value will be inverted after mapping. If `Axis`, it will be before mapping.
+           </invertType>
+           <max type="float">
+The maximum output value
+           </max>
+           <min type="float">
+The minimum output value
+           </min>
+           <overrideInput type="string">
+If assigned, this will override the `input` field.
+           </overrideInput>
+           <showActivationGroup type="bool">
+Controls if the activation group spinner is shown in the designer.
+           </showActivationGroup>
+           <showInputAxis type="bool">
+Controls if the input axis spinner is shown in the desinger.
+           </showInputAxis>
+           <showInvert type="bool">
+Controls if the invert checkbox is shown in the deisgner.
+           </showInvert>
+           <type type="string">
+This is the method used to map the input to the output range. See the `InputControllerType` table.
+           </type>
+           <zeroOnDeactivate type="bool">
+If false, the value will remain frozen when deactivated. If true it will go to zero.
+           </zeroOnDeactivate>
+        </Overrides>
     </InputController>
 </Sr2XmlDocManifest>
