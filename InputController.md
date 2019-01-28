@@ -36,6 +36,7 @@ There are many things you can put in the `input` field. It's rather quite exciti
 
 |Controls|
 |---|
+|`AG1`, `AG2`, ... _activation group n_ |
 |`Brake`|
 |`OffsetBrake`|
 |`OffsetPitch`|
@@ -53,6 +54,8 @@ There are many things you can put in the `input` field. It's rather quite exciti
 |`TranslateRight`|
 |`TranslateUp`|
 |`Yaw`|
+
+The activation group controls appear in the _SimpleAirways_ stock aircraft model. **AG1** causes the landing gear rotators to move to their other extreme position. **AG2** toggles the thrust reversers.
 
 If you want to, you can just put a constant value in there. Like `0.5`, `-1`, or even `.3`. This will just remain constant.
 
