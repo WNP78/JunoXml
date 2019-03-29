@@ -153,6 +153,9 @@ One, two or three numbers, comma separated. They define the range of the input v
       <editActivationGroups />
       <headingDirectionRotation />
       <primaryButton />
+      <craftConfigType />
+      <pilotSeatRotation />
+      <reorientCraftOnConfigChange />
     </Overrides>
   </CommandPod>
   <Detacher>
@@ -190,6 +193,8 @@ One, two or three numbers, comma separated. They define the range of the input v
       <fuelType />
       <totalCapacity />
       <totalFuel />
+      <autoUpdateFuelTanks />
+      <requiresFuelLine />
     </Overrides>
   </FuelSource>
   <FuelTank>
@@ -198,6 +203,9 @@ One, two or three numbers, comma separated. They define the range of the input v
       <designerFuelType />
       <fuel />
       <fuelType />
+      <autoFuelType />
+      <fuelTypeDescription />
+      <fuelTypeReadOnly />
     </Overrides>
   </FuelTank>
   <CoverEngine>
@@ -330,6 +338,7 @@ One, two or three numbers, comma separated. They define the range of the input v
       <tipPosition />
       <tipTrailingOffset />
       <wingPhysicsEnabled />
+      <invertAirfoil />
     </Overrides>
   </Wing>
   <ControlSurface>
@@ -341,6 +350,8 @@ One, two or three numbers, comma separated. They define the range of the input v
       <invert />
       <maxDeflectionDegree />
       <start />
+      <designerAutoAxesInfo />
+      <singleAxisWhenAuto />
     </Overrides>
   </ControlSurface>
   <SolarPanelArray>
@@ -395,6 +406,7 @@ One, two or three numbers, comma separated. They define the range of the input v
       <shroudCurvature />
       <shroudLength />
       <size />
+      <propulsionLabButton />
     </Overrides>
   </JetEngine>
   <Fuselage>
@@ -454,6 +466,22 @@ One, two or three numbers, comma separated. They define the range of the input v
       <supportsActivation />
       <thermalMassRatio />
       <tinkerPanelEnabled />
+      <autoActivateIfNoStageOrActivationGroup />
     </Overrides>
   </Config>
+  <RocketEngine>
+    <Overrides>
+      <chamberPressure />
+      <engineSubTypeId />
+      <engineTypeId />
+      <exhaustScale />
+      <fuelTypeId />
+      <gimbalRange />
+      <nozzleSize />
+      <nozzleThroatSize />
+      <nozzleTypeId />
+      <propulsionLabButton />
+      <size />
+    </Overrides>
+  </RocketEngine>
 </Sr2XmlDocManifest>

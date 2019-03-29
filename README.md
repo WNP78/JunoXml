@@ -37,6 +37,7 @@ Contents:
  - [Engine](/Sr2Xml/Engine)
  - [Inlet](/Sr2Xml/Inlet)
  - [JetEngine](/Sr2Xml/JetEngine)
+ - [RocketEngine](/Sr2Xml/RocketEngine)
  - [InputController](/Sr2Xml/InputController)
    - [PartModifierScriptProperties](/Sr2Xml/PartModifierScriptProperties)
  - [Fuselage](/Sr2Xml/Fuselage)

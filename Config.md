@@ -3,6 +3,7 @@
 
 |Name|Type|Description|
 |--|--|--|
+|`autoActivateIfNoStageOrActivationGroup`|`bool`||
 |`buoyancyBaseScale`|`float`||
 |`buoyancyUserScale`|`float`|Changes how buoyant the part is in water.|
 |`centerOfMass`|`Vector3`||

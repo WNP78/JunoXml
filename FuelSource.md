@@ -4,8 +4,10 @@
 |Name|Type|Description|
 |--|--|--|
 |`autoIdentifyFuelTanks`|`bool`||
+|`autoUpdateFuelTanks`|`bool`||
 |`fuelTankPartIds`|`string`||
-|`fuelType`|`FuelType`||
+|`fuelType`|`string`||
+|`requiresFuelLine`|`bool`||
 |`totalCapacity`|`float`||
 |`totalFuel`|`float`||
 

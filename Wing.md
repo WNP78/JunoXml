@@ -9,7 +9,7 @@
 |`density`|`float`||
 |`fuelPercentage`|`float`||
 |`hingeDistanceFromTrailingEdge`|`float`||
-|`inverted`|`bool`||
+|`invertAirfoil`|`bool`||
 |`minSectionLength`|`float`||
 |`rootLeadingOffset`|`float`||
 |`rootTrailingOffset`|`float`||
