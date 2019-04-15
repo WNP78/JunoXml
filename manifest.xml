@@ -434,6 +434,7 @@ One, two or three numbers, comma separated. They define the range of the input v
       <toolShapeTop />
       <toolSupportsAddSection />
       <topScale />
+      <flattenNormals />
     </Overrides>
   </Fuselage>
   <Config>

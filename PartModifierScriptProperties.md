@@ -230,6 +230,7 @@ then, in an `InputController`, use:
 |`RocketEngine.MaximumThrust`|float|
 |`RocketEngine.RemainingFuel`|float|
 |`RocketEngine.SupportsWarpBurn`|bool|
+|`RocketEngine.PerformanceAnalysisAirPressure`|double|
 |`InputControllerData.Data.CurrentValue`|float|
 |`InputControllerData.Data.IgnorePartActivationState`|bool|
 |`InputControllerData.Data.Invert`|bool|
