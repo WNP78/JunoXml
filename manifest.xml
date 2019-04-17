@@ -13,11 +13,26 @@ To those interested in contributing, all changes should be made to `manifest.xml
 If you would like to contact me, I am WNP78#2849 on discord or WNP78 on [simplerockets.com](https://www.simplerockets.com/u/WNP78). Details on how the `manfiest.xml` file is laid out are [here](ManifestXmlGuide).
         </Head>
   </README>
+  <PartModifierScriptProperties>
+    <Head>
+      # PartModifier Properties
+These can all be used when referencing a part modifier by `id` in an InputController.
+They are displayed in the format of: `PartModifierId.Property`. In actual use, you could call the modifier anything you like. For instance, you could, on your fuel tank, set up:
+```xml
+&lt;FuelTank id="MainFuelTank" /&gt;
+```
+then, in an `InputController`, use:
+```xml
+&lt;InputController input="MainFuelTank.IsEmpty" /&gt;
+```
+Below is a table of all the different properties you can access, per modifier.
+    </Head>
+  </PartModifierScriptProperties>
   <InputController childPages="PartModifierScriptProperties">
     <Head>
 # InputController
 An `InputController` takes an input value, chosen by it's `input` property, then applies a set of transformations to it, mapping it to the final range of `min` to `max`, optionally inverting it. Other modifiers then use the `InputController`'s output value as their input.
-        </Head>
+    </Head>
     <Footer>
 ## Option Values
 
