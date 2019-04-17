@@ -15,7 +15,7 @@
 |`nozzleTypeId`|`string`|The nozzle style.|
 |`price`|`int`||
 |`propulsionLabButton`|`bool`|Opens the Performance Analyzer to analyze the performance of this engine.|
-|`size`|`float`|Changes the overall size of the engine.|
+|`size`|`float`|Changes the overall size of the engine. Increasing size can increase thrust, but it also increases mass and price.|
 |`supportsWarpBurn`|`bool`||
 
 

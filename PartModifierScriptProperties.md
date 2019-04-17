@@ -212,6 +212,7 @@ Below is a table of all the different properties you can access, per modifier.
 |`JetEngine.MaximumThrust`|float|
 |`JetEngine.RemainingFuel`|float|
 |`JetEngine.SupportsWarpBurn`|bool|
+|`JetEngine.UsesMachNumber`|bool|
 |`RocketEngineData.Data.AltitudeCompensation`|float|
 |`RocketEngineData.Data.ChamberPressure`|float|
 |`RocketEngineData.Data.ExhaustScale`|float|
@@ -230,6 +231,7 @@ Below is a table of all the different properties you can access, per modifier.
 |`RocketEngine.MaximumThrust`|float|
 |`RocketEngine.RemainingFuel`|float|
 |`RocketEngine.SupportsWarpBurn`|bool|
+|`RocketEngine.UsesMachNumber`|bool|
 |`RocketEngine.PerformanceAnalysisAirPressure`|double|
 |`InputControllerData.Data.CurrentValue`|float|
 |`InputControllerData.Data.IgnorePartActivationState`|bool|
