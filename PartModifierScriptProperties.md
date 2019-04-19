@@ -9,6 +9,7 @@ then, in an `InputController`, use:
 <InputController input="MainFuelTank.IsEmpty" />
 ```
 Below is a table of all the different properties you can access, per modifier.
+
 |Name|Type|
 |--|--|
 |`CargoBayData.Data.Open`|bool|
