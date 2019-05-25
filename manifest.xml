@@ -221,6 +221,8 @@ One, two or three numbers, comma separated. They define the range of the input v
       <autoFuelType />
       <fuelTypeDescription />
       <fuelTypeReadOnly />
+      <priority />
+      <subPriority />
     </Overrides>
   </FuelTank>
   <CoverEngine>
@@ -258,6 +260,7 @@ One, two or three numbers, comma separated. They define the range of the input v
       <range />
       <soundVolume />
       <speed />
+      <angle />
     </Overrides>
   </JointRotator>
   <LandingLeg>
@@ -295,6 +298,7 @@ One, two or three numbers, comma separated. They define the range of the input v
       <fuelConsumptionRate />
       <power />
       <powerScale />
+      <multiDirection />
     </Overrides>
   </ReactionControlNozzle>
   <RelayFuelSource>
@@ -402,6 +406,7 @@ One, two or three numbers, comma separated. They define the range of the input v
       <supportsWarpBurn />
       <thrust />
       <vacuumEfficiency />
+      <fuelType />
     </Overrides>
   </Engine>
   <Inlet>
@@ -450,6 +455,7 @@ One, two or three numbers, comma separated. They define the range of the input v
       <toolSupportsAddSection />
       <topScale />
       <flattenNormals />
+      <supportsXZOffset />
     </Overrides>
   </Fuselage>
   <Config>
@@ -503,6 +509,14 @@ One, two or three numbers, comma separated. They define the range of the input v
       <mass />
       <price />
       <supportsWarpBurn />
+      <fuelType />
     </Overrides>
   </RocketEngine>
+  <CrossFeed>
+    <Overrides>
+      <attachPointA />
+      <attachPointB />
+      <mode />
+    </Overrides>
+  </CrossFeed>
 </Sr2XmlDocManifest>

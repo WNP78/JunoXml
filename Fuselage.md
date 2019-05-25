@@ -14,6 +14,7 @@
 |`normalSmoothingAngle`|`float`||
 |`offset`|`Vector3`||
 |`subpartIndex`|`int`||
+|`supportsXZOffset`|`bool`||
 |`toolAutoAdaptBottom`|`bool`||
 |`toolAutoAdaptTop`|`bool`||
 |`toolIgnore`|`bool`||

@@ -7,7 +7,7 @@
 |`engineSubTypeId`|`string`|The method used for injecting the propellant, which can greatly impact the performance of the engine.|
 |`engineTypeId`|`string`|The type of rocket engine.|
 |`exhaustScale`|`float`||
-|`fuelTypeId`|`string`|Designer only. The type of fuel to use. Connected fuel tanks will be automatically updated to this fuel type if they have the Auto Select Fuel Type setting enabled.|
+|`fuelType`|`string`|The type of fuel to use. Connected fuel tanks will be automatically updated to this fuel type if they have the Auto Select Fuel Type setting enabled.|
 |`gimbalRange`|`float`|The maximum allowable range that the engine can rotate to assist in controlling the craft's attitude.|
 |`mass`|`float`||
 |`nozzleSize`|`float`|Increasing the nozzle length can increase the Nozzle Ratio, which will improve vacuum efficiency but it can decrease sea level efficiency and it adds additional mass and cost.|

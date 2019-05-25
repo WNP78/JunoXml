@@ -4,6 +4,7 @@
 |Name|Type|Description|
 |--|--|--|
 |`allowFreeSpin`|`bool`||
+|`angle`|`float`||
 |`attachPointIndex`|`int`||
 |`baseMode`|`BaseMode`|Changes the visual style of the base plate. Purely for cosmetic purposes.|
 |`currentAngle`|`float`||
