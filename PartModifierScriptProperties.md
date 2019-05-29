@@ -50,6 +50,7 @@ Below is a table of all the different properties you can access, per modifier.
 |`FuelTank.UsesMachNumber`|bool|
 |`CoverEngineData.Data.CoverEngine`|bool|
 |`GyroscopeData.Data.ElectricalConsumption`|float|
+|`GyroscopeData.Data.Mass`|float|
 |`GyroscopeData.Data.Power`|float|
 |`InputBasedActivatorData.Data.CurrentState`|bool|
 |`InputBasedActivatorData.Data.RangeEnd`|float|

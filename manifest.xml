@@ -235,6 +235,7 @@ One, two or three numbers, comma separated. They define the range of the input v
       <electricalConsumption />
       <power />
       <powerScale />
+      <mass />
     </Overrides>
   </Gyroscope>
   <InputBasedActivator>
