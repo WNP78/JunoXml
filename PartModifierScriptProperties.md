@@ -222,6 +222,7 @@ Below is a table of all the different properties you can access, per modifier.
 |`RocketEngineData.Data.NozzleAreaExit`|float|
 |`RocketEngineData.Data.NozzleAreaThroat`|float|
 |`RocketEngineData.Data.NozzleExitRadius`|float|
+|`RocketEngineData.Data.NozzleThroatRadius`|float|
 |`RocketEngineData.Data.Size`|float|
 |`RocketEngineData.Data.SupportsWarpBurn`|bool|
 |`RocketEngineData.Data.TopRadius`|float|
