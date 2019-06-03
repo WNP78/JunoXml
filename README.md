@@ -9,6 +9,7 @@ To those interested in contributing, all changes should be made to `manifest.xml
 If you would like to contact me, I am WNP78#2849 on discord or WNP78 on [simplerockets.com](https://www.simplerockets.com/u/WNP78). Details on how the `manfiest.xml` file is laid out are [here](ManifestXmlGuide).
 
 Game Version: `0.7.1.4`
+
 Contents:
  - [CargoBay](/Sr2Xml/CargoBay)
  - [CommandPod](/Sr2Xml/CommandPod)
