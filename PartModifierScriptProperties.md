@@ -1,3 +1,5 @@
+[Home](https://wnp78.github.io/Sr2Xml/)
+
 # PartModifier Properties
 These can all be used when referencing a part modifier by `id` in an InputController.
 They are displayed in the format of: `PartModifierId.Property`. In actual use, you could call the modifier anything you like. For instance, you could, on your fuel tank, set up:
