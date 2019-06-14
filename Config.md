@@ -14,7 +14,7 @@
 |`collisionExplodeImpulse`|`float`||
 |`collisionExplodeVelocity`|`float`||
 |`collisionVelocityMode`|`PartCollisionVelocityMode`||
-|`descriptionLabel`|`string`|Designer only. |
+|`descriptionLabel`|`string`||
 |`dragScale`|`float`|Changes this part's contribution to the craft's overall drag force.|
 |`fuelLine`|`bool`|Allow connected engines to search this part and its connected parts for fuel tanks.|
 |`heatShield`|`float`|Heat shield that prevents heat damage until it depletes.|
@@ -27,14 +27,14 @@
 |`maxTemperature`|`float`|The maximum temperature, in Celsius, that this part can withstand before taking heat damage or depleting its heat shield.|
 |`partCollisionHandling`|`PartCollisionHandlingMethod`|Determines how collisions are handled when two parts bump into each other.|
 |`partCollisionResponse`|`PartCollisionResponseType`|Determines how this part reacts when it takes a solid hit.|
-|`partIdLabel`|`string`|Designer only. |
+|`partIdLabel`|`string`||
 |`partScale`|`Vector3`||
-|`partScaleMagnitude`|`float`|Designer only. Changes the size of the part. This can cause odd behavior, so for parts that have a dedicated size setting or tool we recommend you use that instead of this.|
+|`partScaleMagnitude`|`float`|Changes the size of the part. This can cause odd behavior, so for parts that have a dedicated size setting or tool we recommend you use that instead of this.|
 |`raiseWaterEventsEvenIfNotBuoyant`|`bool`||
-|`showHiddenPartProperties`|`bool`|Designer only. |
+|`showHiddenPartProperties`|`bool`||
 |`stageActivationType`|`StageActivationType`|Changes the current stage activation type of the part.|
 |`supportsActivation`|`bool`||
 |`thermalMassRatio`|`float`||
-|`tinkerPanelEnabled`|`bool`|Designer only. |
+|`tinkerPanelEnabled`|`bool`||
 
 

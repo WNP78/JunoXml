@@ -7,7 +7,7 @@
 |--|--|--|
 |`currentPosition`|`float`||
 |`cycle`|`bool`|Enabling this will cause the piston to extend and retract, continuously while input is applied.|
-|`editMessage`|`string`|Designer only. |
+|`editMessage`|`string`||
 |`extend`|`bool`|Determines the direction the piston will move when input is applied.|
 |`preventBreaking`|`bool`||
 |`range`|`float`|Changes the range of motion of the piston.|

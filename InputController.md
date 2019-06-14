@@ -10,6 +10,7 @@ An `InputController` takes an input value, chosen by it's `input` property, then
 |`designerInputOptions`|`string`|This is the comma separated list of available inputs in the part properties panel. This is overriden by the "Show Hidden Properties" checkbox in the Tinker panel.|
 |`ignorePartActivationState`|`bool`|If set to true, then the input controller will function even when the part is not activated. This is required for auto-activating parts.|
 |`input`|`string`|The input axis to use. More details below.|
+|`inputAxisRange`|`InputControllerInputRange`||
 |`inputAxisRangeDesigner`|`string`|The designer field for the `inputAxisRange` property.|
 |`invert`|`bool`|Invert the value?|
 |`invertOnMirror`|`bool`|Invert when the part is mirrored?|

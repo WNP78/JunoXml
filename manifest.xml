@@ -145,6 +145,7 @@ This is the method used to map the input to the output range. See the `InputCont
       <zeroOnDeactivate type="bool">
 If false, the value will remain frozen when deactivated. If true it will go to zero.
            </zeroOnDeactivate>
+      <inputAxisRange />
     </Overrides>
     <Customs>
       <inputAxisRange type="string">
