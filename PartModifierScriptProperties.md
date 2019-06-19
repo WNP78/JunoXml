@@ -54,6 +54,7 @@ Below is a table of all the different properties you can access, per modifier.
 |`Gyroscope.Data.ElectricalConsumption`|float|
 |`Gyroscope.Data.Mass`|float|
 |`Gyroscope.Data.Power`|float|
+|`Gyroscope.PowerConsumption`|float|
 |`InputBasedActivator.Data.CurrentState`|bool|
 |`InputBasedActivator.Data.RangeEnd`|float|
 |`InputBasedActivator.Data.RangeStart`|float|
