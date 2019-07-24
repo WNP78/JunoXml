@@ -521,4 +521,31 @@ One, two or three numbers, comma separated. They define the range of the input v
       <mode />
     </Overrides>
   </CrossFeed>
+  <LandingGear>
+    <Overrides>
+      <bayLength />
+      <brakeTorque />
+      <damperScale />
+      <extensionPercent />
+      <flipped />
+      <forwardOffset />
+      <gearRatio />
+      <heightOffset />
+      <lengthScale />
+      <maxTurningAngle />
+      <retractionSpeed />
+      <showUpperBraces />
+      <sideOffset />
+      <size />
+      <slantAngle />
+      <springForceScale />
+      <startExtended />
+      <supportArmEnabled />
+      <suspensionTravel />
+      <torque />
+      <tractionForward />
+      <tractionSideways />
+      <verticalAngleOffset />
+    </Overrides>
+  </LandingGear>
 </Sr2XmlDocManifest>
