@@ -548,4 +548,10 @@ One, two or three numbers, comma separated. They define the range of the input v
       <verticalAngleOffset />
     </Overrides>
   </LandingGear>
+  <CameraVantage>
+    <Overrides>
+      <lookAtCommandPod />
+      <padPosition />
+    </Overrides>
+  </CameraVantage>
 </Sr2XmlDocManifest>

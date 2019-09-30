@@ -14,6 +14,15 @@ Below is a table of all the different properties you can access, per modifier.
 
 |Name|Type|
 |--|--|
+|`CameraVantage.Data.AutoCenterCamera`|bool|
+|`CameraVantage.Data.AutoOrient`|bool|
+|`CameraVantage.Data.HidePart`|bool|
+|`CameraVantage.Data.LookAtCommandPod`|bool|
+|`CameraVantage.Data.PadPosition`|bool|
+|`CameraVantage.AutoCenterCamera`|bool|
+|`CameraVantage.AutoOrient`|bool|
+|`CameraVantage.HidePart`|bool|
+|`CameraVantage.LookAtCommandPod`|bool|
 |`CargoBay.Data.Open`|bool|
 |`CargoBay.Data.OpenAngle`|float|
 |`CargoBay.Data.OpenSpeed`|float|
