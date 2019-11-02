@@ -172,6 +172,19 @@ One, two or three numbers, comma separated. They define the range of the input v
       <craftConfigType />
       <pilotSeatRotation />
       <reorientCraftOnConfigChange />
+      <autoPilotMaxPitchPid />
+      <autoPilotMaxRollPid />
+      <autoPilotPitchDerivative />
+      <autoPilotPitchIntegral />
+      <autoPilotPitchPidLabel />
+      <autoPilotPitchProportional />
+      <autoPilotRollDerivative />
+      <autoPilotRollIntegral />
+      <autoPilotRollPidLabel />
+      <autoPilotRollProportional />
+      <descriptionLabel />
+      <pidPitch />
+      <pidRoll />
     </Overrides>
   </CommandPod>
   <Detacher>
