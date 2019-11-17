@@ -19,7 +19,7 @@ An `InputController` takes an input value, chosen by it's `input` property, then
 |`min`|`float`|The minimum output value|
 |`outputCurveAmplitude`|`float`|The amplitude of the output curve.|
 |`outputCurveFrequency`|`float`|The frequency of the output curve.|
-|`outputCurveKeyframes`|`string`|Keyframes should be separated by the '|' character, with each keyframe having values separated by the ',' character. A keyframe should define a time value and an output value. Optionally, the keyframe may specify a third value the definesthe incoming and outgoing tangents, or a third and fourth value that define the incoming and outgoing tangents respectively. Example: 0.0,0.0|0.5,1.0|1.0,0.0|
+|`outputCurveKeyframes`|`string`|Keyframes should be separated by the '\|' character, with each keyframe having values separated by the ',' character. A keyframe should define a time value and an output value. Optionally, the keyframe may specify a third value the definesthe incoming and outgoing tangents, or a third and fourth value that define the incoming and outgoing tangents respectively. Example: 0.0,0.0\|0.5,1.0\|1.0,0.0|
 |`outputCurveLabel`|`string`||
 |`outputCurveOffset`|`float`|The offset value used when evaluating the output curve.|
 |`outputCurveStyle`|`CurveStyle`|The style of the output curve.|
