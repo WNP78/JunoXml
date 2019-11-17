@@ -17,6 +17,13 @@ An `InputController` takes an input value, chosen by it's `input` property, then
 |`invertType`|`string`|If `Output`, then the value will be inverted after mapping. If `Axis`, it will be before mapping.|
 |`max`|`float`|The maximum output value|
 |`min`|`float`|The minimum output value|
+|`outputCurveAmplitude`|`float`|The amplitude of the output curve.|
+|`outputCurveFrequency`|`float`|The frequency of the output curve.|
+|`outputCurveKeyframes`|`string`|Keyframes should be separated by the '|' character, with each keyframe having values separated by the ',' character. A keyframe should define a time value and an output value. Optionally, the keyframe may specify a third value the definesthe incoming and outgoing tangents, or a third and fourth value that define the incoming and outgoing tangents respectively. Example: 0.0,0.0|0.5,1.0|1.0,0.0|
+|`outputCurveLabel`|`string`||
+|`outputCurveOffset`|`float`|The offset value used when evaluating the output curve.|
+|`outputCurveStyle`|`CurveStyle`|The style of the output curve.|
+|`outputCurveWrapMode`|`CurveWrapMode`|Determines how the curve is evaluated when the axis value extends beyond the extents of the curve.|
 |`overrideInput`|`string`|If assigned, this will override the `input` field.|
 |`showActivationGroup`|`bool`|Controls if the activation group spinner is shown in the designer.|
 |`showInputAxis`|`bool`|Controls if the input axis spinner is shown in the desinger.|

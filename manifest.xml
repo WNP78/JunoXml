@@ -146,6 +146,13 @@ This is the method used to map the input to the output range. See the `InputCont
 If false, the value will remain frozen when deactivated. If true it will go to zero.
            </zeroOnDeactivate>
       <inputAxisRange />
+      <outputCurveAmplitude />
+      <outputCurveFrequency />
+      <outputCurveKeyframes />
+      <outputCurveLabel />
+      <outputCurveOffset />
+      <outputCurveStyle />
+      <outputCurveWrapMode />
     </Overrides>
     <Customs>
       <inputAxisRange type="string">
@@ -289,7 +296,21 @@ One, two or three numbers, comma separated. They define the range of the input v
     </Overrides>
   </LandingLeg>
   <Light>
-    <Overrides />
+    <Overrides>
+      <color />
+      <intensity />
+      <lightType />
+      <mask />
+      <offsetX />
+      <offsetY />
+      <offsetZ />
+      <partGlow />
+      <range />
+      <rotationX />
+      <rotationY />
+      <rotationZ />
+      <spotLightAngle />
+    </Overrides>
   </Light>
   <Parachute>
     <Overrides>
@@ -567,4 +588,37 @@ One, two or three numbers, comma separated. They define the range of the input v
       <padPosition />
     </Overrides>
   </CameraVantage>
+  <BeaconLight>
+    <Overrides>
+      <blinkFrequency />
+      <blinkOffset />
+      <blinkStyle />
+      <hideBase />
+      <intensity />
+      <powerConsumptionScale />
+    </Overrides>
+  </BeaconLight>
+  <LightPart>
+    <Overrides>
+      <extension />
+      <hideBase />
+      <powerConsumptionScale />
+      <range />
+      <rotation />
+      <spotLightAngle />
+    </Overrides>
+  </LightPart>
+  <CurveInput>
+    <Overrides>
+      <amplitude />
+      <frequency />
+      <ignorePartActivationState />
+      <keyframes />
+      <offset />
+      <style />
+      <updateInWarp />
+      <useUnscaledTime />
+      <wrapMode />
+    </Overrides>
+  </CurveInput>
 </Sr2XmlDocManifest>
