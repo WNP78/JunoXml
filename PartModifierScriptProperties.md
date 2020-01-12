@@ -49,6 +49,7 @@ Below is a table of all the different properties you can access, per modifier.
 |`Fairing.Data.Jettisoned`|bool|
 |`Fairing.Data.JettisonSpin`|float|
 |`Fairing.Data.JettisonVelocity`|float|
+|`FlightProgram.Data.OutputToDevConsole`|bool|
 |`FuelTank.Data.AutoFuelType`|bool|
 |`FuelTank.Data.Capacity`|double|
 |`FuelTank.Data.Fuel`|double|
@@ -256,10 +257,12 @@ Below is a table of all the different properties you can access, per modifier.
 |`BeaconLight.PowerConsumption`|float|
 |`Light.Data.Intensity`|float|
 |`Light.Data.PartGlow`|bool|
+|`Light.Data.PartGlowSelfShadowCasting`|bool|
 |`Light.Data.Range`|float|
 |`Light.Data.SpotLightAngle`|float|
 |`LightPart.Data.Extension`|float|
 |`LightPart.Data.HideBase`|bool|
+|`LightPart.Data.Intensity`|float|
 |`LightPart.Data.PowerConsumptionScale`|float|
 |`LightPart.Data.Range`|float|
 |`LightPart.Data.Rotation`|float|

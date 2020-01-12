@@ -7,6 +7,7 @@
 |--|--|--|
 |`extension`|`float`|The extension distance of the light (in meters).|
 |`hideBase`|`bool`|Toggles the base on/off where the light is mounted to the attached surface.|
+|`intensity`|`float`|The intensity of the light.|
 |`powerConsumptionScale`|`float`||
 |`range`|`float`|The maximum range (in meters) of the light.|
 |`rotation`|`float`|The rotation of the light (in degrees).|

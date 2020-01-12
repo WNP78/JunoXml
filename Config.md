@@ -5,6 +5,7 @@
 
 |Name|Type|Description|
 |--|--|--|
+|`addFlightProgramButton`|`bool`|Adds a flight program to this part.|
 |`autoActivateIfNoStageOrActivationGroup`|`bool`||
 |`buoyancyBaseScale`|`float`||
 |`buoyancyUserScale`|`float`|Changes how buoyant the part is in water.|

@@ -310,6 +310,7 @@ One, two or three numbers, comma separated. They define the range of the input v
       <rotationY />
       <rotationZ />
       <spotLightAngle />
+      <partGlowSelfShadowCasting />
     </Overrides>
   </Light>
   <Parachute>
@@ -527,6 +528,7 @@ One, two or three numbers, comma separated. They define the range of the input v
       <thermalMassRatio />
       <tinkerPanelEnabled />
       <autoActivateIfNoStageOrActivationGroup />
+      <addFlightProgramButton />
     </Overrides>
   </Config>
   <RocketEngine>
@@ -606,6 +608,7 @@ One, two or three numbers, comma separated. They define the range of the input v
       <range />
       <rotation />
       <spotLightAngle />
+      <intensity />
     </Overrides>
   </LightPart>
   <CurveInput>
@@ -621,4 +624,13 @@ One, two or three numbers, comma separated. They define the range of the input v
       <wrapMode />
     </Overrides>
   </CurveInput>
+  <FlightProgram>
+    <Overrides>
+      <editFlightProgramButton />
+      <maxCallStackSize />
+      <maxInstructionsPerFrame />
+      <maxThreads />
+      <outputToDevConsole />
+    </Overrides>
+  </FlightProgram>
 </Sr2XmlDocManifest>
