@@ -50,6 +50,7 @@ Below is a table of all the different properties you can access, per modifier.
 |`Fairing.Data.JettisonSpin`|float|
 |`Fairing.Data.JettisonVelocity`|float|
 |`FlightProgram.Data.OutputToDevConsole`|bool|
+|`FlightProgram.Data.TimeSinceLaunch`|double|
 |`FuelTank.Data.AutoFuelType`|bool|
 |`FuelTank.Data.Capacity`|double|
 |`FuelTank.Data.Fuel`|double|
