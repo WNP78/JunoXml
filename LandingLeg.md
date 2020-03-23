@@ -11,5 +11,6 @@
 |`deployedExtensionY`|`float`||
 |`deploySpeed`|`float`|Changes the speed at which the leg will deploy.|
 |`scale`|`float`|Changes the overall size of the part.|
+|`startDeployed`|`bool`|Determines if the landing leg should start deployed or not.|
 
 

@@ -8,7 +8,7 @@ If you find, or think you have found, any inaccuracies or omissions, do not be a
 To those interested in contributing, all changes should be made to `manifest.xml`, and then the site can be re-generated with [this](https://github.com/WNP78/ModifierPropertiesExtractor) program. If you can't run this, just submit a PR with your modifications to manifest.xml and I can merge it and re-build the site.
 If you would like to contact me, I am WNP78#2849 on discord or WNP78 on [simplerockets.com](https://www.simplerockets.com/u/WNP78). Details on how the `manfiest.xml` file is laid out are [here](ManifestXmlGuide).
 
-Game Version: `0.8.500.0`
+Game Version: `0.9.300.2`
 
 Contents:
  - [BeaconLight](/Sr2Xml/BeaconLight)
@@ -18,12 +18,15 @@ Contents:
  - [Config](/Sr2Xml/Config)
  - [ControlSurface](/Sr2Xml/ControlSurface)
  - [CoverEngine](/Sr2Xml/CoverEngine)
+ - [CrewCompartment](/Sr2Xml/CrewCompartment)
  - [CrossFeed](/Sr2Xml/CrossFeed)
  - [CurveInput](/Sr2Xml/CurveInput)
  - [Detacher](/Sr2Xml/Detacher)
  - [DockingPort](/Sr2Xml/DockingPort)
  - [ElectricMotor](/Sr2Xml/ElectricMotor)
  - [Engine](/Sr2Xml/Engine)
+ - [Eva](/Sr2Xml/Eva)
+ - [EvaChair](/Sr2Xml/EvaChair)
  - [Fairing](/Sr2Xml/Fairing)
  - [FlightProgram](/Sr2Xml/FlightProgram)
  - [FuelTank](/Sr2Xml/FuelTank)

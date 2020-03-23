@@ -192,6 +192,11 @@ One, two or three numbers, comma separated. They define the range of the input v
       <descriptionLabel />
       <pidPitch />
       <pidRoll />
+      <autoRecalculateStages />
+      <craftConfigAutoAssign />
+      <replicateActivationGroups />
+      <replicateControls />
+      <replicateStageActivations />
     </Overrides>
   </CommandPod>
   <Detacher>
@@ -293,6 +298,7 @@ One, two or three numbers, comma separated. They define the range of the input v
       <deployedExtensionY />
       <deploySpeed />
       <scale />
+      <startDeployed />
     </Overrides>
   </LandingLeg>
   <Light>
@@ -529,6 +535,10 @@ One, two or three numbers, comma separated. They define the range of the input v
       <tinkerPanelEnabled />
       <autoActivateIfNoStageOrActivationGroup />
       <addFlightProgramButton />
+      <changeCommandPod />
+      <collisionPreventExternalDisconnections />
+      <preventDebris />
+      <viewCommandPod />
     </Overrides>
   </Config>
   <RocketEngine>
@@ -582,12 +592,18 @@ One, two or three numbers, comma separated. They define the range of the input v
       <tractionForward />
       <tractionSideways />
       <verticalAngleOffset />
+      <extended />
     </Overrides>
   </LandingGear>
   <CameraVantage>
     <Overrides>
       <lookAtCommandPod />
       <padPosition />
+      <autoCenterCamera />
+      <cameraOffset />
+      <enabledByDefault />
+      <isHidden />
+      <manualRegister />
     </Overrides>
   </CameraVantage>
   <BeaconLight>
@@ -634,4 +650,29 @@ One, two or three numbers, comma separated. They define the range of the input v
       <timeSinceLaunch />
     </Overrides>
   </FlightProgram>
+  <EvaChair>
+    <Overrides />
+  </EvaChair>
+  <CrewCompartment>
+    <Overrides>
+      <capacity />
+      <capacityLabel />
+      <commandPodEnabledInCompartment />
+      <crewExitPosition />
+      <crewExitRotation />
+      <visibleInCompartment />
+    </Overrides>
+  </CrewCompartment>
+  <Eva>
+    <Overrides>
+      <crewName />
+      <grapplingHookEnabled />
+      <jetpackEnabled />
+      <jetpackPowerScalar />
+      <jumpPowerScalar />
+      <primaryButton />
+      <randomizeName />
+      <separator />
+    </Overrides>
+  </Eva>
 </Sr2XmlDocManifest>
