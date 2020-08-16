@@ -166,6 +166,7 @@ One, two or three numbers, comma separated. They define the range of the input v
       <openAngle />
       <openSpeed />
       <startOpen />
+      <soundVolume />
     </Overrides>
   </CargoBay>
   <CommandPod>

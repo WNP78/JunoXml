@@ -30,6 +30,7 @@ Below is a table of all the different properties you can access, per modifier.
 |`CargoBay.Data.Open`|bool|
 |`CargoBay.Data.OpenAngle`|float|
 |`CargoBay.Data.OpenSpeed`|float|
+|`CargoBay.Data.SoundVolume`|float|
 |`CargoBay.Data.StartOpen`|bool|
 |`CommandPod.Data.AutoRecalculateStages`|bool|
 |`CommandPod.Data.CraftConfigAutoAssign`|bool|
@@ -375,6 +376,14 @@ Below is a table of all the different properties you can access, per modifier.
 |`Eva.Data.JetpackEnabled`|bool|
 |`Eva.Data.JetpackPowerScalar`|float|
 |`Eva.Data.JumpPowerScalar`|float|
+|`Eva.CurrentMassFlowRate`|float|
+|`Eva.CurrentThrust`|float|
+|`Eva.IsActive`|bool|
+|`Eva.MaximumMassFlowRate`|float|
+|`Eva.MaximumThrust`|float|
+|`Eva.RemainingFuel`|float|
+|`Eva.SupportsWarpBurn`|bool|
+|`Eva.ThrottleResponse`|float|
 |`Eva.CameraFollowSpeed`|float|
 |`Eva.ActiveWhileInCrewCompartment`|bool|
 |`Eva.AirborneTime`|float|
@@ -408,11 +417,3 @@ Below is a table of all the different properties you can access, per modifier.
 |`Eva.ShouldInterpolate`|bool|
 |`Eva.TurningResponsiveness`|float|
 |`Eva.UseKinematicTurning`|bool|
-|`Eva.CurrentMassFlowRate`|float|
-|`Eva.CurrentThrust`|float|
-|`Eva.IsActive`|bool|
-|`Eva.MaximumMassFlowRate`|float|
-|`Eva.MaximumThrust`|float|
-|`Eva.RemainingFuel`|float|
-|`Eva.SupportsWarpBurn`|bool|
-|`Eva.ThrottleResponse`|float|
