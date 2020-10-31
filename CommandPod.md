@@ -31,5 +31,6 @@
 |`replicateActivationGroups`|`ActivationGroupReplicationMode`|Determines how this command pod will replicate activation groups from the active command pod when this pod isn't active.|
 |`replicateControls`|`bool`|Determines whether this command pod will replicate inputs from the active pod when this command pod isn't active.|
 |`replicateStageActivations`|`bool`|Determines whether this command pod will replicate stage activations from the active pod when this command pod isn't active.|
+|`useDefaultPilotSeatRotation`|`bool`||
 
 

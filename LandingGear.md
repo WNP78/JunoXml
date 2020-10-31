@@ -5,7 +5,7 @@
 
 |Name|Type|Description|
 |--|--|--|
-|`bayLength`|`float`|Changes the lenght of the landing gear bay|
+|`bayLength`|`float`|Changes the length of the landing gear bay|
 |`brakeTorque`|`float`|Changes the torque applied to the wheel when brake is applied.|
 |`damperScale`|`float`|Higher damper settings can help to reduce oscillation. Lower damper settings allow more oscillation.|
 |`extended`|`Nullable`1`||

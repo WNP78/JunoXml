@@ -5,6 +5,7 @@
 
 |Name|Type|Description|
 |--|--|--|
+|`detachOnActivated`|`bool`||
 |`force`|`float`|The percentage of maximum force to apply when detaching.|
 |`targetAttachPoints`|`string`||
 

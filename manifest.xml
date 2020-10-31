@@ -198,12 +198,14 @@ One, two or three numbers, comma separated. They define the range of the input v
       <replicateActivationGroups />
       <replicateControls />
       <replicateStageActivations />
+      <useDefaultPilotSeatRotation />
     </Overrides>
   </CommandPod>
   <Detacher>
     <Overrides>
       <force />
       <targetAttachPoints />
+      <detachOnActivated />
     </Overrides>
   </Detacher>
   <DockingPort>
@@ -323,6 +325,7 @@ One, two or three numbers, comma separated. They define the range of the input v
   <Parachute>
     <Overrides>
       <size />
+      <baseSize />
     </Overrides>
   </Parachute>
   <Piston>
@@ -540,6 +543,9 @@ One, two or three numbers, comma separated. They define the range of the input v
       <collisionPreventExternalDisconnections />
       <preventDebris />
       <viewCommandPod />
+      <occlusion />
+      <renderQueue />
+      <supportsTransparency />
     </Overrides>
   </Config>
   <RocketEngine>
@@ -676,4 +682,82 @@ One, two or three numbers, comma separated. They define the range of the input v
       <separator />
     </Overrides>
   </Eva>
+  <Cockpit>
+    <Overrides />
+  </Cockpit>
+  <Decal>
+    <Overrides>
+      <materialB />
+      <materialG />
+      <materialR />
+      <materialSourceColor />
+      <offsetX />
+      <offsetY />
+      <path />
+      <tilingX />
+      <tilingY />
+      <useSourceColor />
+    </Overrides>
+  </Decal>
+  <Gauge>
+    <Overrides>
+      <faceType />
+    </Overrides>
+  </Gauge>
+  <KomodoNoseCone>
+    <Overrides>
+      <autoResize />
+      <defaultRadius />
+      <scale />
+    </Overrides>
+  </KomodoNoseCone>
+  <Label>
+    <Overrides>
+      <designText />
+      <fontSize />
+      <height />
+      <horizontalAlignment />
+      <verticalAlignment />
+      <width />
+    </Overrides>
+  </Label>
+  <ScalablePod>
+    <Overrides>
+      <baseScale />
+      <engineBurnTime />
+      <engineEnabled />
+      <engineIsp />
+      <enginePrice />
+      <height />
+      <radiusBottom />
+      <radiusPercent />
+      <radiusTop />
+      <unscaledCenterOfMass />
+    </Overrides>
+  </ScalablePod>
+  <SubPartRotator>
+    <Overrides>
+      <adjustableRate />
+      <currentEnabledPercent />
+      <designerIconEnabledPercent />
+      <disabledRotation />
+      <enabledRotation />
+      <rotationRate />
+      <rotationSpeed />
+      <startEnabled />
+      <startEnabledLabel />
+      <subPartPath />
+      <syncActivationGroup />
+    </Overrides>
+  </SubPartRotator>
+  <Mfd>
+    <Overrides>
+      <height />
+      <maxTextureSize />
+      <maxWidgets />
+      <mfdProgram />
+      <resolution />
+      <width />
+    </Overrides>
+  </Mfd>
 </Sr2XmlDocManifest>
