@@ -48,23 +48,41 @@ There are many things you can put in the `input` field. It's rather quite exciti
 
 |Controls|
 |---|
+|`AG 1 (to 10)`|
 |`Brake`|
-|`OffsetBrake`|
-|`OffsetPitch`|
-|`OffsetRoll`|
-|`OffsetSlider1`|
-|`OffsetSlider2`|
-|`OffsetYaw`|
+|`Eva Analog Jump`|
+|`Eva Move Fwd Aft`|
+|`Eva Move Up Down`|
+|`Eva Pitch`|
+|`Eva Roll`|
+|`Eva Shoot Tether`|
+|`Eva Strafe`|
+|`Eva Tether Length`|
+|`Eva Tether Length Offset`|
+|`Eva Turn`|
+|`Eva Walk`|
+|`Offset Brake`|
+|`Offset Pitch`|
+|`Offset Roll`|
+|`Offset Slider 1`|
+|`Offset Slider 2`|
+|`Offset Translate Forward`|
+|`Offset Translate Right`|
+|`Offset Translate Up`|
+|`Offset Yaw`|
 |`Pitch`|
+|`Pitch Input Received`|
 |`Roll`|
-|`RollInputReceived`|
-|`Slider1`|
-|`Slider2`|
+|`Roll Input Received`|
+|`Slider 1`|
+|`Slider 2`|
 |`Throttle`|
-|`TranslateForward`|
-|`TranslateRight`|
-|`TranslateUp`|
+|`Translate Forward`|
+|`Translate Right`|
+|`Translate Up`|
+|`Translation Mode Enabled`|
 |`Yaw`|
+|`Yaw Input Received`|
 
 If you want to, you can just put a constant value in there. Like `0.5`, `-1`, or even `.3`. This will just remain constant.
 
@@ -72,18 +90,38 @@ But it goes on. You can also access Flight Data.
 
 |Flight Data|
 |---|
+|`FlightData.AccelerationMagnitude`|
 |`FlightData.AltitudeAboveGroundLevel`|
 |`FlightData.AltitudeAboveSeaLevel`|
+|`FlightData.AltitudeAboveTerrain`|
+|`FlightData.AngleOfAttack`|
+|`FlightData.AngularVelocityMagnitude`|
+|`FlightData.BankAngle`|
 |`FlightData.CurrentEngineThrust`|
+|`FlightData.CurrentEngineThrustUnscaled`|
 |`FlightData.CurrentMass`|
+|`FlightData.CurrentMassUnscaled`|
+|`FlightData.FuelMass`|
+|`FlightData.GravityMagnitude`|
+|`FlightData.Grounded`|
+|`FlightData.Heading`|
+|`FlightData.LateralSurfaceVelocity`|
+|`FlightData.MachNumber`|
 |`FlightData.MaxActiveEngineThrust`|
+|`FlightData.MaxActiveEngineThrustUnscaled`|
 |`FlightData.ParentPlanetOcclusion`|
+|`FlightData.Pitch`|
 |`FlightData.RemainingBattery`|
 |`FlightData.RemainingFuelInStage`|
 |`FlightData.RemainingMonopropellant`|
+|`FlightData.SideSlip`|
 |`FlightData.SolarRadiationIntensity`|
+|`FlightData.SupportsWarpBurn`|
 |`FlightData.SurfaceVelocityMagnitude`|
 |`FlightData.VelocityMagnitude`|
+|`FlightData.VerticalSurfaceVelocity`|
+|`FlightData.WeightedThrottleResponse`|
+|`FlightData.WeightedThrottleResponseTime`|
 
 How awesome! Then it gets even more complex.
 
