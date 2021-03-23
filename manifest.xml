@@ -66,7 +66,7 @@ There are many things you can put in the `input` field. It's rather quite exciti
 |`TranslateUp`|
 |`Yaw`|
 
-If you want to, you can just put a constant value in there. Like `0.5`, `-1`, or even `.3`. This will just remain constant.
+If you want to, you can just put a constant value in there. Like `0.5`, `-1`, or even `.3`. This will just remain constant. Additionally you can reference `pi`, `e`, `true` or `false` to get their respective values.
 
 But it goes on. You can also access Flight Data.
 
@@ -85,13 +85,66 @@ But it goes on. You can also access Flight Data.
 |`FlightData.SurfaceVelocityMagnitude`|
 |`FlightData.VelocityMagnitude`|
 
-How awesome! Then it gets even more complex.
+And even use some operators and functions.
 
-You can assign, to any part modifier (the sub elements under `&lt;Part&gt;`), an `id` value, that uniquely identifies that modifier within the craft. You can then reference that from the InputController and get a value from that modifier. There are two ways to do this. 
+|Operators and Functions|
+|---|
+|`Mathematical`|`+`, `-`, `*` and `/` |
+|`Comparison`|`<`, `>`, `<=`, `>=`, `==`, `!=` |
+|`Boolean`|`&`, `AND`, `|`, `OR`, `!`, `NOT`, Ternary operator: `(condition ? value_if_true : value_if_false)` |
+|`abs(x)`|The absolute (positive) value of x. |
+|`ammo(name)`|The amount of ammo of the weapon with name. Remember to put the name in &quot; quotes. |
+|`ceil(x)`|x rounded up to an integer. |
+|`clamp(x, min, max)`|x clamped between min and max. |
+|`clamp01(x)`|Equivalent to clamp(x, 0, 1). |
+|`deltaangle(a, b)`|The shortest angle delta between angles a and b in degrees. |
+|`exp(x)`|Returns e raised to the power of x. |
+|`floor(x)`|x rounded down to an integer. |
+|`inverselerp(a, b, x)`|Calculates the linear parameter t that produces the interpolant value within the range [a, b]. |
+|`lerp(a, b, t)`|Linearly interpolates between a and b, by a proportion of t. |
+|`lerpangle(a, b, t)`|Similar to lerp, but interpolates correctly when values pass 360 degrees. |
+|`lerpunclamped(a, b, t)`|Similar to lerp, but doesn't clamp the value between a and b. |
+|`log(x, p)`|The logarithm of x in base p. |
+|`log10(x)`|Equivalent to log(x, 10). |
+|`pingpong(x, l)`|"Ping-pongs" the value x so it is never larger than l and never less than 0. |
+|`max(a, b)`|The largest value between a and b. |
+|`min(a, b)`|The smallest value between a and b. |
+|`pow(x, p)`|x raised to the power of p. |
+|`repeat(x, l)`|Loops the value x so it is never larger than l and never less than 0. |
+|`round(x)`|Rounds x to the nearest integer. |
+|`sign(x)`|The sign of x (1 if x positive, -1 if x negative) |
+|`smoothstep(a, b, t)`|Similar to lerp, but with smoothing at the ends. |
+|`sqrt(x)`|The square root of x. |
+|`sin(x)`|The sine of x (degrees) |
+|`cos(x)`|The cosine of x (degrees) |
+|`tan(x)`|The tangent of x (degrees) |
+|`asin(x)`|The arc-sine of x (degrees) |
+|`acos(x)`|The arc-cosine of x (degrees) |
+|`atan(x)`|The arc-tangent of x (degrees) |
 
-Firstly, the modifier itself can act as an input. To do this, you just add the modifier ID straight out. This only works if that particular modifier is able to act as an InputControllerInput, and nothing does that at the moment. So for now, this paragraph is useless. But don't fret! Something probably will use it in the future.
+How awesome! Then it gets even more complex. You can get parameters from different parts in the crafts using the following format:
 
-There is also a way that works. By inputting the modifier ID, then a `.`, then a property name, you can get any property from the modifier! The properties you can choose are all listed in [this page](PartModifierScriptProperties).
+	`[PartSelector].ModifierSelector[.Data][.PropertySelector]`
+
+	`[PartSelector]`
+	 - May be omitted to select the current part (must start with '.')
+	 - May be '*' for legacy style of searching entire craft for a modifier id (specified by modifier selector)
+	 - Matches part based on exact part name. If the part belongs to a group, the connected group parts will be searched first.
+
+	`.ModifierSelector`
+	 - Required
+	 - First tries to match a modifier based on the modifier's 'id' property.
+	 - If no match is found, it tries to match based on the modifier's type id (InputController, Piston, Gyroscope, etc)
+
+	`[.Data]`
+	 - If specified, it will match the part modifier data object
+	 - If omitted, it will match the part modifier's script
+
+	`[.PropertySelector]`
+	 - Required (unless the target modifier implements the IInputControllerInput interface)
+	 - Matches the name of a public float/double/bool property on the target object.
+
+The properties you can choose are all listed in [this page](PartModifierScriptProperties).
         </Footer>
     <Overrides>
       <activationGroup type="int">
