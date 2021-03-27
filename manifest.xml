@@ -90,8 +90,8 @@ And even use some operators and functions.
 |Operators and Functions|
 |---|
 |`Mathematical`|`+`, `-`, `*` and `/` |
-|`Comparison`|`<`, `>`, `<=`, `>=`, `==`, `!=` |
-|`Boolean`|`&`, `AND`, `|`, `OR`, `!`, `NOT`, Ternary operator: `(condition ? value_if_true : value_if_false)` |
+|`Comparison`|`&lt;`, `&gt;`, `&lt;=`, `&gt;=`, `==`, `!=` |
+|`Boolean`|`&amp;`, `AND`, `|`, `OR`, `!`, `NOT`, Ternary operator: `(condition ? value_if_true : value_if_false)` |
 |`abs(x)`|The absolute (positive) value of x. |
 |`ammo(name)`|The amount of ammo of the weapon with name. Remember to put the name in &quot; quotes. |
 |`ceil(x)`|x rounded up to an integer. |
