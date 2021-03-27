@@ -59,7 +59,6 @@ And you can even use some operators and functions:
 |`Comparison`|`&lt;`, `&gt;`, `&lt;=`, `&gt;=`, `==`, `!=` |
 |`Boolean`|`&amp;`, `AND`, `|`, `OR`, `!`, `NOT`, Ternary operator: `(condition ? value_if_true : value_if_false)` |
 |`abs(x)`|The absolute (positive) value of x. |
-|`ammo(name)`|The amount of ammo of the weapon with name. Remember to put the name in " quotes. |
 |`ceil(x)`|x rounded up to an integer. |
 |`clamp(x, min, max)`|x clamped between min and max. |
 |`clamp01(x)`|Equivalent to clamp(x, 0, 1). |
