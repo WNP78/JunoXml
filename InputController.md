@@ -42,18 +42,33 @@ An `InputController` takes an input value, chosen by it's `input` property, then
 |`LerpNegativeAxis`|The output value will be linearly interpolated between the min and max values assuming an input axis of -1 to 0.|
 
 ## Input Axes
-There are many things you can put in the `input` field. It's rather quite exciting. For a start, you can access any "control" in this list.
+There are many things you can put in the `input` field. It's rather quite exciting. For a start, you can access anything in this list.
 
 |Controls|
 |---|
 |`Brake`|
+|`EvaAnalogJump`|
+|`EvaMoveFwdAft`|
+|`EvaMoveUpDown`|
+|`EvaPitch`|
+|`EvaRoll`|
+|`EvaShootTether`|
+|`EvaStrafe`|
+|`EvaTetherLength`|
+|`EvaTetherLengthOffset`|
+|`EvaTurn`|
+|`EvaWalk`|
 |`OffsetBrake`|
 |`OffsetPitch`|
 |`OffsetRoll`|
 |`OffsetSlider1`|
 |`OffsetSlider2`|
+|`OffsetTranslateForward`|
+|`OffsetTranslateRight`|
+|`OffsetTranslateUp`|
 |`OffsetYaw`|
 |`Pitch`|
+|`PitchInputReceived`|
 |`Roll`|
 |`RollInputReceived`|
 |`Slider1`|
@@ -62,28 +77,50 @@ There are many things you can put in the `input` field. It's rather quite exciti
 |`TranslateForward`|
 |`TranslateRight`|
 |`TranslateUp`|
+|`TranslationModeEnabled`|
 |`Yaw`|
+|`YawInputReceived`|
 
-If you want to, you can just put a constant value in there. Like `0.5`, `-1`, or even `.3`. This will just remain constant. Additionally you can reference `pi`, `e`, `true` or `false` to get their respective values.
-
-But it goes on. You can also access Flight Data.
 
 |Flight Data|
 |---|
+|`FlightData.AccelerationMagnitude`|
 |`FlightData.AltitudeAboveGroundLevel`|
 |`FlightData.AltitudeAboveSeaLevel`|
+|`FlightData.AltitudeAboveTerrain`|
+|`FlightData.AngleOfAttack`|
+|`FlightData.AngularVelocityMagnitude`|
+|`FlightData.BankAngle`|
 |`FlightData.CurrentEngineThrust`|
+|`FlightData.CurrentEngineThrustUnscaled`|
 |`FlightData.CurrentMass`|
+|`FlightData.CurrentMassUnscaled`|
+|`FlightData.FuelMass`|
+|`FlightData.GravityMagnitude`|
+|`FlightData.Grounded`|
+|`FlightData.Heading`|
+|`FlightData.LateralSurfaceVelocity`|
+|`FlightData.MachNumber`|
 |`FlightData.MaxActiveEngineThrust`|
+|`FlightData.MaxActiveEngineThrustUnscaled`|
 |`FlightData.ParentPlanetOcclusion`|
+|`FlightData.Pitch`|
 |`FlightData.RemainingBattery`|
 |`FlightData.RemainingFuelInStage`|
 |`FlightData.RemainingMonopropellant`|
+|`FlightData.SideSlip`|
 |`FlightData.SolarRadiationIntensity`|
+|`FlightData.SupportsWarpBurn`|
 |`FlightData.SurfaceVelocityMagnitude`|
 |`FlightData.VelocityMagnitude`|
+|`FlightData.VerticalSurfaceVelocity`|
+|`FlightData.WeightedThrottleResponse`|
+|`FlightData.WeightedThrottleResponseTime`|
 
-And even use some operators and functions.
+
+If you want to, you can just put a constant value in there. Like `0.5`, `-1`, or even `.3`. This will just remain constant. Additionally you can reference `pi`, `e`, `true` or `false` to get their respective values.
+
+And you can even use some operators and functions:
 
 |Operators and Functions|
 |---|
