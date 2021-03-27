@@ -87,6 +87,17 @@ Below is a table of all the different properties you can access, per modifier.
 |`FuelTank.TotalFuel`|double|
 |`FuelTank.UsesMachNumber`|bool|
 |`CoverEngine.Data.CoverEngine`|bool|
+|`GaugeBase.Data.HideBase`|bool|
+|`GaugeBase.Data.HideRim`|bool|
+|`GaugeBase.Data.Scale`|float|
+|`Gauge.Data.FaceZero`|float|
+|`Gauge.Data.FlipFace`|bool|
+|`Gauge.Data.HideFace`|bool|
+|`Gauge.Data.HideIndicator`|bool|
+|`Gauge.Data.IndicatorLength`|float|
+|`Gauge.Data.IndicatorZero`|float|
+|`Gauge.Data.Multiplier`|float|
+|`Gauge.Data.Scale`|float|
 |`Gyroscope.Data.ElectricalConsumption`|float|
 |`Gyroscope.Data.Mass`|float|
 |`Gyroscope.Data.Power`|float|
@@ -105,8 +116,10 @@ Below is a table of all the different properties you can access, per modifier.
 |`KomodoNoseCone.Data.DefaultRadius`|float|
 |`KomodoNoseCone.Data.Mass`|float|
 |`KomodoNoseCone.Data.Scale`|float|
+|`Label.Data.CurvatureAngle`|float|
 |`Label.Data.FontSize`|float|
 |`Label.Data.Height`|float|
+|`Label.Data.OutlineWidth`|float|
 |`Label.Data.Width`|float|
 |`LandingLeg.Data.DeployedAngle`|float|
 |`LandingLeg.Data.DeployedExtensionY`|float|
@@ -440,6 +453,7 @@ Below is a table of all the different properties you can access, per modifier.
 |`Eva.JetpackPowerScalar`|float|
 |`Eva.JumpPowerScalar`|float|
 |`Eva.TetherAdjustLengthEnabled`|bool|
+|`Eva.UnloadingFromCrewCompartmentInProgress`|bool|
 |`Eva.MaxForwardSpeed`|float|
 |`Eva.MaxStrafeSpeed`|float|
 |`Eva.RecentlyJumped`|bool|

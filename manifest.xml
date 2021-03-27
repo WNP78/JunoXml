@@ -567,6 +567,9 @@ Define what input the InputController is trying to override. See the `inputId` t
       <occlusion />
       <renderQueue />
       <supportsTransparency />
+      <dragScaleActive />
+      <maxDrag />
+      <maxDragActive />
     </Overrides>
   </Config>
   <RocketEngine>
@@ -723,6 +726,17 @@ Define what input the InputController is trying to override. See the `inputId` t
   <Gauge>
     <Overrides>
       <faceType />
+      <faceZero />
+      <flipFace />
+      <hideFace />
+      <hideIndicator />
+      <indicatorLength />
+      <indicatorOffset />
+      <indicatorType />
+      <indicatorZero />
+      <multiplier />
+      <rotationType />
+      <scale />
     </Overrides>
   </Gauge>
   <KomodoNoseCone>
@@ -740,6 +754,10 @@ Define what input the InputController is trying to override. See the `inputId` t
       <horizontalAlignment />
       <verticalAlignment />
       <width />
+      <curvatureAngle />
+      <fontName />
+      <gradient />
+      <outlineWidth />
     </Overrides>
   </Label>
   <ScalablePod>
@@ -781,4 +799,12 @@ Define what input the InputController is trying to override. See the `inputId` t
       <width />
     </Overrides>
   </Mfd>
+  <GaugeBase>
+    <Overrides>
+      <hideBase />
+      <hideRim />
+      <scale />
+      <trimType />
+    </Overrides>
+  </GaugeBase>
 </Sr2XmlDocManifest>

@@ -19,6 +19,7 @@
 |`collisionVelocityMode`|`PartCollisionVelocityMode`||
 |`descriptionLabel`|`string`||
 |`dragScale`|`float`|Changes this part's contribution to the craft's overall drag force.|
+|`dragScaleActive`|`float`||
 |`fuelLine`|`bool`|Allow connected engines to search this part and its connected parts for fuel tanks.|
 |`heatShield`|`float`|Heat shield that prevents heat damage until it depletes.|
 |`includeInDrag`|`bool`|Determines whether or not to include this part in the drag model.|
@@ -27,6 +28,8 @@
 |`inertiaTensorUserScale`|`float`|Increase to strengthen movable joints which are wobbly. Increase slowly, and only as much as necessary until the joint is stable as it can dramatically slow down rotation, or cause other issues if raised too much. Note: It is irrelevant which part within a group is adjusted; values are summed between parts in a group and applied to the group as a whole.|
 |`massScale`|`float`|Handy way to trick the laws of physics and increase or decrease the mass of this part.|
 |`maxDamage`|`float`||
+|`maxDrag`|`float`||
+|`maxDragActive`|`float`||
 |`maxTemperature`|`float`|The maximum temperature, in Kelvin, that this part can withstand before taking heat damage or depleting its heat shield.|
 |`occlusion`|`OcclusionCalculationType`|Changes how the occlusion state of the part is calculated. Some parts will not function if they are occluded, such as wings and inlets. Auto will calculate if the part is occluded by other surrounding parts. Always will always consider the part as occluded. Never will never consider the part as occluded.|
 |`partCollisionHandling`|`PartCollisionHandlingMethod`|Determines how collisions are handled when two parts bump into each other.|
