@@ -127,7 +127,7 @@ And you can even use some operators and functions:
 |---|
 |`Mathematical`|`+`, `-`, `*` and `/` |
 |`Comparison`|`<`, `>`, `<=`, `>=`, `==`, `!=` |
-|`Boolean`|`&`, `AND`, `|`, `OR`, `!`, `NOT`, Ternary operator: `(condition ? value_if_true : value_if_false)` |
+|`Boolean`|`&`, `|`, `!`, Ternary operator: `(condition ? value_if_true : value_if_false)` |
 |`abs(x)`|The absolute (positive) value of x. |
 |`ceil(x)`|x rounded up to an integer. |
 |`clamp(x, min, max)`|x clamped between min and max. |
