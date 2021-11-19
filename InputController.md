@@ -172,7 +172,7 @@ And you can even use some operators and functions:
 |`asin(x)`|The arc-sine of x (degrees) |
 |`acos(x)`|The arc-cosine of x (degrees) |
 |`atan(x)`|The arc-tangent of x (degrees) |
-| |
+
 |Vector Operators and Functions|
 |---|
 |`angle(Vector from, Vector to)`|The difference in angle between two vectors (degrees) |
