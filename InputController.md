@@ -86,40 +86,52 @@ There are many things you can put in the `input` field. It's rather quite exciti
 |`YawInputReceived`|
 
 
-|Flight Data|
-|---|
-|`FlightData.AccelerationMagnitude`|
-|`FlightData.AltitudeAboveGroundLevel`|
-|`FlightData.AltitudeAboveSeaLevel`|
-|`FlightData.AltitudeAboveTerrain`|
-|`FlightData.AngleOfAttack`|
-|`FlightData.AngularVelocityMagnitude`|
-|`FlightData.BankAngle`|
-|`FlightData.CurrentEngineThrust`|
-|`FlightData.CurrentEngineThrustUnscaled`|
-|`FlightData.CurrentMass`|
-|`FlightData.CurrentMassUnscaled`|
-|`FlightData.FuelMass`|
-|`FlightData.GravityMagnitude`|
-|`FlightData.Grounded`|
-|`FlightData.Heading`|
-|`FlightData.LateralSurfaceVelocity`|
-|`FlightData.MachNumber`|
-|`FlightData.MaxActiveEngineThrust`|
-|`FlightData.MaxActiveEngineThrustUnscaled`|
-|`FlightData.ParentPlanetOcclusion`|
-|`FlightData.Pitch`|
-|`FlightData.RemainingBattery`|
-|`FlightData.RemainingFuelInStage`|
-|`FlightData.RemainingMonopropellant`|
-|`FlightData.SideSlip`|
-|`FlightData.SolarRadiationIntensity`|
-|`FlightData.SupportsWarpBurn`|
-|`FlightData.SurfaceVelocityMagnitude`|
-|`FlightData.VelocityMagnitude`|
-|`FlightData.VerticalSurfaceVelocity`|
-|`FlightData.WeightedThrottleResponse`|
-|`FlightData.WeightedThrottleResponseTime`|
+|Flight Data|Type|
+|---|---|
+|`FlightData.Acceleration`|`vector`|
+|`FlightData.AccelerationMagnitude`|`double`|
+|`FlightData.AltitudeAboveGroundLevel`|`double`|
+|`FlightData.AltitudeAboveSeaLevel`|`double`|
+|`FlightData.AltitudeAboveTerrain`|`double`|
+|`FlightData.AngleOfAttack`|`double`|
+|`FlightData.AngularVelocityMagnitude`|`double`|
+|`FlightData.BankAngle`|`double`|
+|`FlightData.CraftForward`|`vector`|
+|`FlightData.CraftRight`|`vector`|
+|`FlightData.CraftUp`|`vector`|
+|`FlightData.CurrentEngineThrust`|`float`|
+|`FlightData.CurrentEngineThrustUnscaled`|`float`|
+|`FlightData.CurrentMass`|`float`|
+|`FlightData.CurrentMassUnscaled`|`float`|
+|`FlightData.East`|`vector`|
+|`FlightData.FuelMass`|`float`|
+|`FlightData.Gravity`|`vector`|
+|`FlightData.GravityMagnitude`|`float`|
+|`FlightData.Grounded`|`bool`|
+|`FlightData.Heading`|`double`|
+|`FlightData.LateralSurfaceVelocity`|`double`|
+|`FlightData.MachNumber`|`float`|
+|`FlightData.MaxActiveEngineThrust`|`float`|
+|`FlightData.MaxActiveEngineThrustUnscaled`|`float`|
+|`FlightData.North`|`vector`|
+|`FlightData.ParentPlanetOcclusion`|`float`|
+|`FlightData.Pitch`|`double`|
+|`FlightData.Position`|`vector`|
+|`FlightData.PositionNormalized`|`vector`|
+|`FlightData.RemainingBattery`|`float`|
+|`FlightData.RemainingFuelInStage`|`float`|
+|`FlightData.RemainingMonopropellant`|`float`|
+|`FlightData.SideSlip`|`double`|
+|`FlightData.SolarRadiationDirection`|`vector`|
+|`FlightData.SolarRadiationIntensity`|`double`|
+|`FlightData.SupportsWarpBurn`|`bool`|
+|`FlightData.SurfaceVelocity`|`vector`|
+|`FlightData.SurfaceVelocityMagnitude`|`double`|
+|`FlightData.Velocity`|`vector`|
+|`FlightData.VelocityMagnitude`|`double`|
+|`FlightData.VerticalSurfaceVelocity`|`double`|
+|`FlightData.WeightedThrottleResponse`|`float`|
+|`FlightData.WeightedThrottleResponseTime`|`float`|
 
 
 You can also access activation group states with `AG1` to `AG10`.
@@ -160,6 +172,32 @@ And you can even use some operators and functions:
 |`asin(x)`|The arc-sine of x (degrees) |
 |`acos(x)`|The arc-cosine of x (degrees) |
 |`atan(x)`|The arc-tangent of x (degrees) |
+| |
+|Vector Operators and Functions|
+|---|
+|`angle(Vector from, Vector to)`|The difference in angle between two vectors (degrees) |
+|`clampMagnitude(Vector vector, Number maxLength)`|A vector pointing in the same direction but with the indicated magnitude |
+|`cross(Vector lhs, Vector rhs)`|The cross product of two vectors |
+|`distance(Vector a, Vector b)`|The distance between the positions pointed at by two vectors |
+|`dot(Vector lhs, Vector rhs)`|The dot product of two vectors |
+|`exclude(Vector excludeThis, Vector fromThat)`|A vector with the components in the direction of fromThat removed, similar to projectOnPlane |
+|`isNaN(Vector v)`|Checks if a vector is NaN |
+|`lerp3(Vector from, Vector to, Number t)`|A linear interpolation between two vectors by the amount t |
+|`magnitude(Vector vector)`|The length of a vector |
+|`max3(Vector a, Vector b)`|A vector formed by the max components between the input vectors |
+|`min3(Vector a, Vector b)`|A vector formed by the min components between the input vectors |
+|`moveTowards(Vector current, Vector target, Number maxDistanceDelta)`|A vector interpolation limited by a maximum distance delta |
+|`normalize(Vector vector)`|A vector with the same direction but with a magnitude of 1 |
+|`project(Vector vector, Vector onNormal)`|A vector in the direction of onNormal with the length of the projection of the vector onto it |
+|`projectOnPlane(Vector vector, Vector planeNormal)`|The projection of a vector onto a plane defined by its normal, similar to exclude |
+|`reflect(Vector inDirection, Vector inNormal)`|A mirrored vector of inDirection relative to inNormal |
+|`scale(Vector a, Vector b)`|The component-wise multiplication of a and b |
+|`signedAngle(Vector from, Vector to, Vector axis)`|The signed angle in degrees between two vectors rotated around an axis |
+|`slerp(Vector from, Vector to, Number t)`|A smooth interpolation between two vectors by the amount t |
+|`sqrMagnitude(Vector vector)`|The square root of the length of the vector |
+|`x(Vector)`|The X component of the vector |
+|`y(Vector)`|The Y component of the vector |
+|`z(Vector)`|The Z component of the vector |
 
 How awesome! Then it gets even more complex. You can get parameters from different parts in the crafts using the following format:
 
