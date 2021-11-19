@@ -8,6 +8,7 @@
 |`airfoil`|`string`||
 |`allowControlSurfaces`|`bool`||
 |`angleOfAttack`|`float`||
+|`craftSide`|`CraftSideType`|The side of the craft the wing is connected to. If connected to the right side of the craft then the airfoil and pitch input will be inverted, which is important for airplanes.|
 |`density`|`float`||
 |`fuelPercentage`|`float`||
 |`hingeDistanceFromTrailingEdge`|`float`||

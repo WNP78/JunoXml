@@ -17,13 +17,18 @@ Below is a table of all the different properties you can access, per modifier.
 |`CameraVantage.Data.AutoCenterCamera`|bool|
 |`CameraVantage.Data.AutoOrient`|bool|
 |`CameraVantage.Data.EnabledByDefault`|bool|
+|`CameraVantage.Data.FieldOfView`|float|
+|`CameraVantage.Data.FieldOfViewMax`|float|
+|`CameraVantage.Data.FieldOfViewMin`|float|
 |`CameraVantage.Data.HidePart`|bool|
 |`CameraVantage.Data.IsHidden`|bool|
 |`CameraVantage.Data.LookAtCommandPod`|bool|
 |`CameraVantage.Data.ManualRegister`|bool|
 |`CameraVantage.Data.PadPosition`|bool|
+|`CameraVantage.Data.VariableZoom`|bool|
 |`CameraVantage.AutoCenterCamera`|bool|
 |`CameraVantage.AutoOrient`|bool|
+|`CameraVantage.CurrentFieldOfView`|float|
 |`CameraVantage.HidePart`|bool|
 |`CameraVantage.LookAtCommandPod`|bool|
 |`CameraVantage.MouseLook`|bool|
@@ -79,6 +84,7 @@ Below is a table of all the different properties you can access, per modifier.
 |`FuelTank.Data.Capacity`|double|
 |`FuelTank.Data.Fuel`|double|
 |`FuelTank.Data.Mass`|float|
+|`FuelTank.Data.Utilization`|float|
 |`FuelTank.IsDestroyed`|bool|
 |`FuelTank.IsEmpty`|bool|
 |`FuelTank.IsFull`|bool|
@@ -393,6 +399,7 @@ Below is a table of all the different properties you can access, per modifier.
 |`Fuselage.Data.InletTrimSize`|float|
 |`Fuselage.Data.InnerVolume`|float|
 |`Fuselage.Data.Mass`|float|
+|`Fuselage.Data.MeshMassMultiplier`|float|
 |`Fuselage.Data.NormalSmoothingAngle`|float|
 |`Fuselage.Data.SupportsAddSection`|bool|
 |`Fuselage.Data.SupportsXZOffset`|bool|

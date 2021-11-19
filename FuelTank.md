@@ -13,5 +13,6 @@
 |`fuelTypeReadOnly`|`string`|The type of fuel stored in this fuel tank.|
 |`priority`|`int`|Within the same Tank Set, fuel tanks with a higher priority will be drained first. Fuel tanks with the same non-zero priority will drain at the same time.|
 |`subPriority`|`int`||
+|`utilization`|`float`||
 
 

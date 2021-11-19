@@ -63,6 +63,8 @@ There are many things you can put in the `input` field. It's rather quite exciti
 |`OffsetRoll`|
 |`OffsetSlider1`|
 |`OffsetSlider2`|
+|`OffsetSlider3`|
+|`OffsetSlider4`|
 |`OffsetTranslateForward`|
 |`OffsetTranslateRight`|
 |`OffsetTranslateUp`|
@@ -73,6 +75,8 @@ There are many things you can put in the `input` field. It's rather quite exciti
 |`RollInputReceived`|
 |`Slider1`|
 |`Slider2`|
+|`Slider3`|
+|`Slider4`|
 |`Throttle`|
 |`TranslateForward`|
 |`TranslateRight`|

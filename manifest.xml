@@ -219,6 +219,7 @@ Define what input the InputController is trying to override. See the `inputId` t
       <replicateControls />
       <replicateStageActivations />
       <useDefaultPilotSeatRotation />
+      <stageCalculationVersion />
     </Overrides>
   </CommandPod>
   <Detacher>
@@ -272,6 +273,7 @@ Define what input the InputController is trying to override. See the `inputId` t
       <fuelTypeReadOnly />
       <priority />
       <subPriority />
+      <utilization />
     </Overrides>
   </FuelTank>
   <CoverEngine>
@@ -425,6 +427,7 @@ Define what input the InputController is trying to override. See the `inputId` t
       <tipTrailingOffset />
       <wingPhysicsEnabled />
       <invertAirfoil />
+      <craftSide />
     </Overrides>
   </Wing>
   <ControlSurface>
@@ -523,6 +526,7 @@ Define what input the InputController is trying to override. See the `inputId` t
       <topScale />
       <flattenNormals />
       <supportsXZOffset />
+      <meshMassMultiplier />
     </Overrides>
   </Fuselage>
   <Config>
@@ -634,6 +638,10 @@ Define what input the InputController is trying to override. See the `inputId` t
       <enabledByDefault />
       <isHidden />
       <manualRegister />
+      <fieldOfView />
+      <fieldOfViewMax />
+      <fieldOfViewMin />
+      <variableZoom />
     </Overrides>
   </CameraVantage>
   <BeaconLight>
