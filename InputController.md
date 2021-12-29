@@ -134,8 +134,9 @@ There are many things you can put in the `input` field. It's rather quite exciti
 |`FlightData.WeightedThrottleResponseTime`|`float`|
 
 
-You can also access activation group states with `AG1` to `AG10`.
-If you want to, you can just put a constant value in there. Like `0.5`, `-1`, or even `.3`. This will just remain constant. Additionally you can reference `pi`, `e`, `true` or `false` to get their respective values.
+You can also access activation group states with `AG1` to `AG10`. If you want to, you can just put a constant value in there. Like `0.5`, `-1`, or even `.3`. This will just remain constant. Additionally you can reference `pi`, `e`, `true` or `false` to get their respective values.
+
+When working with Funk in Vizzy you can reference variables from the program just by typing their name, having to add `v:` if they are a vector.
 
 And you can even use some operators and functions:
 
