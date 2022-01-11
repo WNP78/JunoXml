@@ -195,6 +195,7 @@ And you can even use some operators and functions:
 |`signedAngle(Vector from, Vector to, Vector axis)`|The signed angle in degrees between two vectors rotated around an axis |
 |`slerp(Vector from, Vector to, Number t)`|A smooth interpolation between two vectors by the amount t |
 |`sqrMagnitude(Vector vector)`|The square root of the length of the vector |
+|`vec(x,y,z)`|Constructs a vector from three scalars |
 |`x(Vector)`|The X component of the vector |
 |`y(Vector)`|The Y component of the vector |
 |`z(Vector)`|The Z component of the vector |
