@@ -12,7 +12,7 @@
 |`openingSideDepth`|`int`||
 |`rows`|`int`|The number of rows of panels.|
 |`rowSize`|`int`|The number of panels in each row.|
-|`scale`|`float`|The overall size of the part.|
+|`scale`|`float`|The overall size of the solar panel array.|
 |`sideOpenPercentage`|`float`||
 |`startOpen`|`bool`|Determines if the solar panel array should start out open or closed.|
 

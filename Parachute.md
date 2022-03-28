@@ -5,7 +5,15 @@
 
 |Name|Type|Description|
 |--|--|--|
-|`baseSize`|`float`|Changes the size of the parachute base.|
-|`size`|`float`|Changes the size of the chute that is deployed when activated.|
+|`autocutDensity`|`float`|Changes the density at which the parachute is automatically cut.|
+|`baseSize`|`float`|Changes the scale of the parachute base.|
+|`chuteHeight`|`float`|Changes the curvature of the parachute.|
+|`chuteRadius`|`float`|Changes the radius of the parachute.|
+|`chuteRadiusDeflated`|`float`|Changes the radius the parachute will have after being deployed while it isn't inflated.|
+|`cordLength`|`float`|Changes the length of the parachute cord.|
+|`deploymentDensity`|`float`|Changes the density at which the parachute is allowed to be deployed.|
+|`inflationDensity`|`float`|Changes the density at which the parachute is inflated to its full size.|
+|`maxDeploymentSpeed`|`float`|Defines the max speed at which parachutes can be deployed.|
+|`referenceDensity`|`float`||
 
 

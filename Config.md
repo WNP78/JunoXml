@@ -40,6 +40,7 @@
 |`preventDebris`|`bool`|Prevent this part (and connected parts) from being automatically removed when separated from the player's craft.|
 |`raiseWaterEventsEvenIfNotBuoyant`|`bool`||
 |`renderQueue`|`PartMeshRenderQueue`|The render queue for the part. Rendering before the depth mask will allow some parts to be visible inside of cockpits where they might not otherwise be visible. Transparent objects may not display correctly.|
+|`castShadows`|`bool`|Define if the part group should cast shadows on other parts and the terrain while in flight.|
 |`showHiddenPartProperties`|`bool`||
 |`stageActivationType`|`StageActivationType`|Changes the current stage activation type of the part.|
 |`supportsActivation`|`bool`||
@@ -47,5 +48,6 @@
 |`thermalMassRatio`|`float`||
 |`tinkerPanelEnabled`|`bool`||
 |`viewCommandPod`|`bool`|View the command pod that controls this part.|
+|`xmlEditButton`|`bool`|Opens a window that shows all the parameters in the different modifiers found in the part, with all its available parameters.|
 
 

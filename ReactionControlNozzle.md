@@ -8,6 +8,7 @@
 |`fuelConsumptionRate`|`float`||
 |`multiDirection`|`bool`||
 |`power`|`float`||
-|`powerScale`|`float`|Increases the power of the nozzle, but also increases its fuel usage.|
+|`powerScale`|`float`|Changes the power of the nozzle and its fuel usage.|
+|`scale`|`float`|Changes the overall size of the RCS, affecting its max thrust, price and mass.|
 
 

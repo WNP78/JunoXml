@@ -5,6 +5,7 @@
 
 |Name|Type|Description|
 |--|--|--|
+|`version`|`int`||
 |`brakeTorque`|`float`|Changes the torque applied to the wheel when brake is applied.|
 |`damper`|`float`|Higher damper settings can help to reduce oscillation. Lower damper settings allow more oscillation.|
 |`direction`|`string`|Changes the direction the wheel rotates when motor input is applied.|

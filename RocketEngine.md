@@ -8,6 +8,16 @@
 |`chamberPressure`|`float`|Higher chamber pressures can increase thrust and efficiency, but add additional cost.|
 |`engineSubTypeId`|`string`|The method used for injecting the propellant, which can greatly impact the performance of the engine.|
 |`engineTypeId`|`string`|The type of rocket engine.|
+|`thrustOverride`|`float`||
+|`massFlowRateOverride`|`float`||
+|`wattsPerFuelFlowOverride`|`float`||
+|`minThrottleOverride`|`float`||
+|`throttleResponse`|`float`||
+|`overexpansionDamage`|`float`||
+|`hasSmoke`|`bool`||
+|`exhaustColor`|`string`||
+|`exhaustOffset`|`float`||
+|`exhaustWhiteIntensity`|`float`||
 |`exhaustScale`|`float`||
 |`fuelType`|`string`|The type of fuel to use. Connected fuel tanks will be automatically updated to this fuel type if they have the Auto Select Fuel Type setting enabled.|
 |`gimbalRange`|`float`|The maximum allowable range that the engine can rotate to assist in controlling the craft's attitude.|

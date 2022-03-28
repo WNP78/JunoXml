@@ -5,6 +5,7 @@
 
 |Name|Type|Description|
 |--|--|--|
+|`version`|`int`||
 |`bayLength`|`float`|Changes the length of the landing gear bay|
 |`brakeTorque`|`float`|Changes the torque applied to the wheel when brake is applied.|
 |`damperScale`|`float`|Higher damper settings can help to reduce oscillation. Lower damper settings allow more oscillation.|
@@ -19,7 +20,7 @@
 |`retractionSpeed`|`float`|Allows speeding up/slowing down of the wheel's retraction.|
 |`showUpperBraces`|`bool`|Determines whether the upper braces inside the bay should be hidden.|
 |`sideOffset`|`float`|Changes the side offset of the wheel's position|
-|`size`|`float`|Uniformly changes the size of the landing gear.|
+|`size`|`float`|Changes the overall size of the landing gear.|
 |`slantAngle`|`float`|Changes the angle that the lower support attatches to the wheel.|
 |`springForceScale`|`float`|Changes the strength of the spring force in the suspension.|
 |`startExtended`|`bool`|Determines whether the gear should start out extended, or retracted.|

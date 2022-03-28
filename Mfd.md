@@ -11,5 +11,6 @@
 |`mfdProgram`|`string`|The program to run on this MFD.|
 |`resolution`|`float`||
 |`width`|`float`|Changes the width of the display.|
+|`wattsperm2`|`float`||
 
 

@@ -33,5 +33,6 @@
 |`replicateStageActivations`|`bool`|Determines whether this command pod will replicate stage activations from the active pod when this command pod isn't active.|
 |`stageCalculationVersion`|`int`||
 |`useDefaultPilotSeatRotation`|`bool`||
+|`powerConsumption`|`float`||
 
 

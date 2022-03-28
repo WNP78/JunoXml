@@ -13,5 +13,6 @@
 |`range`|`float`|Changes the range of motion of the piston.|
 |`scale`|`float`|Changes the overall size of the piston.|
 |`speed`|`float`|Changes the speed of the piston.|
+|`consumptionMultiplier`|`float`||
 
 

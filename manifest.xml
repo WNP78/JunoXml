@@ -248,6 +248,7 @@ Define what input the InputController is trying to override. See the `inputId` t
       <replicateStageActivations />
       <useDefaultPilotSeatRotation />
       <stageCalculationVersion />
+      <powerConsumption />
     </Overrides>
   </CommandPod>
   <Detacher>
@@ -255,6 +256,9 @@ Define what input the InputController is trying to override. See the `inputId` t
       <force />
       <targetAttachPoints />
       <detachOnActivated />
+      <scale />
+      <attachPointIndex />
+      <version />
     </Overrides>
   </Detacher>
   <DockingPort>
@@ -269,6 +273,8 @@ Define what input the InputController is trying to override. See the `inputId` t
       <soundVolume />
       <staticResistance />
       <torque />
+      <version />
+      <scale />
     </Overrides>
   </ElectricMotor>
   <Fairing>
@@ -341,6 +347,10 @@ Define what input the InputController is trying to override. See the `inputId` t
       <soundVolume />
       <speed />
       <angle />
+      <version />
+      <editMessage />
+      <scale />
+      <consumptionMultiplier />
     </Overrides>
   </JointRotator>
   <LandingLeg>
@@ -352,6 +362,12 @@ Define what input the InputController is trying to override. See the `inputId` t
       <deploySpeed />
       <scale />
       <startDeployed />
+      <baseScale />
+      <extensionPercentage />
+      <landingLegType />
+      <massHeight />
+      <massRadius />
+      <soundVolume />
     </Overrides>
   </LandingLeg>
   <Light>
@@ -376,6 +392,15 @@ Define what input the InputController is trying to override. See the `inputId` t
     <Overrides>
       <size />
       <baseSize />
+      <autocutDensity />
+      <chuteHeight />
+      <chuteRadius />
+      <chuteRadiusDeflated />
+      <cordLength />
+      <deploymentDensity />
+      <inflationDensity />
+      <maxDeploymentSpeed />
+      <referenceDensity />
     </Overrides>
   </Parachute>
   <Piston>
@@ -388,6 +413,7 @@ Define what input the InputController is trying to override. See the `inputId` t
       <range />
       <scale />
       <speed />
+      <consumptionMultiplier />
     </Overrides>
   </Piston>
   <ReactionControlNozzle>
@@ -396,6 +422,7 @@ Define what input the InputController is trying to override. See the `inputId` t
       <power />
       <powerScale />
       <multiDirection />
+      <scale />
     </Overrides>
   </ReactionControlNozzle>
   <RelayFuelSource>
@@ -422,6 +449,7 @@ Define what input the InputController is trying to override. See the `inputId` t
       <turningAngle />
       <turningRate />
       <width />
+      <version />
     </Overrides>
   </ResizableWheel>
   <Suspension>
@@ -456,6 +484,10 @@ Define what input the InputController is trying to override. See the `inputId` t
       <wingPhysicsEnabled />
       <invertAirfoil />
       <craftSide />
+      <version />
+      <controlSurfacePriceMultiplier />
+      <maxFuelCapacity />
+      <thickness />
     </Overrides>
   </Wing>
   <ControlSurface>
@@ -505,6 +537,10 @@ Define what input the InputController is trying to override. See the `inputId` t
       <thrust />
       <vacuumEfficiency />
       <fuelType />
+      <scale />
+      <version />
+      <exhaustColorInner />
+      <exhaustColorOutter />
     </Overrides>
   </Engine>
   <Inlet>
@@ -601,6 +637,8 @@ Define what input the InputController is trying to override. See the `inputId` t
       <dragScaleActive />
       <maxDrag />
       <maxDragActive />
+      <castShadows />
+      <xmlEditButton />
     </Overrides>
   </Config>
   <RocketEngine>
@@ -620,6 +658,16 @@ Define what input the InputController is trying to override. See the `inputId` t
       <price />
       <supportsWarpBurn />
       <fuelType />
+      <thrustOverride />
+      <massFlowRateOverride />
+      <wattsPerFuelFlowOverride />
+      <minThrottleOverride />
+      <throttleResponse />
+      <overexpansionDamage />
+      <hasSmoke />
+      <exhaustColor />
+      <exhaustOffset />
+      <exhaustWhiteIntensity />
     </Overrides>
   </RocketEngine>
   <CrossFeed>
@@ -655,6 +703,7 @@ Define what input the InputController is trying to override. See the `inputId` t
       <tractionSideways />
       <verticalAngleOffset />
       <extended />
+      <version />
     </Overrides>
   </LandingGear>
   <CameraVantage>
@@ -670,6 +719,8 @@ Define what input the InputController is trying to override. See the `inputId` t
       <fieldOfViewMax />
       <fieldOfViewMin />
       <variableZoom />
+      <version />
+      <scale />
     </Overrides>
   </CameraVantage>
   <BeaconLight>
@@ -680,6 +731,7 @@ Define what input the InputController is trying to override. See the `inputId` t
       <hideBase />
       <intensity />
       <powerConsumptionScale />
+      <scale />
     </Overrides>
   </BeaconLight>
   <LightPart>
@@ -691,6 +743,7 @@ Define what input the InputController is trying to override. See the `inputId` t
       <rotation />
       <spotLightAngle />
       <intensity />
+      <scale />
     </Overrides>
   </LightPart>
   <CurveInput>
@@ -714,6 +767,8 @@ Define what input the InputController is trying to override. See the `inputId` t
       <maxThreads />
       <outputToDevConsole />
       <timeSinceLaunch />
+      <powerConsumptionPerInstruction />
+      <broadcastPowerConsumptionPerByte />
     </Overrides>
   </FlightProgram>
   <EvaChair>
@@ -832,6 +887,7 @@ Define what input the InputController is trying to override. See the `inputId` t
       <mfdProgram />
       <resolution />
       <width />
+      <wattsperm2 />
     </Overrides>
   </Mfd>
   <GaugeBase>
@@ -842,4 +898,17 @@ Define what input the InputController is trying to override. See the `inputId` t
       <trimType />
     </Overrides>
   </GaugeBase>
+  <LandingLegSuspension>
+    <Overrides>
+      <damper />
+      <maxSuspensionDistance />
+      <maxSuspensionScale />
+      <minSuspensionDistance />
+      <spring />
+      <suspensionCompression />
+      <suspensionDistance />
+      <suspensionType />
+      <targetCompression />
+    </Overrides>
+  </LandingLegSuspension>
 </Sr2XmlDocManifest>

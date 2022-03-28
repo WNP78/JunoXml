@@ -6,6 +6,7 @@
 |Name|Type|Description|
 |--|--|--|
 |`extension`|`float`|The extension distance of the light (in meters).|
+|`scale`|`float`|Changes the overall size of the light.|
 |`hideBase`|`bool`|Toggles the base on/off where the light is mounted to the attached surface.|
 |`intensity`|`float`|The intensity of the light.|
 |`powerConsumptionScale`|`float`||
