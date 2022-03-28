@@ -133,6 +133,24 @@ There are many things you can put in the `input` field. It's rather quite exciti
 |`FlightData.WeightedThrottleResponse`|`float`|
 |`FlightData.WeightedThrottleResponseTime`|`float`|
 
+|Orbit Data|Type|
+|---|---|
+|`OrbitData.ApoapsisAltitude`|`double`|
+|`OrbitData.ApoapsisTime`|`double`|
+|`OrbitData.BurnNodeDeltaV`|`vector`|
+|`OrbitData.Eccentricity`|`double`|
+|`OrbitData.Inclination`|`double`|
+|`OrbitData.PeriapsisAltitude`|`double`|
+|`OrbitData.PeriapsisTime`|`double`|
+|`OrbitData.Period`|`double`|
+|`OrbitData.MeanAnomaly`|`double`|
+|`OrbitData.MeanMotion`|`double`|
+|`OrbitData.PeriapsisArgument`|`double`|
+|`OrbitData.RightAscension`|`double`|
+|`OrbitData.TrueAnomaly`|`double`|
+|`OrbitData.SemiMajorAxis`|`double`|
+|`OrbitData.SemiMinorAxis`|`double`|
+
 
 You can also access activation group states with `AG1` to `AG10`. If you want to, you can just put a constant value in there. Like `0.5`, `-1`, or even `.3`. This will just remain constant. Additionally you can reference `pi`, `e`, `true` or `false` to get their respective values.
 
