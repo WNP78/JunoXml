@@ -48,8 +48,9 @@ There are many things you can put in the `input` field. It's rather quite exciti
 
 {{INPUTS}}
 
-You can also access activation group states with `AG1` to `AG10`.
-If you want to, you can just put a constant value in there. Like `0.5`, `-1`, or even `.3`. This will just remain constant. Additionally you can reference `pi`, `e`, `true` or `false` to get their respective values.
+You can also access activation group states with `AG1` to `AG10`. If you want to, you can just put a constant value in there. Like `0.5`, `-1`, or even `.3`. This will just remain constant. Additionally you can reference `pi`, `e`, `true` or `false` to get their respective values.
+
+When working with Funk in Vizzy you can reference variables from the program just by typing their name, having to add `v:` if they are a vector, and although Funk doesn't have any string operators, if you want it to output strings you have to enclose them with "".
 
 And you can even use some operators and functions:
 
@@ -109,6 +110,7 @@ And you can even use some operators and functions:
 |`signedAngle(Vector from, Vector to, Vector axis)`|The signed angle in degrees between two vectors rotated around an axis |
 |`slerp(Vector from, Vector to, Number t)`|A smooth interpolation between two vectors by the amount t |
 |`sqrMagnitude(Vector vector)`|The square root of the length of the vector |
+|`vec(x,y,z)`|Constructs a vector from three scalars |    
 |`x(Vector)`|The X component of the vector |
 |`y(Vector)`|The Y component of the vector |
 |`z(Vector)`|The Z component of the vector |
