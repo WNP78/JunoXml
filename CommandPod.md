@@ -19,6 +19,9 @@
 |`activationGroupNames`|`List`1`||
 |`activationGroupStates`|`List`1`||
 |`autoRecalculateStages`|`bool`||
+|`configurableContents`|`bool`||
+|`configureBattery`|`float`|Define the percentage of the available volume to use for batteries.|
+|`configureGyros`|`float`|Define the percentage of the available volume to use for gyroscopes.|
 |`craftConfigAutoAssign`|`bool`||
 |`craftConfigType`|`CrafConfigurationType`|Changes the configuration of a craft. The configuration is used to drive various functions such as pilot orientation, rotation when certain parts are pulled out, and some default settings for parts.|
 |`currentStage`|`int`||
@@ -26,6 +29,7 @@
 |`pidPitch`|`Vector3`||
 |`pidRoll`|`Vector3`||
 |`pilotSeatRotation`|`Vector3`||
+|`powerConsumption`|`float`||
 |`primaryButton`|`bool`|Assigns this as the primary command pod for the craft. The primary command pod will control all parts in the craft, except for those added from a previously made subassembly that included its own command pod. Note: The primary command pod cannot be deleted.|
 |`reorientCraftOnConfigChange`|`bool`|If enabled, the craft in the designer will rotate when the configuration type changes (Plane/Rocket).  You would want to disable this if a craft is already oriented correctly but it needs to have its configuration type changed.  This option does not impact operation during flight.|
 |`replicateActivationGroups`|`ActivationGroupReplicationMode`|Determines how this command pod will replicate activation groups from the active command pod when this pod isn't active.|
@@ -33,6 +37,5 @@
 |`replicateStageActivations`|`bool`|Determines whether this command pod will replicate stage activations from the active pod when this command pod isn't active.|
 |`stageCalculationVersion`|`int`||
 |`useDefaultPilotSeatRotation`|`bool`||
-|`powerConsumption`|`float`||
 
 

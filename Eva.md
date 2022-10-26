@@ -5,13 +5,16 @@
 
 |Name|Type|Description|
 |--|--|--|
+|`crewButton`|`bool`|Manage crew assignment.|
+|`crewId`|`int`||
 |`crewName`|`string`||
 |`grapplingHookEnabled`|`bool`||
+|`jetpackAvailable`|`bool`||
 |`jetpackEnabled`|`bool`||
 |`jetpackPowerScalar`|`float`||
 |`jumpPowerScalar`|`float`||
 |`primaryButton`|`bool`|Assigns this crew member to be the primary control point for the craft.  Note: The primary command pod cannot be deleted.|
-|`randomizeName`|`bool`|Generate new name.|
+|`requiresCrewMember`|`bool`||
 |`separator`|`string`||
 
 

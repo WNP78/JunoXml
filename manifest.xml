@@ -215,6 +215,9 @@ Define what input the InputController is trying to override. See the `inputId` t
       <openSpeed />
       <startOpen />
       <soundVolume />
+      <hasBase />
+      <hingeStyle />
+      <secondaryDoorAngle />
     </Overrides>
   </CargoBay>
   <CommandPod>
@@ -249,6 +252,9 @@ Define what input the InputController is trying to override. See the `inputId` t
       <useDefaultPilotSeatRotation />
       <stageCalculationVersion />
       <powerConsumption />
+      <configurableContents />
+      <configureBattery />
+      <configureGyros />
     </Overrides>
   </CommandPod>
   <Detacher>
@@ -321,6 +327,8 @@ Define what input the InputController is trying to override. See the `inputId` t
       <power />
       <powerScale />
       <mass />
+      <spoolupRatio />
+      <utilization />
     </Overrides>
   </Gyroscope>
   <InputBasedActivator>
@@ -401,6 +409,11 @@ Define what input the InputController is trying to override. See the `inputId` t
       <inflationDensity />
       <maxDeploymentSpeed />
       <referenceDensity />
+      <aslBased />
+      <autocutASL />
+      <deploymentASL />
+      <inflationASL />
+      <snapThresholdMultiplier />
     </Overrides>
   </Parachute>
   <Piston>
@@ -488,6 +501,7 @@ Define what input the InputController is trying to override. See the `inputId` t
       <controlSurfacePriceMultiplier />
       <maxFuelCapacity />
       <thickness />
+      <wingStrengthOverride />
     </Overrides>
   </Wing>
   <ControlSurface>
@@ -515,6 +529,10 @@ Define what input the InputController is trying to override. See the `inputId` t
       <scale />
       <sideOpenPercentage />
       <startOpen />
+      <folds />
+      <hideBase />
+      <length />
+      <rotateSpeed />
     </Overrides>
   </SolarPanelArray>
   <SolarPanel>
@@ -591,6 +609,11 @@ Define what input the InputController is trying to override. See the `inputId` t
       <flattenNormals />
       <supportsXZOffset />
       <meshMassMultiplier />
+      <clampDistances />
+      <deadWeightPercentage />
+      <deformations />
+      <depthCurve />
+      <meshPriceMultiplier />
     </Overrides>
   </Fuselage>
   <Config>
@@ -639,6 +662,15 @@ Define what input the InputController is trying to override. See the `inputId` t
       <maxDragActive />
       <castShadows />
       <xmlEditButton />
+      <contractId />
+      <explosiveness />
+      <heatShieldBaseScale />
+      <heatShieldMass />
+      <heatShieldScale />
+      <partSelectionEnabled />
+      <payloadId />
+      <payloadTrackingId />
+      <priceScale />
     </Overrides>
   </Config>
   <RocketEngine>
@@ -668,6 +700,12 @@ Define what input the InputController is trying to override. See the `inputId` t
       <exhaustColor />
       <exhaustOffset />
       <exhaustWhiteIntensity />
+      <engineSoundOverride />
+      <heatTransferOverride />
+      <directDamage />
+      <smokeSpeedOverride />
+      <smokeColor />
+      <fuelGrain />
     </Overrides>
   </RocketEngine>
   <CrossFeed>
@@ -721,6 +759,9 @@ Define what input the InputController is trying to override. See the `inputId` t
       <variableZoom />
       <version />
       <scale />
+      <hideBase />
+      <isNight />
+      <nightVisionColor />
     </Overrides>
   </CameraVantage>
   <BeaconLight>
@@ -782,6 +823,9 @@ Define what input the InputController is trying to override. See the `inputId` t
       <crewExitPosition />
       <crewExitRotation />
       <visibleInCompartment />
+      <maxPressure />
+      <minPressure />
+      <volumePerIndividual />
     </Overrides>
   </CrewCompartment>
   <Eva>
@@ -794,6 +838,10 @@ Define what input the InputController is trying to override. See the `inputId` t
       <primaryButton />
       <randomizeName />
       <separator />
+      <crewButton />
+      <crewId />
+      <jetpackAvailable />
+      <requiresCrewMember />
     </Overrides>
   </Eva>
   <Cockpit>
@@ -862,6 +910,7 @@ Define what input the InputController is trying to override. See the `inputId` t
       <radiusPercent />
       <radiusTop />
       <unscaledCenterOfMass />
+      <heightStretch />
     </Overrides>
   </ScalablePod>
   <SubPartRotator>
@@ -877,6 +926,9 @@ Define what input the InputController is trying to override. See the `inputId` t
       <startEnabledLabel />
       <subPartPath />
       <syncActivationGroup />
+      <angleLerp />
+      <positionOffset />
+      <selfGoverned />
     </Overrides>
   </SubPartRotator>
   <Mfd>
@@ -911,4 +963,26 @@ Define what input the InputController is trying to override. See the `inputId` t
       <targetCompression />
     </Overrides>
   </LandingLegSuspension>
+  <Generator>
+    <Overrides>
+      <baseFuelFlow />
+      <baseMass />
+      <consumptionOverride />
+      <costPerWatt />
+      <efficiency />
+      <fuelConsumptionScale />
+      <fuelSourceAttachPoint />
+      <fuelType />
+      <generationOverride />
+      <hideBase />
+      <scale />
+      <stretch />
+      <soundVolume />
+    </Overrides>
+  </Generator>
+  <Package>
+    <Overrides>
+      <mass />
+    </Overrides>
+  </Package>
 </Sr2XmlDocManifest>

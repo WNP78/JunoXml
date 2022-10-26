@@ -9,6 +9,7 @@
 |`autoActivateIfNoStageOrActivationGroup`|`bool`||
 |`buoyancyBaseScale`|`float`||
 |`buoyancyUserScale`|`float`|Changes how buoyant the part is in water.|
+|`castShadows`|`bool`|Define if the part group should cast shadows on other parts and the terrain while in flight.|
 |`centerOfMass`|`Vector3`||
 |`changeCommandPod`|`bool`|Change the command pod that controls this part.|
 |`collisionDisconnectImpulse`|`float`||
@@ -17,11 +18,16 @@
 |`collisionExplodeVelocity`|`float`||
 |`collisionPreventExternalDisconnections`|`bool`||
 |`collisionVelocityMode`|`PartCollisionVelocityMode`||
+|`contractId`|`string`|Normally Auto is fine, but if you are attempting to complete multiple contracts at the same time with the same type of payload, then it might be necessary to manually link specific contracts with specific payloads.|
 |`descriptionLabel`|`string`||
 |`dragScale`|`float`|Changes this part's contribution to the craft's overall drag force.|
 |`dragScaleActive`|`float`||
+|`explosiveness`|`float`|Changes how much explosiveness this part has.|
 |`fuelLine`|`bool`|Allow connected engines to search this part and its connected parts for fuel tanks.|
-|`heatShield`|`float`|Heat shield that prevents heat damage until it depletes.|
+|`heatShield`|`float`||
+|`heatShieldBaseScale`|`float`||
+|`heatShieldMass`|`float`||
+|`heatShieldScale`|`float`|A heat shield layer that prevents heat damage until it gets depleted.|
 |`includeInDrag`|`bool`|Determines whether or not to include this part in the drag model.|
 |`inertiaTensorBaseScale`|`float`||
 |`inertiaTensorMin`|`float`||
@@ -37,10 +43,13 @@
 |`partIdLabel`|`string`||
 |`partScale`|`Vector3`||
 |`partScaleMagnitude`|`float`|Changes the size of the part. This can cause odd behavior, so for parts that have a dedicated size setting or tool we recommend you use that instead of this.|
+|`partSelectionEnabled`|`bool`||
+|`payloadId`|`string`||
+|`payloadTrackingId`|`string`||
 |`preventDebris`|`bool`|Prevent this part (and connected parts) from being automatically removed when separated from the player's craft.|
+|`priceScale`|`float`|Handy way to adjust the cost of this part to fit your budget.|
 |`raiseWaterEventsEvenIfNotBuoyant`|`bool`||
 |`renderQueue`|`PartMeshRenderQueue`|The render queue for the part. Rendering before the depth mask will allow some parts to be visible inside of cockpits where they might not otherwise be visible. Transparent objects may not display correctly.|
-|`castShadows`|`bool`|Define if the part group should cast shadows on other parts and the terrain while in flight.|
 |`showHiddenPartProperties`|`bool`||
 |`stageActivationType`|`StageActivationType`|Changes the current stage activation type of the part.|
 |`supportsActivation`|`bool`||

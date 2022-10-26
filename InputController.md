@@ -109,6 +109,7 @@ There are many things you can put in the `input` field. It's rather quite exciti
 |`FlightData.GravityMagnitude`|`float`|
 |`FlightData.Grounded`|`bool`|
 |`FlightData.Heading`|`double`|
+|`FlightData.InWater`|`bool`|
 |`FlightData.LateralSurfaceVelocity`|`double`|
 |`FlightData.MachNumber`|`float`|
 |`FlightData.MaxActiveEngineThrust`|`float`|

@@ -8,7 +8,7 @@ If you find, or think you have found, any inaccuracies or omissions, do not be a
 To those interested in contributing, all changes should be made to `manifest.xml`, and then the site can be re-generated with [this](https://github.com/WNP78/ModifierPropertiesExtractor) program. If you can't run this, just submit a PR with your modifications to manifest.xml and I can merge it and re-build the site.
 If you would like to contact me, I am WNP78#2849 on discord or WNP78 on [simplerockets.com](https://www.simplerockets.com/u/WNP78). Details on how the `manfiest.xml` file is laid out are [here](ManifestXmlGuide).
 
-Game Version: `0.9.905.1`
+Game Version: `0.9.923.0`
 
 Contents:
  - [BeaconLight](/Sr2Xml/BeaconLight)
@@ -35,6 +35,7 @@ Contents:
  - [Fuselage](/Sr2Xml/Fuselage)
  - [Gauge](/Sr2Xml/Gauge)
  - [GaugeBase](/Sr2Xml/GaugeBase)
+ - [Generator](/Sr2Xml/Generator)
  - [Gyroscope](/Sr2Xml/Gyroscope)
  - [Inlet](/Sr2Xml/Inlet)
  - [InputBasedActivator](/Sr2Xml/InputBasedActivator)
@@ -50,6 +51,7 @@ Contents:
  - [Light](/Sr2Xml/Light)
  - [LightPart](/Sr2Xml/LightPart)
  - [Mfd](/Sr2Xml/Mfd)
+ - [Package](/Sr2Xml/Package)
  - [Parachute](/Sr2Xml/Parachute)
  - [Piston](/Sr2Xml/Piston)
  - [ReactionControlNozzle](/Sr2Xml/ReactionControlNozzle)

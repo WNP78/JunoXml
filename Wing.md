@@ -23,6 +23,7 @@
 |`tipPosition`|`Vector3`||
 |`tipTrailingOffset`|`float`||
 |`thickness`|`float`||
+|`wingStrengthOverride`|`float`||
 |`wingPhysicsEnabled`|`bool`||
 
 
