@@ -1,11 +1,10 @@
-[Home](https://wnp78.github.io/Sr2Xml/)
+[Home](https://wnp78.github.io/JunoXml/)
 
 # LandingGear
 
 
 |Name|Type|Description|
 |--|--|--|
-|`version`|`int`||
 |`bayLength`|`float`|Changes the length of the landing gear bay|
 |`brakeTorque`|`float`|Changes the torque applied to the wheel when brake is applied.|
 |`damperScale`|`float`|Higher damper settings can help to reduce oscillation. Lower damper settings allow more oscillation.|
@@ -26,7 +25,7 @@
 |`startExtended`|`bool`|Determines whether the gear should start out extended, or retracted.|
 |`supportArmEnabled`|`bool`|Enables/disables the support arm for the landing gear.|
 |`suspensionTravel`|`float`|Changes the length (meters) of available suspension travel.|
-|`torque`|`float`|Changes the power of the wheel, which impacts electricity usage.|
+|`torque`|`float`|Changes the power of the wheel, which impacts electricity usage. The value shown is already scaled by the Gear Ratio.|
 |`tractionForward`|`float`|Changes the forward grip of the wheel.|
 |`tractionSideways`|`float`|Changes the sideways grip of the wheel.|
 |`verticalAngleOffset`|`float`|Changes the vertical angle of the wheel.|

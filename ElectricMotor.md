@@ -1,4 +1,4 @@
-[Home](https://wnp78.github.io/Sr2Xml/)
+[Home](https://wnp78.github.io/JunoXml/)
 
 # ElectricMotor
 
@@ -6,7 +6,6 @@
 |Name|Type|Description|
 |--|--|--|
 |`attachPointIndex`|`int`||
-|`version`|`int`||
 |`brakeTorque`|`float`|Changes the torque that the brake applies.|
 |`powerUsagePerTorque`|`float`||
 |`rpm`|`float`|Changes the target rotations per minute (RPM).|

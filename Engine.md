@@ -1,4 +1,4 @@
-[Home](https://wnp78.github.io/Sr2Xml/)
+[Home](https://wnp78.github.io/JunoXml/)
 
 # Engine
 
@@ -9,7 +9,6 @@
 |`fuelConsumption`|`float`||
 |`fuelConsumptionScale`|`float`|Allows increasing the maximum thrust of the engine at the cost of higher fuel consumption.|
 |`scale`|`float`|Defines the scale of the engine.|
-|`version`|`int`||
 |`fuelType`|`string`||
 |`gimbalRange`|`float`|The maximum allowable range that the engine can rotate to assist in controlling the craft's attitude. Setting to zero will disable gimbaling.|
 |`maxGimbalAngle`|`float`||

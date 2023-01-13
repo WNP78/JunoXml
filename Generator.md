@@ -1,4 +1,4 @@
-[Home](https://wnp78.github.io/Sr2Xml/)
+[Home](https://wnp78.github.io/JunoXml/)
 
 # Generator
 
@@ -7,6 +7,7 @@
 |--|--|--|
 |`baseFuelFlow`|`float`||
 |`baseMass`|`float`||
+|`baseScale`|`float`||
 |`consumptionOverride`|`float`||
 |`costPerWatt`|`float`||
 |`efficiency`|`float`||

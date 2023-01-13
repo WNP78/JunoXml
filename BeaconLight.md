@@ -1,4 +1,4 @@
-[Home](https://wnp78.github.io/Sr2Xml/)
+[Home](https://wnp78.github.io/JunoXml/)
 
 # BeaconLight
 
@@ -9,7 +9,7 @@
 |`blinkOffset`|`float`|The initial time offset value used when evaluating the current blink state of the light.|
 |`blinkStyle`|`BlinkStyleType`|The blinking style of the light.|
 |`hideBase`|`bool`|Toggles the base on/off where the light is mounted to the attached surface.|
-|`intensity`|`float`|The intensity of the light.|
+|`intensity`|`float`||
 |`powerConsumptionScale`|`float`||
 |`scale`|`float`|Changes the overall size of the beacon.|
 

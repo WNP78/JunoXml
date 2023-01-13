@@ -1,4 +1,4 @@
-[Home](https://wnp78.github.io/Sr2Xml/)
+[Home](https://wnp78.github.io/JunoXml/)
 
 # ScalablePod
 
@@ -15,6 +15,7 @@
 |`radiusBottom`|`float`||
 |`radiusPercent`|`float`|The radius of the pod base.|
 |`radiusTop`|`float`||
+|`requiredAreaPerAstronaut`|`float`||
 |`unscaledCenterOfMass`|`Vector3`||
 
 

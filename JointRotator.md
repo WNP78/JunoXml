@@ -1,11 +1,10 @@
-[Home](https://wnp78.github.io/Sr2Xml/)
+[Home](https://wnp78.github.io/JunoXml/)
 
 # JointRotator
 
 
 |Name|Type|Description|
 |--|--|--|
-|`version`|`int`||
 |`allowFreeSpin`|`bool`||
 |`angle`|`float`||
 |`attachPointIndex`|`int`||

@@ -1,4 +1,4 @@
-[Home](https://wnp78.github.io/Sr2Xml/)
+[Home](https://wnp78.github.io/JunoXml/)
 
 # Detacher
 
@@ -10,6 +10,5 @@
 |`scale`|`float`|Defines the scale of the detacher.|
 |`attachPointIndex`|`int`||
 |`targetAttachPoints`|`string`||
-|`version`|`int`||
 
 

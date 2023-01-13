@@ -1,4 +1,4 @@
-[Home](https://wnp78.github.io/Sr2Xml/)
+[Home](https://wnp78.github.io/JunoXml/)
 
 # Gyroscope
 
@@ -7,6 +7,7 @@
 |--|--|--|
 |`electricalConsumption`|`float`||
 |`mass`|`float`||
+|`maxAcceleration`|`float`||
 |`power`|`float`||
 |`powerScale`|`float`|Increase the power of the gyroscope at the cost of higher electricity usage.|
 |`spoolupRatio`|`float`||

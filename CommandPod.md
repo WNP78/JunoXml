@@ -1,4 +1,4 @@
-[Home](https://wnp78.github.io/Sr2Xml/)
+[Home](https://wnp78.github.io/JunoXml/)
 
 # CommandPod
 
@@ -25,7 +25,6 @@
 |`craftConfigAutoAssign`|`bool`||
 |`craftConfigType`|`CrafConfigurationType`|Changes the configuration of a craft. The configuration is used to drive various functions such as pilot orientation, rotation when certain parts are pulled out, and some default settings for parts.|
 |`currentStage`|`int`||
-|`editActivationGroups`|`bool`|Edit the names of your activation groups to help keep them organized.|
 |`pidPitch`|`Vector3`||
 |`pidRoll`|`Vector3`||
 |`pilotSeatRotation`|`Vector3`||

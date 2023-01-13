@@ -1,4 +1,4 @@
-[Home](https://wnp78.github.io/Sr2Xml/)
+[Home](https://wnp78.github.io/JunoXml/)
 
 # LandingLeg
 
@@ -12,6 +12,8 @@
 |`deployedExtensionY`|`float`||
 |`deploySpeed`|`float`|Changes the speed at which the leg will deploy.|
 |`extensionPercentage`|`float`||
+|`footPivot`|`float`|Changes the rotation of the foot.|
+|`footPivotAvailable`|`bool`||
 |`landingLegType`|`int`||
 |`massHeight`|`float`||
 |`massRadius`|`float`||

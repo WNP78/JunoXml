@@ -2,10 +2,9 @@
 <Sr2XmlDocManifest>
   <README>
     <Head>
-# SR2 XML Guide
-This guide is under construction. Patience.
+# Juno: New Origins XML Reference
 
-The big difference between SP and SR2 modding is that you can add new modifiers to things as you like. For instance, a landing leg might not have an `InputBasedActivator` on it by default, but you can just add one.
+The big difference between SP and JNO XML modding is that you can add new modifiers to things as you like. For instance, a landing leg might not have an `InputBasedActivator` on it by default, but you can just add one.
 
 If you find, or think you have found, any inaccuracies or omissions, do not be afraid to ask, or submit a PR.
 
@@ -268,7 +267,10 @@ Define what input the InputController is trying to override. See the `inputId` t
     </Overrides>
   </Detacher>
   <DockingPort>
-    <Overrides />
+    <Overrides>
+      <magnetForce />
+      <scale />
+    </Overrides>
   </DockingPort>
   <ElectricMotor>
     <Overrides>
@@ -329,6 +331,7 @@ Define what input the InputController is trying to override. See the `inputId` t
       <mass />
       <spoolupRatio />
       <utilization />
+      <maxAcceleration />
     </Overrides>
   </Gyroscope>
   <InputBasedActivator>
@@ -376,6 +379,8 @@ Define what input the InputController is trying to override. See the `inputId` t
       <massHeight />
       <massRadius />
       <soundVolume />
+      <footPivot />
+      <footPivotAvailable />
     </Overrides>
   </LandingLeg>
   <Light>
@@ -463,6 +468,7 @@ Define what input the InputController is trying to override. See the `inputId` t
       <turningRate />
       <width />
       <version />
+      <directionReverse />
     </Overrides>
   </ResizableWheel>
   <Suspension>
@@ -502,6 +508,7 @@ Define what input the InputController is trying to override. See the `inputId` t
       <maxFuelCapacity />
       <thickness />
       <wingStrengthOverride />
+      <allowAirfoilSelection />
     </Overrides>
   </Wing>
   <ControlSurface>
@@ -581,6 +588,7 @@ Define what input the InputController is trying to override. See the `inputId` t
       <propulsionLabButton />
       <mass />
       <price />
+      <hasReverseThrust />
     </Overrides>
   </JetEngine>
   <Fuselage>
@@ -671,6 +679,10 @@ Define what input the InputController is trying to override. See the `inputId` t
       <payloadId />
       <payloadTrackingId />
       <priceScale />
+      <heatShieldValidation />
+      <ignoreValidation />
+      <initialCraftNodeId />
+      <tutorialId />
     </Overrides>
   </Config>
   <RocketEngine>
@@ -762,6 +774,7 @@ Define what input the InputController is trying to override. See the `inputId` t
       <hideBase />
       <isNight />
       <nightVisionColor />
+      <cameraRotationOffset />
     </Overrides>
   </CameraVantage>
   <BeaconLight>
@@ -911,6 +924,7 @@ Define what input the InputController is trying to override. See the `inputId` t
       <radiusTop />
       <unscaledCenterOfMass />
       <heightStretch />
+      <requiredAreaPerAstronaut />
     </Overrides>
   </ScalablePod>
   <SubPartRotator>
@@ -978,6 +992,7 @@ Define what input the InputController is trying to override. See the `inputId` t
       <scale />
       <stretch />
       <soundVolume />
+      <baseScale />
     </Overrides>
   </Generator>
   <Package>
@@ -985,4 +1000,13 @@ Define what input the InputController is trying to override. See the `inputId` t
       <mass />
     </Overrides>
   </Package>
+  <Payload>
+    <Overrides>
+      <contractId />
+      <payloadId />
+      <payloadTrackingId />
+      <contractNumber />
+      <contractNumberString />
+    </Overrides>
+  </Payload>
 </Sr2XmlDocManifest>

@@ -1,4 +1,4 @@
-[Home](https://wnp78.github.io/Sr2Xml/)
+[Home](https://wnp78.github.io/JunoXml/)
 
 # RocketEngine
 
@@ -31,8 +31,7 @@
 |`nozzleThroatSize`|`float`|Increasing the throat size can increase thrust, but will decrease the Nozzle Ratio, which decreases efficiency in a vacuum.|
 |`nozzleTypeId`|`string`|The nozzle style.|
 |`fuelGrain`|`string`|The fuel grain of the solid propellant, defining its thrust curve.|
-|`price`|`int`||
-|`propulsionLabButton`|`bool`|Opens the Performance Analyzer to analyze the performance of this engine.|
+|`price`|`Int64`||
 |`size`|`float`|Changes the overall size of the engine. Increasing size can increase thrust, but it also increases mass and price.|
 |`supportsWarpBurn`|`bool`||
 
