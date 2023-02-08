@@ -94,6 +94,7 @@ There are many things you can put in the `input` field. It's rather quite exciti
 |`FlightData.AltitudeAboveSeaLevel`|`double`|
 |`FlightData.AltitudeAboveTerrain`|`double`|
 |`FlightData.AngleOfAttack`|`double`|
+|`FlightData.AngularVelocity`|`vector`|
 |`FlightData.AngularVelocityMagnitude`|`double`|
 |`FlightData.BankAngle`|`double`|
 |`FlightData.CraftForward`|`vector`|
@@ -103,6 +104,8 @@ There are many things you can put in the `input` field. It's rather quite exciti
 |`FlightData.CurrentEngineThrustUnscaled`|`float`|
 |`FlightData.CurrentMass`|`float`|
 |`FlightData.CurrentMassUnscaled`|`float`|
+|`FlightData.DeltaVStage`|`double`|
+|`FlightData.DragAccelerationMagnitude`|`float`|
 |`FlightData.East`|`vector`|
 |`FlightData.FuelMass`|`float`|
 |`FlightData.Gravity`|`vector`|
@@ -128,6 +131,8 @@ There are many things you can put in the `input` field. It's rather quite exciti
 |`FlightData.SupportsWarpBurn`|`bool`|
 |`FlightData.SurfaceVelocity`|`vector`|
 |`FlightData.SurfaceVelocityMagnitude`|`double`|
+|`FlightData.TimeDelta`|`double`|
+|`FlightData.TimeMultiplier`|`double`|
 |`FlightData.Velocity`|`vector`|
 |`FlightData.VelocityMagnitude`|`double`|
 |`FlightData.VerticalSurfaceVelocity`|`double`|
@@ -162,7 +167,7 @@ And you can even use some operators and functions:
 |Operators and Functions|
 |---|
 |`Mathematical`|`+`, `-`, `*` and `/` |
-|`Comparison`|`<`, `>`, `<=`, `>=`, `==`, `!=` |
+|`Comparison`|`<`, `>`, `<=`, `>=`, `=`, `!=` |
 |`Boolean`|`&`, `|`, `!`, Ternary operator: `(condition ? value_if_true : value_if_false)` |
 |`abs(x)`|The absolute (positive) value of x. |
 |`ceil(x)`|x rounded up to an integer. |
@@ -186,16 +191,16 @@ And you can even use some operators and functions:
 |`sign(x)`|The sign of x (1 if x positive, -1 if x negative) |
 |`smoothstep(a, b, t)`|Similar to lerp, but with smoothing at the ends. |
 |`sqrt(x)`|The square root of x. |
-|`sin(x)`|The sine of x (degrees) |
-|`cos(x)`|The cosine of x (degrees) |
-|`tan(x)`|The tangent of x (degrees) |
-|`asin(x)`|The arc-sine of x (degrees) |
-|`acos(x)`|The arc-cosine of x (degrees) |
-|`atan(x)`|The arc-tangent of x (degrees) |
+|`sin(x)`|The sine of x (radians) |
+|`cos(x)`|The cosine of x (radians) |
+|`tan(x)`|The tangent of x (radians) |
+|`asin(x)`|The arc-sine of x (radians) |
+|`acos(x)`|The arc-cosine of x (radians) |
+|`atan(x)`|The arc-tangent of x (radians) |
 
 |Vector Operators and Functions|
 |---|
-|`angle(Vector from, Vector to)`|The difference in angle between two vectors (degrees) |
+|`angle(Vector from, Vector to)`|The difference in angle between two vectors (radians) |
 |`clampMagnitude(Vector vector, Number maxLength)`|A vector pointing in the same direction but with the indicated magnitude |
 |`cross(Vector lhs, Vector rhs)`|The cross product of two vectors |
 |`distance(Vector a, Vector b)`|The distance between the positions pointed at by two vectors |
@@ -212,7 +217,7 @@ And you can even use some operators and functions:
 |`projectOnPlane(Vector vector, Vector planeNormal)`|The projection of a vector onto a plane defined by its normal, similar to exclude |
 |`reflect(Vector inDirection, Vector inNormal)`|A mirrored vector of inDirection relative to inNormal |
 |`scale(Vector a, Vector b)`|The component-wise multiplication of a and b |
-|`signedAngle(Vector from, Vector to, Vector axis)`|The signed angle in degrees between two vectors rotated around an axis |
+|`signedAngle(Vector from, Vector to, Vector axis)`|The signed angle in radians between two vectors rotated around an axis |
 |`slerp(Vector from, Vector to, Number t)`|A smooth interpolation between two vectors by the amount t |
 |`sqrMagnitude(Vector vector)`|The square root of the length of the vector |
 |`vec(x,y,z)`|Constructs a vector from three scalars |    
@@ -220,26 +225,29 @@ And you can even use some operators and functions:
 |`y(Vector)`|The Y component of the vector |
 |`z(Vector)`|The Z component of the vector |
 
-How awesome! Then it gets even more complex. You can get parameters from different parts in the crafts using the following format:
+How awesome! Then it gets even more complex. You can get parameters from different parts in the crafts using the following format (note that the elements surrounded by {} are optional):
 
-	`[PartSelector].ModifierSelector[.Data][.PropertySelector]`
+	`{PartSelector}.ModifierSelector{.Data}.PropertySelector`
 
-	`[PartSelector]`
-	 - May be omitted to select the current part (must start with '.')
+	`{PartSelector}`
+	 - May be omitted to select the current part
 	 - May be '*' for legacy style of searching entire craft for a modifier id (specified by modifier selector)
-	 - Matches part based on exact part name. If the part belongs to a group, the connected group parts will be searched first.
+	 - May be '$' followed by an integer to reference a part by its part id
+	 - Matches part based on exact part name. Names can't start by a number or include spaces
+	    - In order to support spaces brackets must be added encasing the entire string, from '[PartSelector' to 'PropertySelector]'
+	 - If the part belongs to a group, the connected group parts will be evaluated first
 
 	`.ModifierSelector`
 	 - Required
 	 - First tries to match a modifier based on the modifier's 'id' property.
 	 - If no match is found, it tries to match based on the modifier's type id (InputController, Piston, Gyroscope, etc)
 
-	`[.Data]`
+	`{.Data}`
 	 - If specified, it will match the part modifier data object
 	 - If omitted, it will match the part modifier's script
 
-	`[.PropertySelector]`
-	 - Required (unless the target modifier implements the IInputControllerInput interface)
-	 - Matches the name of a public float/double/bool property on the target object.
+	`.PropertySelector`
+	 - Required
+	 - Matches the name of a public float/double/bool/Vector3d property on the target object.
 
 The properties you can choose are all listed in [this page](PartModifierScriptProperties).
