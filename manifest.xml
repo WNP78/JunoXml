@@ -56,7 +56,7 @@ And you can even use some operators and functions:
 |Operators and Functions|
 |---|
 |`Mathematical`|`+`, `-`, `*` and `/` |
-|`Comparison`|`&lt;`, `&gt;`, `&lt;=`, `&gt;=`, `==`, `!=` |
+|`Comparison`|`&lt;`, `&gt;`, `&lt;=`, `&gt;=`, `=`, `!=` |
 |`Boolean`|`&amp;`, `|`, `!`, Ternary operator: `(condition ? value_if_true : value_if_false)` |
 |`abs(x)`|The absolute (positive) value of x. |
 |`ceil(x)`|x rounded up to an integer. |
@@ -80,16 +80,16 @@ And you can even use some operators and functions:
 |`sign(x)`|The sign of x (1 if x positive, -1 if x negative) |
 |`smoothstep(a, b, t)`|Similar to lerp, but with smoothing at the ends. |
 |`sqrt(x)`|The square root of x. |
-|`sin(x)`|The sine of x (degrees) |
-|`cos(x)`|The cosine of x (degrees) |
-|`tan(x)`|The tangent of x (degrees) |
-|`asin(x)`|The arc-sine of x (degrees) |
-|`acos(x)`|The arc-cosine of x (degrees) |
-|`atan(x)`|The arc-tangent of x (degrees) |
+|`sin(x)`|The sine of x (radians) |
+|`cos(x)`|The cosine of x (radians) |
+|`tan(x)`|The tangent of x (radians) |
+|`asin(x)`|The arc-sine of x (radians) |
+|`acos(x)`|The arc-cosine of x (radians) |
+|`atan(x)`|The arc-tangent of x (radians) |
 
 |Vector Operators and Functions|
 |---|
-|`angle(Vector from, Vector to)`|The difference in angle between two vectors (degrees) |
+|`angle(Vector from, Vector to)`|The difference in angle between two vectors (radians) |
 |`clampMagnitude(Vector vector, Number maxLength)`|A vector pointing in the same direction but with the indicated magnitude |
 |`cross(Vector lhs, Vector rhs)`|The cross product of two vectors |
 |`distance(Vector a, Vector b)`|The distance between the positions pointed at by two vectors |
@@ -106,7 +106,7 @@ And you can even use some operators and functions:
 |`projectOnPlane(Vector vector, Vector planeNormal)`|The projection of a vector onto a plane defined by its normal, similar to exclude |
 |`reflect(Vector inDirection, Vector inNormal)`|A mirrored vector of inDirection relative to inNormal |
 |`scale(Vector a, Vector b)`|The component-wise multiplication of a and b |
-|`signedAngle(Vector from, Vector to, Vector axis)`|The signed angle in degrees between two vectors rotated around an axis |
+|`signedAngle(Vector from, Vector to, Vector axis)`|The signed angle in radians between two vectors rotated around an axis |
 |`slerp(Vector from, Vector to, Number t)`|A smooth interpolation between two vectors by the amount t |
 |`sqrMagnitude(Vector vector)`|The square root of the length of the vector |
 |`vec(x,y,z)`|Constructs a vector from three scalars |    
