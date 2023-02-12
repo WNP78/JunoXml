@@ -43,7 +43,7 @@ An `InputController` takes an input value, chosen by it's `input` property, then
 |`LerpNegativeAxis`|The output value will be linearly interpolated between the min and max values assuming an input axis of -1 to 0.|
 
 ## Input Axes
-There are many things you can put in the `input` field. It's rather quite exciting. For a start, you can access anything in this list.
+There are many things you can put in the `input` field. It's rather quite exciting. For a start, you can access anything in this list. Note that you can also use `FD` as a shorthand for `FlightData` and `OD` as a shorthand for `OrbitData`.
 
 {{INPUTS}}
 
@@ -139,7 +139,7 @@ How awesome! Then it gets even more complex. You can get parameters from differe
 	 - Required
 	 - Matches the name of a public float/double/bool/Vector3d property on the target object.
 
-The properties you can choose are all listed in [this page](PartModifierScriptProperties).
+An example of the usefulness of this technique is the retrieval of Variables from Vizzy programs by using `FlightProgram` (or `VZ` for short) for the Modifier Selector, followed by the name of the variable. If the variable is a vector the prefix `v:` will be required. All parts have very useful properties you can access, they are all listed in [this page](PartModifierScriptProperties).
         </Footer>
     <Overrides>
       <activationGroup type="int">
