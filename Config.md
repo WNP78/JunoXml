@@ -21,6 +21,7 @@
 |`descriptionLabel`|`string`||
 |`dragScale`|`float`|Changes this part's contribution to the craft's overall drag force.|
 |`dragScaleActive`|`float`||
+|`dragScaleAngular`|`float`||
 |`explosiveness`|`float`|Changes how much explosiveness this part has.|
 |`fuelLine`|`bool`|Allow connected engines to search this part and its connected parts for fuel tanks.|
 |`heatShield`|`float`||

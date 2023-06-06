@@ -21,6 +21,7 @@
 |`sideOffset`|`float`|Changes the side offset of the wheel's position|
 |`size`|`float`|Changes the overall size of the landing gear.|
 |`slantAngle`|`float`|Changes the angle that the lower support attatches to the wheel.|
+|`soundVolume`|`float`|Changes the volume of the sound made by the motor built into the wheel.|
 |`springForceScale`|`float`|Changes the strength of the spring force in the suspension.|
 |`startExtended`|`bool`|Determines whether the gear should start out extended, or retracted.|
 |`supportArmEnabled`|`bool`|Enables/disables the support arm for the landing gear.|

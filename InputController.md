@@ -104,6 +104,7 @@ There are many things you can put in the `input` field. It's rather quite exciti
 |`FlightData.CurrentEngineThrustUnscaled`|`float`|
 |`FlightData.CurrentMass`|`float`|
 |`FlightData.CurrentMassUnscaled`|`float`|
+|`FlightData.CurrentReactionControlNozzleThrust`|`float`|
 |`FlightData.DeltaVStage`|`double`|
 |`FlightData.DragAccelerationMagnitude`|`float`|
 |`FlightData.East`|`vector`|
@@ -133,6 +134,7 @@ There are many things you can put in the `input` field. It's rather quite exciti
 |`FlightData.SurfaceVelocityMagnitude`|`double`|
 |`FlightData.TimeDelta`|`double`|
 |`FlightData.TimeMultiplier`|`double`|
+|`FlightData.TimeReal`|`double`|
 |`FlightData.Velocity`|`vector`|
 |`FlightData.VelocityMagnitude`|`double`|
 |`FlightData.VerticalSurfaceVelocity`|`double`|

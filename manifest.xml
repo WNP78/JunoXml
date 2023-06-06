@@ -286,6 +286,7 @@ Define what input the InputController is trying to override. See the `inputId` t
       <torque />
       <version />
       <scale />
+      <throttleGovernorEnabled />
     </Overrides>
   </ElectricMotor>
   <Fairing>
@@ -444,6 +445,7 @@ Define what input the InputController is trying to override. See the `inputId` t
       <powerScale />
       <multiDirection />
       <scale />
+      <manualInput />
     </Overrides>
   </ReactionControlNozzle>
   <RelayFuelSource>
@@ -472,6 +474,7 @@ Define what input the InputController is trying to override. See the `inputId` t
       <width />
       <version />
       <directionReverse />
+      <soundVolume />
     </Overrides>
   </ResizableWheel>
   <Suspension>
@@ -512,6 +515,7 @@ Define what input the InputController is trying to override. See the `inputId` t
       <thickness />
       <wingStrengthOverride />
       <allowAirfoilSelection />
+      <densityOverride />
     </Overrides>
   </Wing>
   <ControlSurface>
@@ -543,6 +547,10 @@ Define what input the InputController is trying to override. See the `inputId` t
       <hideBase />
       <length />
       <rotateSpeed />
+      <invert />
+      <invertOnMirror />
+      <juicyBase />
+      <rowSizeOverride />
     </Overrides>
   </SolarPanelArray>
   <SolarPanel>
@@ -686,6 +694,7 @@ Define what input the InputController is trying to override. See the `inputId` t
       <ignoreValidation />
       <initialCraftNodeId />
       <tutorialId />
+      <dragScaleAngular />
     </Overrides>
   </Config>
   <RocketEngine>
@@ -757,6 +766,7 @@ Define what input the InputController is trying to override. See the `inputId` t
       <verticalAngleOffset />
       <extended />
       <version />
+      <soundVolume />
     </Overrides>
   </LandingGear>
   <CameraVantage>
@@ -829,7 +839,20 @@ Define what input the InputController is trying to override. See the `inputId` t
     </Overrides>
   </FlightProgram>
   <EvaChair>
-    <Overrides />
+    <Overrides>
+      <armTargets />
+      <legTargets />
+      <topHeader />
+      <bottomHeader />
+      <leftHandTarget />
+      <rightHandTarget />
+      <leftHandBend />
+      <rightHandBend />
+      <leftFootTarget />
+      <rightFootTarget />
+      <leftFootBend />
+      <rightFootBend />
+    </Overrides>
   </EvaChair>
   <CrewCompartment>
     <Overrides>
@@ -928,6 +951,7 @@ Define what input the InputController is trying to override. See the `inputId` t
       <unscaledCenterOfMass />
       <heightStretch />
       <requiredAreaPerAstronaut />
+      <mass />
     </Overrides>
   </ScalablePod>
   <SubPartRotator>
@@ -1010,6 +1034,54 @@ Define what input the InputController is trying to override. See the `inputId` t
       <payloadTrackingId />
       <contractNumber />
       <contractNumberString />
+      <disconnectedWarning />
+      <payloadCount />
     </Overrides>
   </Payload>
+  <ElectricMotorOld>
+    <Overrides>
+      <attachPointIndex />
+      <brakeTorque />
+      <powerUsagePerTorque />
+      <rpm />
+      <soundVolume />
+      <staticResistance />
+      <torque />
+      <scale />
+    </Overrides>
+  </ElectricMotorOld>
+  <GenericPart>
+    <Overrides>
+      <attachmentSize />
+      <baseMass />
+      <basePrize />
+      <massSizeRate />
+      <priceSizeRate />
+      <scale />
+    </Overrides>
+  </GenericPart>
+  <PropellerAssembly>
+    <Overrides>
+      <basePrice />
+      <bladeBlurCount />
+      <bladeBlurSpread />
+      <bladeCount />
+      <chordRadiusRatio />
+      <chordScale />
+      <defaultDiameter />
+      <density />
+      <dragScalar />
+      <hubScale />
+      <isWaterProp />
+      <maxPitch />
+      <pitchControlType />
+      <reverseBladeDirection />
+      <size />
+      <spinTolerance />
+      <styleId />
+      <styleIdHub />
+      <syncWithMotor />
+      <thrustScalar />
+    </Overrides>
+  </PropellerAssembly>
 </Sr2XmlDocManifest>

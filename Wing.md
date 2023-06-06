@@ -11,7 +11,7 @@
 |`angleOfAttack`|`float`||
 |`controlSurfacePriceMultiplier`|`float`||
 |`craftSide`|`CraftSideType`|The side of the craft the wing is connected to. If connected to the right side of the craft then the airfoil and pitch input will be inverted, which is important for airplanes.|
-|`density`|`float`||
+|`densityOverride`|`float`||
 |`fuelPercentage`|`float`|The amount of fuel to put in this fuel tank.|
 |`hingeDistanceFromTrailingEdge`|`float`||
 |`invertAirfoil`|`bool`||

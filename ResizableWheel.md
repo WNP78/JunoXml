@@ -18,6 +18,7 @@
 |`slipForwardExtremum`|`float`||
 |`slipSidewaysAsymptote`|`float`||
 |`slipSidewaysExtremum`|`float`||
+|`soundVolume`|`float`|Changes the volume of the sound made by the motor built into the wheel.|
 |`spring`|`float`|Changes the strength of the spring force in the suspension.|
 |`torque`|`float`|Increase the power of the wheel at the cost of higher electricity usage. The value shown is already scaled by the Gear Ratio.|
 |`tractionForward`|`float`|Changes the forward grip of the wheel.|
