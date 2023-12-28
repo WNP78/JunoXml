@@ -139,7 +139,9 @@ How awesome! Then it gets even more complex. You can get parameters from differe
 	 - Required
 	 - Matches the name of a public float/double/bool/Vector3d property on the target object.
 
-An example of the usefulness of this technique is the retrieval of Variables from Vizzy programs by using `FlightProgram` (or `VZ` for short) for the Modifier Selector, followed by the name of the variable. If the variable is a vector the prefix `v:` will be required. All parts have very useful properties you can access, they are all listed in [this page](PartModifierScriptProperties).
+An example of the usefulness of this technique is the retrieval of Variables from Vizzy programs by using `FlightProgram` (or `VZ` for short) for the Modifier Selector, followed by the name of the variable. If the variable is a vector the prefix `v:` will be required. If it is a list, Funk includes a couple retrievers that work only within Vizzy: `listNum`, `listVec`, `listBool` and `listStr` take as parameters a string with the name of the list and the index of the value to be retrieved, and `listLen`, which takes as a parameter just the name of the list and returns its length.
+
+All parts have very useful properties you can access, they are all listed in [this page](PartModifierScriptProperties).
         </Footer>
     <Overrides>
       <activationGroup type="int">
