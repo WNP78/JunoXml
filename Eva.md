@@ -8,6 +8,8 @@
 |`crewId`|`int`||
 |`crewName`|`string`||
 |`grapplingHookEnabled`|`bool`||
+|`gDamageScale`|`float`||
+|`gTolerance`|`float`||
 |`jetpackAvailable`|`bool`||
 |`jetpackEnabled`|`bool`||
 |`jetpackPowerScalar`|`float`||

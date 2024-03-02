@@ -57,6 +57,7 @@
 |`supportsTransparency`|`bool`|When enabled this part will respond to transparent materials. Note that this can cause some parts to render in strange and mysterious ways, so use with caution.|
 |`thermalMassRatio`|`float`||
 |`tinkerPanelEnabled`|`bool`||
+|`tinkerPanelUpgradeLabel`|`string`||
 |`tutorialId`|`string`||
 |`viewCommandPod`|`bool`|View the command pod that controls this part.|
 |`xmlEditButton`|`bool`|Opens a window that shows all the parameters in the different modifiers found in the part, with all its available parameters.|

@@ -11,5 +11,7 @@
 |`payloadCount`|`string`|The number of payloads connected to this craft that have been explicitly assigned to this contract.|
 |`payloadId`|`string`||
 |`payloadTrackingId`|`string`||
+|`setCraftTrackingIdOnActive`|`string`||
+|`setCraftNameOnActive`|`string`||
 
 

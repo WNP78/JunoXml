@@ -8,6 +8,7 @@
 |`autoCenterCamera`|`bool`||
 |`cameraOffset`|`Vector3`||
 |`cameraRotationOffset`|`Vector3`||
+|`dirtIntensity`|`float`||
 |`enabledByDefault`|`bool`||
 |`hideBase`|`bool`|Toggles the visibility of the base on/off.|
 |`scale`|`float`|Changes the overall size of the camera.|

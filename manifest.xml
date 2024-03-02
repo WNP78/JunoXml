@@ -518,6 +518,20 @@ Define what input the InputController is trying to override. See the `inputId` t
       <wingStrengthOverride />
       <allowAirfoilSelection />
       <densityOverride />
+      <autoResize />
+      <cDragOverride />
+      <cLiftOverride />
+      <curveLength />
+      <isFancy />
+      <isStylish />
+      <thicknessDelta />
+      <thicknessDeltaStyle />
+      <thicknessOffset />
+      <thicknessOffsetStyle />
+      <thicknessTip />
+      <thicknessTipAuto />
+      <leadingBulge />
+      <leadingBulgeStyle />
     </Overrides>
   </Wing>
   <ControlSurface>
@@ -531,6 +545,7 @@ Define what input the InputController is trying to override. See the `inputId` t
       <start />
       <designerAutoAxesInfo />
       <singleAxisWhenAuto />
+      <invertOnMirror />
     </Overrides>
   </ControlSurface>
   <SolarPanelArray>
@@ -635,6 +650,10 @@ Define what input the InputController is trying to override. See the `inputId` t
       <deformations />
       <depthCurve />
       <meshPriceMultiplier />
+      <depthCurved />
+      <volume />
+      <volumeInner />
+      <wallThickness />
     </Overrides>
   </Fuselage>
   <Config>
@@ -697,6 +716,7 @@ Define what input the InputController is trying to override. See the `inputId` t
       <initialCraftNodeId />
       <tutorialId />
       <dragScaleAngular />
+      <tinkerPanelUpgradeLabel />
     </Overrides>
   </Config>
   <RocketEngine>
@@ -732,6 +752,20 @@ Define what input the InputController is trying to override. See the `inputId` t
       <smokeSpeedOverride />
       <smokeColor />
       <fuelGrain />
+      <exhaustExpansionRange />
+      <exhaustGlobalIntensity />
+      <exhaustShockIntensity />
+      <exhaustShockDirectionOffset />
+      <exhaustRimShade />
+      <exhaustSootIntensity />
+      <exhaustSootLength />
+      <exhaustColorTip />
+      <exhaustColorShock />
+      <exhaustColorFlame />
+      <exhaustColorSoot />
+      <smokeOffset />
+      <exhaustTextureStrength />
+      <nozzleDiscStrength />
     </Overrides>
   </RocketEngine>
   <CrossFeed>
@@ -769,6 +803,7 @@ Define what input the InputController is trying to override. See the `inputId` t
       <extended />
       <version />
       <soundVolume />
+      <bayWidth />
     </Overrides>
   </LandingGear>
   <CameraVantage>
@@ -790,6 +825,7 @@ Define what input the InputController is trying to override. See the `inputId` t
       <isNight />
       <nightVisionColor />
       <cameraRotationOffset />
+      <dirtIntensity />
     </Overrides>
   </CameraVantage>
   <BeaconLight>
@@ -854,6 +890,8 @@ Define what input the InputController is trying to override. See the `inputId` t
       <rightFootTarget />
       <leftFootBend />
       <rightFootBend />
+      <forwardLook />
+      <snapRange />
     </Overrides>
   </EvaChair>
   <CrewCompartment>
@@ -883,6 +921,8 @@ Define what input the InputController is trying to override. See the `inputId` t
       <crewId />
       <jetpackAvailable />
       <requiresCrewMember />
+      <gDamageScale />
+      <gTolerance />
     </Overrides>
   </Eva>
   <Cockpit>
@@ -937,6 +977,13 @@ Define what input the InputController is trying to override. See the `inputId` t
       <fontName />
       <gradient />
       <outlineWidth />
+      <curvatureDirection />
+      <offset />
+      <paintIndexShift />
+      <parentPath />
+      <rotation />
+      <supportsCurvature />
+      <supportsGradient />
     </Overrides>
   </Label>
   <ScalablePod>
@@ -1038,6 +1085,8 @@ Define what input the InputController is trying to override. See the `inputId` t
       <contractNumberString />
       <disconnectedWarning />
       <payloadCount />
+      <setCraftTrackingIdOnActive />
+      <setCraftNameOnActive />
     </Overrides>
   </Payload>
   <ElectricMotorOld>

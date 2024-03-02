@@ -8,7 +8,6 @@
 |`allowFreeSpin`|`bool`||
 |`angle`|`float`||
 |`attachPointIndex`|`int`||
-|`editMessage`|`string`||
 |`baseMode`|`BaseMode`|Changes the visual style of the base plate. Purely for cosmetic purposes.|
 |`scale`|`float`|Changes the overall size of the joint.|
 |`damperMultiplier`|`float`||
