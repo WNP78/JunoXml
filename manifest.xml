@@ -75,7 +75,7 @@ And you can even use some operators and functions:
 |`max(a, b)`|The largest value between a and b. |
 |`min(a, b)`|The smallest value between a and b. |
 |`pow(x, p)`|x raised to the power of p. |
-|`repeat(x, l)`|Loops the value x so it is never larger than l and never less than 0. |
+|`repeat(x, l)`|Loops the value x so it is never larger than l and never less than 0, equivalent to the modulo operator (%). |
 |`round(x)`|Rounds x to the nearest integer. |
 |`sign(x)`|The sign of x (1 if x positive, -1 if x negative) |
 |`smoothstep(a, b, t)`|Similar to lerp, but with smoothing at the ends. |
