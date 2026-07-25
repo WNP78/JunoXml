@@ -411,6 +411,7 @@ Define what input the InputController is trying to override. See the `inputId` t
       <rotationZ />
       <spotLightAngle />
       <partGlowSelfShadowCasting />
+      <castShadows />
     </Overrides>
   </Light>
   <Parachute>
@@ -623,6 +624,9 @@ Define what input the InputController is trying to override. See the `inputId` t
       <mass />
       <price />
       <hasReverseThrust />
+      <overrideAfterBurnerTemp />
+      <overrideBurnerTemp />
+      <overrideFanPressureRatio />
     </Overrides>
   </JetEngine>
   <Fuselage>
@@ -660,6 +664,7 @@ Define what input the InputController is trying to override. See the `inputId` t
       <volume />
       <volumeInner />
       <wallThickness />
+      <shellDensityOverride />
     </Overrides>
   </Fuselage>
   <Config>
@@ -772,6 +777,10 @@ Define what input the InputController is trying to override. See the `inputId` t
       <smokeOffset />
       <exhaustTextureStrength />
       <nozzleDiscStrength />
+      <ignited />
+      <ignitionsOverride />
+      <ignitionsUsed />
+      <exhaustColorExpanded />
     </Overrides>
   </RocketEngine>
   <CrossFeed>
@@ -855,6 +864,7 @@ Define what input the InputController is trying to override. See the `inputId` t
       <spotLightAngle />
       <intensity />
       <scale />
+      <castShadows />
     </Overrides>
   </LightPart>
   <CurveInput>
@@ -1139,6 +1149,7 @@ Define what input the InputController is trying to override. See the `inputId` t
       <styleIdHub />
       <syncWithMotor />
       <thrustScalar />
+      <spinToleranceMultiplier />
     </Overrides>
   </PropellerAssembly>
 </Sr2XmlDocManifest>

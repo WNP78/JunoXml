@@ -5,6 +5,7 @@
 
 |Name|Type|Description|
 |--|--|--|
+|`castShadows`|`bool`|Toggles the shadow casting in the light. Without shadows the performance impact of lights is greatly reduced.|
 |`color`|`Color`|The color of the light.|
 |`intensity`|`float`|The intensity of the light.|
 |`lightType`|`LightModifierType`|The type the light. Spot lights are configured with a light angle. Point lights are omni-directional.|

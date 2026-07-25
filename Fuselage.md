@@ -22,6 +22,7 @@
 |`meshType`|`FuselageMeshType`||
 |`normalSmoothingAngle`|`float`||
 |`offset`|`Vector3`||
+|`shellDensityOverride`|`float`||
 |`subpartIndex`|`int`||
 |`supportsXZOffset`|`bool`||
 |`toolAutoAdaptBottom`|`bool`||

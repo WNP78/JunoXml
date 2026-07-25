@@ -12,7 +12,7 @@ If you do want to run the generator, you need to have the .NET 10 SDK installed 
 
 If you would like to contact me, I am @wnp78 on discord or WNP78 on [simplerockets.com](https://www.simplerockets.com/u/WNP78). Details on how the `manfiest.xml` file is laid out are [here](ManifestXmlGuide).
 
-Game Version: `1.3.0.6`
+Game Version: `1.3.205.0`
 
 Contents:
  - [BeaconLight](/JunoXml/BeaconLight)

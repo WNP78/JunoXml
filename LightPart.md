@@ -13,5 +13,6 @@
 |`range`|`float`|The maximum range (in meters) of the light.|
 |`rotation`|`float`|The rotation of the light (in degrees).|
 |`spotLightAngle`|`float`|The spot light angle in degrees.|
+|`castShadows`|`bool`|Toggles the shadow casting in the light. Without shadows the performance impact of lights is greatly reduced.|
 
 

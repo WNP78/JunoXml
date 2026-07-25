@@ -7,7 +7,7 @@
 |--|--|--|
 |`fuelConsumptionRate`|`float`||
 |`manualInput`|`bool`|Determines if the rcn uses an Input Controller to determine its throttle or does it automatically.|
-|`multiDirection`|`bool`||
+|`multiDirection`|`bool`|Determines if the rcn includes a gimbal.|
 |`power`|`float`||
 |`powerScale`|`float`|Changes the power of the nozzle and its fuel usage.|
 |`scale`|`float`|Changes the overall size of the RCS, affecting its max thrust, price and mass.|

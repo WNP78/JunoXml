@@ -445,6 +445,9 @@ Below is a table of all the different properties you can access, per modifier.
 |`JetEngine.Data.HasAfterburner`|bool|
 |`JetEngine.Data.HasReverseThrust`|bool|
 |`JetEngine.Data.MassDry`|float|
+|`JetEngine.Data.OverrideAfterBurnerTemp`|float|
+|`JetEngine.Data.OverrideBurnerTemp`|float|
+|`JetEngine.Data.OverrideFanPressureRatio`|float|
 |`JetEngine.Data.ShroudCurvature`|float|
 |`JetEngine.Data.ShroudLength`|float|
 |`JetEngine.Data.Scale`|float|
@@ -476,6 +479,7 @@ Below is a table of all the different properties you can access, per modifier.
 |`RocketEngine.Data.ThrustOverride`|float|
 |`RocketEngine.Data.MassFlowRateOverride`|float|
 |`RocketEngine.Data.WattsPerFuelFlowOverride`|float|
+|`RocketEngine.Data.Ignited`|bool|
 |`RocketEngine.Data.MinThrottleOverride`|float|
 |`RocketEngine.Data.ThrottleResponse`|float|
 |`RocketEngine.Data.HeatTransferOverride`|float|
@@ -523,11 +527,13 @@ Below is a table of all the different properties you can access, per modifier.
 |`BeaconLight.HasPower`|bool|
 |`BeaconLight.PowerConsumption`|float|
 |`BeaconLight.UsesMachNumber`|bool|
+|`Light.Data.CastShadows`|bool|
 |`Light.Data.Intensity`|float|
 |`Light.Data.PartGlow`|bool|
 |`Light.Data.PartGlowSelfShadowCasting`|bool|
 |`Light.Data.Range`|float|
 |`Light.Data.SpotLightAngle`|float|
+|`LightPart.Data.CastShadows`|bool|
 |`LightPart.Data.Extension`|float|
 |`LightPart.Data.HideBase`|bool|
 |`LightPart.Data.Intensity`|float|

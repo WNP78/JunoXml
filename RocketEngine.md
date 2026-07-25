@@ -19,6 +19,9 @@
 |`thrustOverride`|`float`||
 |`massFlowRateOverride`|`float`||
 |`wattsPerFuelFlowOverride`|`float`||
+|`ignited`|`bool`||
+|`ignitionsOverride`|`int`||
+|`ignitionsUsed`|`int`||
 |`minThrottleOverride`|`float`||
 |`throttleResponse`|`float`||
 |`heatTransferOverride`|`float`||
@@ -35,6 +38,7 @@
 |`exhaustSootIntensity`|`float`||
 |`exhaustSootLength`|`float`||
 |`exhaustColor`|`string`||
+|`exhaustColorExpanded`|`string`||
 |`exhaustColorTip`|`string`||
 |`exhaustColorShock`|`string`||
 |`exhaustColorFlame`|`string`||

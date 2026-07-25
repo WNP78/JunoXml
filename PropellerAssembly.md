@@ -21,6 +21,7 @@
 |`reverseBladeDirection`|`bool`|Reverses the direction the propellers are facing as well as inverting an attached motor's input controller, if "Sync with motor" is enabled.|
 |`size`|`float`|Changes the overall size/scale of the propeller assembly|
 |`spinTolerance`|`float`||
+|`spinToleranceMultiplier`|`float`||
 |`styleId`|`string`||
 |`styleIdHub`|`string`||
 |`syncWithMotor`|`bool`|Synchronizes changes between blade direction and motor rotation.|
