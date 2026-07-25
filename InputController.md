@@ -5,32 +5,32 @@ An `InputController` takes an input value, chosen by it's `input` property, then
 
 |Name|Type|Description|
 |--|--|--|
-|`activationGroup`|`int`|The activation group assigned to the inputcontroller. When this is disabled, the inputcontroller will not update it's input.|
-|`currentValue`|`float`|This is used in-game, when saving the game's state.|
-|`designerInputOptions`|`string`|This is the comma separated list of available inputs in the part properties panel. This is overriden by the "Show Hidden Properties" checkbox in the Tinker panel.|
-|`ignorePartActivationState`|`bool`|If set to true, then the input controller will function even when the part is not activated. This is required for auto-activating parts.|
-|`input`|`string`|The input axis to use. More details below.|
-|`inputAxisRange`|`string`|One, two or three numbers, comma separated. They define the range of the input values that are expected when mapping to output values. Can either be `max`, `min,max` or `min,zero,max`.|
-|`inputAxisRangeDesigner`|`string`|The designer field for the `inputAxisRange` property.|
-|`invert`|`bool`|Invert the value?|
-|`invertOnMirror`|`bool`|Invert when the part is mirrored?|
-|`invertType`|`string`|If `Output`, then the value will be inverted after mapping. If `Axis`, it will be before mapping.|
-|`max`|`float`|The maximum output value|
-|`min`|`float`|The minimum output value|
-|`outputCurveAmplitude`|`float`|The amplitude of the output curve.|
-|`outputCurveFrequency`|`float`|The frequency of the output curve.|
-|`outputCurveKeyframes`|`string`|Keyframes should be separated by the '\|' character, with each keyframe having values separated by the ',' character. A keyframe should define a time value and an output value. Optionally, the keyframe may specify a third value the definesthe incoming and outgoing tangents, or a third and fourth value that define the incoming and outgoing tangents respectively. Example: 0.0,0.0\|0.5,1.0\|1.0,0.0|
-|`outputCurveLabel`|`string`||
-|`outputCurveOffset`|`float`|The offset value used when evaluating the output curve.|
-|`outputCurveStyle`|`CurveStyle`|The style of the output curve.|
-|`outputCurveWrapMode`|`CurveWrapMode`|Determines how the curve is evaluated when the axis value extends beyond the extents of the curve.|
-|`overrideInput`|`string`|If assigned, this will override the `input` field.|
-|`showActivationGroup`|`bool`|Controls if the activation group spinner is shown in the designer.|
-|`showInputAxis`|`bool`|Controls if the input axis spinner is shown in the desinger.|
-|`showInvert`|`bool`|Controls if the invert checkbox is shown in the deisgner.|
-|`type`|`string`|This is the method used to map the input to the output range. See the `InputControllerType` table.|
-|`zeroOnDeactivate`|`bool`|If false, the value will remain frozen when deactivated. If true it will go to zero.|
-|`inputId`|`string`|Define what input the InputController is trying to override. See the `inputId` table.|
+|``activationGroup``|``int``|The activation group assigned to the inputcontroller. When this is disabled, the inputcontroller will not update it's input.|
+|``currentValue``|``float``|This is used in-game, when saving the game's state.|
+|``designerInputOptions``|``string``|This is the comma separated list of available inputs in the part properties panel. This is overriden by the "Show Hidden Properties" checkbox in the Tinker panel.|
+|``ignorePartActivationState``|``bool``|If set to true, then the input controller will function even when the part is not activated. This is required for auto-activating parts.|
+|``input``|``string``|The input axis to use. More details below.|
+|``inputAxisRange``|``string``|One, two or three numbers, comma separated. They define the range of the input values that are expected when mapping to output values. Can either be `max`, `min,max` or `min,zero,max`.|
+|``inputAxisRangeDesigner``|``string``|The designer field for the `inputAxisRange` property.|
+|``invert``|``bool``|Invert the value?|
+|``invertOnMirror``|``bool``|Invert when the part is mirrored?|
+|``invertType``|``string``|If `Output`, then the value will be inverted after mapping. If `Axis`, it will be before mapping.|
+|``max``|``float``|The maximum output value|
+|``min``|``float``|The minimum output value|
+|``outputCurveAmplitude``|``float``|The amplitude of the output curve.|
+|``outputCurveFrequency``|``float``|The frequency of the output curve.|
+|``outputCurveKeyframes``|``string``|Keyframes should be separated by the '\|' character, with each keyframe having values separated by the ',' character. A keyframe should define a time value and an output value. Optionally, the keyframe may specify a third value the definesthe incoming and outgoing tangents, or a third and fourth value that define the incoming and outgoing tangents respectively. Example: 0.0,0.0\|0.5,1.0\|1.0,0.0|
+|``outputCurveLabel``|``string``||
+|``outputCurveOffset``|``float``|The offset value used when evaluating the output curve.|
+|``outputCurveStyle``|``UserCurve.CurveStyle``|The style of the output curve.|
+|``outputCurveWrapMode``|``UserCurve.CurveWrapMode``|Determines how the curve is evaluated when the axis value extends beyond the extents of the curve.|
+|``overrideInput``|``string``|If assigned, this will override the `input` field.|
+|``showActivationGroup``|``bool``|Controls if the activation group spinner is shown in the designer.|
+|``showInputAxis``|``bool``|Controls if the input axis spinner is shown in the desinger.|
+|``showInvert``|``bool``|Controls if the invert checkbox is shown in the deisgner.|
+|``type``|``string``|This is the method used to map the input to the output range. See the `InputControllerType` table.|
+|``zeroOnDeactivate``|``bool``|If false, the value will remain frozen when deactivated. If true it will go to zero.|
+|``inputId``|``string``|Define what input the InputController is trying to override. See the `inputId` table.|
 
 ## Option Values
 
@@ -46,118 +46,118 @@ There are many things you can put in the `input` field. It's rather quite exciti
 
 |Controls|
 |---|
-|`Brake`|
-|`EvaAnalogJump`|
-|`EvaMoveFwdAft`|
-|`EvaMoveUpDown`|
-|`EvaPitch`|
-|`EvaRoll`|
-|`EvaShootTether`|
-|`EvaStrafe`|
-|`EvaTetherLength`|
-|`EvaTetherLengthOffset`|
-|`EvaTurn`|
-|`EvaWalk`|
-|`OffsetBrake`|
-|`OffsetPitch`|
-|`OffsetRoll`|
-|`OffsetSlider1`|
-|`OffsetSlider2`|
-|`OffsetSlider3`|
-|`OffsetSlider4`|
-|`OffsetTranslateForward`|
-|`OffsetTranslateRight`|
-|`OffsetTranslateUp`|
-|`OffsetYaw`|
-|`Pitch`|
-|`PitchInputReceived`|
-|`Roll`|
-|`RollInputReceived`|
-|`Slider1`|
-|`Slider2`|
-|`Slider3`|
-|`Slider4`|
-|`Throttle`|
-|`TranslateForward`|
-|`TranslateRight`|
-|`TranslateUp`|
-|`TranslationModeEnabled`|
-|`Yaw`|
-|`YawInputReceived`|
+|``Brake``|
+|``EvaAnalogJump``|
+|``EvaMoveFwdAft``|
+|``EvaMoveUpDown``|
+|``EvaPitch``|
+|``EvaRoll``|
+|``EvaShootTether``|
+|``EvaStrafe``|
+|``EvaTetherLength``|
+|``EvaTetherLengthOffset``|
+|``EvaTurn``|
+|``EvaWalk``|
+|``OffsetBrake``|
+|``OffsetPitch``|
+|``OffsetRoll``|
+|``OffsetSlider1``|
+|``OffsetSlider2``|
+|``OffsetSlider3``|
+|``OffsetSlider4``|
+|``OffsetTranslateForward``|
+|``OffsetTranslateRight``|
+|``OffsetTranslateUp``|
+|``OffsetYaw``|
+|``Pitch``|
+|``PitchInputReceived``|
+|``Roll``|
+|``RollInputReceived``|
+|``Slider1``|
+|``Slider2``|
+|``Slider3``|
+|``Slider4``|
+|``Throttle``|
+|``TranslateForward``|
+|``TranslateRight``|
+|``TranslateUp``|
+|``TranslationModeEnabled``|
+|``Yaw``|
+|``YawInputReceived``|
 
 
 |Flight Data|Type|
 |---|---|
-|`FlightData.Acceleration`|`vector`|
-|`FlightData.AccelerationMagnitude`|`double`|
-|`FlightData.AltitudeAboveGroundLevel`|`double`|
-|`FlightData.AltitudeAboveSeaLevel`|`double`|
-|`FlightData.AltitudeAboveTerrain`|`double`|
-|`FlightData.AngleOfAttack`|`double`|
-|`FlightData.AngularVelocity`|`vector`|
-|`FlightData.AngularVelocityMagnitude`|`double`|
-|`FlightData.BankAngle`|`double`|
-|`FlightData.CraftForward`|`vector`|
-|`FlightData.CraftRight`|`vector`|
-|`FlightData.CraftUp`|`vector`|
-|`FlightData.CurrentEngineThrust`|`float`|
-|`FlightData.CurrentEngineThrustUnscaled`|`float`|
-|`FlightData.CurrentMass`|`float`|
-|`FlightData.CurrentMassUnscaled`|`float`|
-|`FlightData.CurrentReactionControlNozzleThrust`|`float`|
-|`FlightData.DeltaVStage`|`double`|
-|`FlightData.DragAccelerationMagnitude`|`float`|
-|`FlightData.East`|`vector`|
-|`FlightData.FuelMass`|`float`|
-|`FlightData.Gravity`|`vector`|
-|`FlightData.GravityMagnitude`|`float`|
-|`FlightData.Grounded`|`bool`|
-|`FlightData.Heading`|`double`|
-|`FlightData.InWater`|`bool`|
-|`FlightData.LateralSurfaceVelocity`|`double`|
-|`FlightData.MachNumber`|`float`|
-|`FlightData.MaxActiveEngineThrust`|`float`|
-|`FlightData.MaxActiveEngineThrustUnscaled`|`float`|
-|`FlightData.North`|`vector`|
-|`FlightData.ParentPlanetOcclusion`|`float`|
-|`FlightData.Pitch`|`double`|
-|`FlightData.Position`|`vector`|
-|`FlightData.PositionNormalized`|`vector`|
-|`FlightData.RemainingBattery`|`float`|
-|`FlightData.RemainingFuelInStage`|`float`|
-|`FlightData.RemainingMonopropellant`|`float`|
-|`FlightData.SideSlip`|`double`|
-|`FlightData.SolarRadiationDirection`|`vector`|
-|`FlightData.SolarRadiationIntensity`|`double`|
-|`FlightData.SupportsWarpBurn`|`bool`|
-|`FlightData.SurfaceVelocity`|`vector`|
-|`FlightData.SurfaceVelocityMagnitude`|`double`|
-|`FlightData.TimeDelta`|`double`|
-|`FlightData.TimeMultiplier`|`double`|
-|`FlightData.TimeReal`|`double`|
-|`FlightData.Velocity`|`vector`|
-|`FlightData.VelocityMagnitude`|`double`|
-|`FlightData.VerticalSurfaceVelocity`|`double`|
-|`FlightData.WeightedThrottleResponse`|`float`|
-|`FlightData.WeightedThrottleResponseTime`|`float`|
+|``FlightData.Acceleration``|``vector``|
+|``FlightData.AccelerationMagnitude``|``double``|
+|``FlightData.AltitudeAboveGroundLevel``|``double``|
+|``FlightData.AltitudeAboveSeaLevel``|``double``|
+|``FlightData.AltitudeAboveTerrain``|``double``|
+|``FlightData.AngleOfAttack``|``double``|
+|``FlightData.AngularVelocity``|``vector``|
+|``FlightData.AngularVelocityMagnitude``|``double``|
+|``FlightData.BankAngle``|``double``|
+|``FlightData.CraftForward``|``vector``|
+|``FlightData.CraftRight``|``vector``|
+|``FlightData.CraftUp``|``vector``|
+|``FlightData.CurrentEngineThrust``|``float``|
+|``FlightData.CurrentEngineThrustUnscaled``|``float``|
+|``FlightData.CurrentMass``|``float``|
+|``FlightData.CurrentMassUnscaled``|``float``|
+|``FlightData.CurrentReactionControlNozzleThrust``|``float``|
+|``FlightData.DeltaVStage``|``double``|
+|``FlightData.DragAccelerationMagnitude``|``float``|
+|``FlightData.East``|``vector``|
+|``FlightData.FuelMass``|``float``|
+|``FlightData.Gravity``|``vector``|
+|``FlightData.GravityMagnitude``|``float``|
+|``FlightData.Grounded``|``bool``|
+|``FlightData.Heading``|``double``|
+|``FlightData.InWater``|``bool``|
+|``FlightData.LateralSurfaceVelocity``|``double``|
+|``FlightData.MachNumber``|``float``|
+|``FlightData.MaxActiveEngineThrust``|``float``|
+|``FlightData.MaxActiveEngineThrustUnscaled``|``float``|
+|``FlightData.North``|``vector``|
+|``FlightData.ParentPlanetOcclusion``|``float``|
+|``FlightData.Pitch``|``double``|
+|``FlightData.Position``|``vector``|
+|``FlightData.PositionNormalized``|``vector``|
+|``FlightData.RemainingBattery``|``float``|
+|``FlightData.RemainingFuelInStage``|``float``|
+|``FlightData.RemainingMonopropellant``|``float``|
+|``FlightData.SideSlip``|``double``|
+|``FlightData.SolarRadiationDirection``|``vector``|
+|``FlightData.SolarRadiationIntensity``|``double``|
+|``FlightData.SupportsWarpBurn``|``bool``|
+|``FlightData.SurfaceVelocity``|``vector``|
+|``FlightData.SurfaceVelocityMagnitude``|``double``|
+|``FlightData.TimeDelta``|``double``|
+|``FlightData.TimeMultiplier``|``double``|
+|``FlightData.TimeReal``|``double``|
+|``FlightData.Velocity``|``vector``|
+|``FlightData.VelocityMagnitude``|``double``|
+|``FlightData.VerticalSurfaceVelocity``|``double``|
+|``FlightData.WeightedThrottleResponse``|``float``|
+|``FlightData.WeightedThrottleResponseTime``|``float``|
 
 |Orbit Data|Type|
 |---|---|
-|`OrbitData.ApoapsisAltitude`|`double`|
-|`OrbitData.ApoapsisTime`|`double`|
-|`OrbitData.BurnNodeDeltaV`|`vector`|
-|`OrbitData.Eccentricity`|`double`|
-|`OrbitData.Inclination`|`double`|
-|`OrbitData.PeriapsisAltitude`|`double`|
-|`OrbitData.PeriapsisTime`|`double`|
-|`OrbitData.Period`|`double`|
-|`OrbitData.MeanAnomaly`|`double`|
-|`OrbitData.MeanMotion`|`double`|
-|`OrbitData.PeriapsisArgument`|`double`|
-|`OrbitData.RightAscension`|`double`|
-|`OrbitData.TrueAnomaly`|`double`|
-|`OrbitData.SemiMajorAxis`|`double`|
-|`OrbitData.SemiMinorAxis`|`double`|
+|``OrbitData.ApoapsisAltitude``|``double``|
+|``OrbitData.ApoapsisTime``|``double``|
+|``OrbitData.BurnNodeDeltaV``|``vector``|
+|``OrbitData.Eccentricity``|``double``|
+|``OrbitData.Inclination``|``double``|
+|``OrbitData.PeriapsisAltitude``|``double``|
+|``OrbitData.PeriapsisTime``|``double``|
+|``OrbitData.Period``|``double``|
+|``OrbitData.MeanAnomaly``|``double``|
+|``OrbitData.MeanMotion``|``double``|
+|``OrbitData.PeriapsisArgument``|``double``|
+|``OrbitData.RightAscension``|``double``|
+|``OrbitData.TrueAnomaly``|``double``|
+|``OrbitData.SemiMajorAxis``|``double``|
+|``OrbitData.SemiMinorAxis``|``double``|
 
 
 You can also access activation group states with `AG1` to `AG10`. If you want to, you can just put a constant value in there. Like `0.5`, `-1`, or even `.3`. This will just remain constant. Additionally you can reference `pi`, `e`, `true` or `false` to get their respective values.

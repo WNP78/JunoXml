@@ -5,6 +5,6 @@
 
 |Name|Type|Description|
 |--|--|--|
-|`mass`|`float`||
+|``mass``|``float``||
 
 

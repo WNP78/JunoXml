@@ -5,14 +5,14 @@
 
 |Name|Type|Description|
 |--|--|--|
-|`capacity`|`int`||
-|`capacityLabel`|`string`||
-|`commandPodEnabledInCompartment`|`bool`||
-|`crewExitPosition`|`Vector3`||
-|`crewExitRotation`|`Vector3`||
-|`maxPressure`|`float`||
-|`minPressure`|`float`||
-|`visibleInCompartment`|`bool`||
-|`volumePerIndividual`|`float`||
+|``capacity``|``int``||
+|``capacityLabel``|``string``||
+|``commandPodEnabledInCompartment``|``bool``||
+|``crewExitPosition``|``Vector3``||
+|``crewExitRotation``|``Vector3``||
+|``maxPressure``|``float``||
+|``minPressure``|``float``||
+|``visibleInCompartment``|``bool``||
+|``volumePerIndividual``|``float``||
 
 

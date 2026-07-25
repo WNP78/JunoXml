@@ -5,18 +5,18 @@
 
 |Name|Type|Description|
 |--|--|--|
-|`baseScale`|`float`||
-|`engineBurnTime`|`float`||
-|`engineEnabled`|`bool`||
-|`engineIsp`|`float`||
-|`enginePrice`|`float`||
-|`height`|`float`||
-|`heightStretch`|`float`|How stretched the pod is in the vertical axis.|
-|`mass`|`float`||
-|`radiusBottom`|`float`||
-|`radiusPercent`|`float`|The radius of the pod base.|
-|`radiusTop`|`float`||
-|`requiredAreaPerAstronaut`|`float`||
-|`unscaledCenterOfMass`|`Vector3`||
+|``baseScale``|``float``||
+|``engineBurnTime``|``float``||
+|``engineEnabled``|``bool``||
+|``engineIsp``|``float``||
+|``enginePrice``|``float``||
+|``height``|``float``||
+|``heightStretch``|``float``|How stretched the pod is in the vertical axis.|
+|``mass``|``float``||
+|``radiusBottom``|``float``||
+|``radiusPercent``|``float``|The radius of the pod base.|
+|``radiusTop``|``float``||
+|``requiredAreaPerAstronaut``|``float``||
+|``unscaledCenterOfMass``|``Vector3``||
 
 

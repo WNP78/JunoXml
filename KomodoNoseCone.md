@@ -5,8 +5,8 @@
 
 |Name|Type|Description|
 |--|--|--|
-|`autoResize`|`bool`||
-|`defaultRadius`|`float`||
-|`scale`|`float`||
+|``autoResize``|``bool``||
+|``defaultRadius``|``float``||
+|``scale``|``float``||
 
 

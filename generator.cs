@@ -4,19 +4,16 @@
 
 using Mono.Cecil;
 using System.Text;
-using System;
-using System.IO;
-using System.Linq;
-using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using System.Xml.Linq;
 using Mono.Cecil.Cil;
+using System.Text.RegularExpressions;
 
-namespace ModifierPropertiesExtractor;
+namespace generator;
 
 static class Program
 {
-    static Dictionary<string, string> TypeMap = new Dictionary<string, string>
+    internal static Dictionary<string, string> FunkyTypeMap = new()
     {
         { "System.Single", "float" },
         { "System.Int32", "int" },
@@ -122,9 +119,7 @@ static class Program
                 var name = property.PropertyType.Name;
                 if (name == "Single" || name == "Double" || name == "Boolean")
                 {
-                    stream.Write("|`");
-                    stream.Write(property.Name);
-                    stream.WriteLine("`|");
+                    stream.WriteLine($"|``{property.Name}``|");
                 }
             }
 
@@ -150,13 +145,9 @@ static class Program
                 stream.WriteLine("|---|---|");
                 foreach (PropertyDefinition property in type.Properties)
                 {
-                    if (TypeMap.TryGetValue(property.PropertyType.FullName, out string typeName))
+                    if (FunkyTypeMap.TryGetValue(property.PropertyType.FullName, out string typeName))
                     {
-                        stream.Write($"|`{prefix}.");
-                        stream.Write(property.Name);
-                        stream.Write("`|`");
-                        stream.Write(typeName);
-                        stream.WriteLine("`|");
+                        stream.WriteLine($"|``{prefix}.{property.Name.MdEscape()}``|``{typeName.MdEscape()}``|");
                     }
                 }
             }
@@ -229,12 +220,12 @@ static class Program
                         continue;
                     }
                     string pname = property.Name;
-                    if (pname.Contains("."))
+                    if (pname.Contains('.'))
                     {
                         pname = pname.Substring(pname.LastIndexOf('.') + 1);
                     }
                     if (pname.StartsWith("_")) { continue; } // relies on style rules being obeyed...
-                    stream.WriteLine("|`" + (name + pname).Replace("|", "\\|") + "`|" + typeName.Replace("|", "\\|") + "|");
+                    stream.WriteLine($"|``{(name + pname).MdEscape()}``|{typeName.MdEscape()}|");
                 }
             }
         }
@@ -256,11 +247,10 @@ static class Program
                         {
                             description = "Designer only. " + (description ?? "");
                         }
-                        if (!TypeMap.TryGetValue(field.FieldType.FullName, out string type)) { type = field.FieldType.Name; }
                         properties.Add(new PropertyEntry
                         {
                             Name = field.Name.TrimStart('_'),
-                            Type = type,
+                            Type = field.FieldType.FormatTypeString(false),
                             Desc = description ?? ""
                         });
                         break;
@@ -334,16 +324,13 @@ static class Program
                             description = "Designer only. " + (description ?? "");
                         }
                         string name = field.Name.TrimStart('_');
-                        if (!TypeMap.TryGetValue(field.FieldType.FullName, out string typeName))
-                        {
-                            typeName = field.FieldType.Name;
-                        }
-                        s.Append("|`");
-                        s.Append(name.Replace("|", "\\|"));
-                        s.Append("`|`");
-                        s.Append(typeName.Replace("|", "\\|"));
-                        s.Append("`|");
-                        s.Append(description.Replace("|", "\\|"));
+                        string typeName = field.FieldType.FormatTypeString(false);
+                        s.Append("|``");
+                        s.Append(name.MdEscape());
+                        s.Append("``|``");
+                        s.Append(typeName.MdEscape());
+                        s.Append("``|");
+                        s.Append(description.MdEscape());
                         s.AppendLine("|");
                         wrote = true;
                     }
@@ -461,17 +448,16 @@ static class Program
                         overrides.Add(over);
                     }
                     string type = over.GetStringAttribute("type", property.Type);
-                    if (TypeMap.ContainsKey(type)) { type = TypeMap[type]; }
                     string desc = over.Value?.Trim();
                     if (string.IsNullOrEmpty(desc)) { desc = property.Desc; }
                     desc = desc.Replace("\r\n", "\n").Replace('\n', ' ');
-                    file.WriteLine("|`" + (over.Name.LocalName ?? property.Name).Replace("|", "\\|") + "`|`" + type.Replace("|", "\\|") + "`|" + desc.Replace("|", "\\|") + "|");
+                    file.WriteLine($"|``{(over.Name.LocalName ?? property.Name).MdEscape()}``|``{type.MdEscape()}``|{desc.Replace("|", "\\|")}|");
                 }
                 if (customs != null)
                 {
                     foreach (var custom in customs.Elements())
                     {
-                        file.WriteLine("|`" + custom.Name.LocalName + "`|`" + custom.GetStringAttribute("type", "string") + "`|" + custom.Value.Trim().Replace("\r", "").Replace("\n", "") + "|");
+                        file.WriteLine($"|``{custom.Name.LocalName.MdEscape()}``|``{custom.GetStringAttribute("type", "string").MdEscape()}``|{custom.Value.Trim().Replace("\r", "").Replace("\n", "")}|");
                     }
                 }
             }
@@ -551,7 +537,97 @@ public static class Extensions
         var a = element.Attribute(name);
         return a != null ? a.Value : def;
     }
+
+    public static string FormatTypeString(this TypeReference type, bool includeNamespace)
+    {
+        if (type == null) return string.Empty;
+
+        if (type is ArrayType array)
+        {
+            string rank = new(',', array.Rank - 1);
+            return $"{array.ElementType.FormatTypeString(includeNamespace)}[{rank}]";
+        }
+
+        if (type is ByReferenceType byRef)
+        {
+            return $"ref {byRef.ElementType.FormatTypeString(includeNamespace)}";
+        }
+
+        if (type is PointerType pointer)
+        {
+            return $"{pointer.ElementType.FormatTypeString(includeNamespace)}*";
+        }
+
+        if (type is GenericInstanceType generic)
+        {
+            if (generic.ElementType.FullName == "System.Nullable`1")
+            {
+                return $"{generic.GenericArguments[0].FormatTypeString(includeNamespace)}?";
+            }
+
+            var baseName = GetCleanClassName(generic.ElementType, includeNamespace);
+            var arguments = string.Join(", ", generic.GenericArguments.Select(x => x.FormatTypeString(includeNamespace)));
+            return $"{baseName}<{arguments}>";
+        }
+
+        return GetCleanClassName(type, includeNamespace);
+    }
+
+    private static string GetCleanClassName(TypeReference type, bool includeNamespace)
+    {
+        switch (type.FullName)
+        {
+            case "System.Void": return "void";
+            case "System.Object": return "object";
+            case "System.String": return "string";
+            case "System.Boolean": return "bool";
+            case "System.Byte": return "byte";
+            case "System.SByte": return "sbyte";
+            case "System.Char": return "char";
+            case "System.Decimal": return "decimal";
+            case "System.Double": return "double";
+            case "System.Single": return "float";
+            case "System.Int32": return "int";
+            case "System.UInt32": return "uint";
+            case "System.Int64": return "long";
+            case "System.UInt64": return "ulong";
+            case "System.Int16": return "short";
+            case "System.UInt16": return "ushort";
+            case "System.IntPtr": return "nint";
+            case "System.UIntPtr": return "nuint";
+            default: break;
+        }
+
+        if (type.IsGenericParameter)
+        {
+            return type.Name;
+        }
+
+        string name = type.Name;
+        int tickIndex = name.IndexOf('`');
+        if (tickIndex > 0)
+        {
+            name = name[..tickIndex];
+        }
+
+        if (type.DeclaringType != null)
+        {
+            return $"{GetCleanClassName(type.DeclaringType, includeNamespace)}.{name}";
+        }
+
+        if (includeNamespace && !string.IsNullOrEmpty(type.Namespace))
+        {
+            return $"{type.Namespace}.{name}";
+        }
+
+        return name;
+    }
+
+    static Regex mdEscape = new("[|*]");
+
+    public static string MdEscape(this string s) => mdEscape.Replace(s, m => "\\" + m.Value);
 }
+
 struct Page
 {
     public string name;
